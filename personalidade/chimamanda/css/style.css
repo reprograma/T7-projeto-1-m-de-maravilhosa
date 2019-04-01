@@ -1,0 +1,22 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Menu */
+
+.navegacao {
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    background-color: #674582;
+}
+
+.menu {
+    display: inline-block;
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
