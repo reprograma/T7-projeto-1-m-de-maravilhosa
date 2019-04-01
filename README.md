@@ -1,5 +1,5 @@
-# Projeto 1 - M de Maravilhosa
-
+# Projeto 1 - M de Maravilhosa - Talita
+ 
 ## Cronograma
 - **01/04**: 
   - Manhã - Revisão.
