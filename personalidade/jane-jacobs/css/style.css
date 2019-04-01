@@ -1,0 +1,59 @@
+
+/* GERAL */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 10px; 
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAVEGACAO */
+
+.navegação {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #674582;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    padding: 1.5rem;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+}
+
+.navegacao__logo {
+    max-width: 200px;
+}
+
+.navegacao__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    
+}
+
+.menu__redes-sociais a{
+    margin-left: 1rem;
+}
+
+/* CABEÇALHO  */
+
+.cabecalho {
+    background: url(../img/janejacobs-1.jpg);
+}
