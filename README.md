@@ -1,4 +1,4 @@
-# Projeto 1 - M de Maravilhosa
+# Projeto 1 - M de Maravilhosa - Kamila Viveiros
 
 ## Cronograma
 - **01/04**: 
