@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.navegacao {
+    background-color: #674582;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    padding: 1.5rem;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+}
+
+.navegacao__logo {
+    max-width: 200px;
+}
+
+.navegacao__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacao__itens {
+    position: absolute;
+    right: -700px;
+    top: 85px;
+    width: 100%;
+    background-color: #674582;
+    text-align: center;
+    padding: 3rem 0;
+    transition: right 1s;
+}
+
+.navegacao__itens.ativo {
+    display: block;
+    right: 0;
+    top: 85px;
+    width: 100%;
+    background-color: #674582;
+    text-align: center;
+    padding: 3rem 0;
+    transition: right 1s;
+}
+
+.navegacao__itens li > a {
+    transition: all .2s;
+}
+
+.navegacao__itens li > a:hover {
+    color: #C083B9;
+}
+
+.navegacao__menu-hamburguer img {
+    background-color: #C083B9;
+    border-radius: 5px;
+}
+
+.navegacao__nav {
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+.navegacao__nav li {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.navegacao__redes-sociais a {
+    margin: 0 1rem;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-size: 10px; /* definir uma font-size padrão */
+}
