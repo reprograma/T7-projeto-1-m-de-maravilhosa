@@ -1,0 +1,41 @@
+body{
+    margin: 0%;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    
+}
+header{
+    background-image: url("../img/obama.jpg");
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -300px;
+    margin: 0%;
+    padding: 0%;
+   
+}
+
+.menu{
+    background-color: #674582;
+    display: flex;
+}
+
+.menu__lista li,
+.menu__lista li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+h1{
+    margin: 0%;
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
