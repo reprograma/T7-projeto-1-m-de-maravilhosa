@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    background-color: #674582;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul>li{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.navigation_logo{
+    height: 10vh;
+}
+
+.navigation_media{
+    
+}
+
+.cabeçalho{
+    background-image: url(../img/bg-banner-claro.png);
+    height: 80vh;
+    max-height: 500px;
+    background-size: cover;
+    background-repeat: 
+}
