@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.navegacao {
+    height: 18.4722vh;
+    background-color: #674582;
+}
