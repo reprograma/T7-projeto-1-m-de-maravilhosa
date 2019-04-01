@@ -1,0 +1,94 @@
+/* CONTEÚDO GERAL */
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.conteudo{
+    max-width: 100%;
+
+}
+
+
+/* CABEÇALHO */
+.cabecalho{
+
+}
+
+.navegacao{
+
+}
+
+
+/* BANNER */
+.banner{
+    background-image: url(../img/hl-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+
+}
+
+
+/* INTRODUÇÃO */
+.introducao{
+    background-color: yellow;
+
+}
+
+.introducao__fotoeparagrafo{
+    display: flex;
+}
+
+.introducao__foto{
+    max-width: 30%;
+
+}
+
+.introducao__paragrafo{
+    max-width: 70%;
+}
+
+/* CITAÇÃO */
+.citacao{
+    background-color: red;
+}
+
+
+/* HISTÓRIA */
+.historia{
+    background-color: blue;
+
+}
+
+.historia__imagem{
+
+}
+
+
+/* AUTORA */
+.autora{
+
+}
+
+
+/* OUTRAS PERSONALIDADES */
+.outraspersonalidades{
+
+}
+
+
+/* FINAL */
+.final{
+
+}
+
+
+/* RODAPÉ */
+.rodape{
+
+}
+
