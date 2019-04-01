@@ -1,0 +1,32 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.cabecalho__conteudo {
+    display: flex;
+    background-color: #674582;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+}
+
+.cabecalho__logo img {
+    width: 150px;
+}
+
+.cabecalho__menu {
+    padding: 1%;
+    width: 20vw;
+    background-color: yellow;
+}
+
+.cabecalho__redes {
+
+}
