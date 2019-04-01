@@ -1,0 +1,50 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/* HEADER Ellen Page */
+
+.header {
+    background-image: url(../img/ellen_header.jpg)
+    min-height: 80vh;
+    height: 500px;
+    background-size: cover;
+    background-position: center 14%;
+    background-repeat: no-repeat;
+}
+
+.header__titulo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.about {
+    padding: 100px;
+
+}
