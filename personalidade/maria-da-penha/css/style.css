@@ -1,0 +1,46 @@
+* {`
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #674582;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 15px;
+    top: 0;
+}
+
+.navegacao__logo {
+height: 50px;
+margin-left: 30px;
+    
+}
+
+.menu >li {
+    display: inline-block;
+    list-style: none;
+    color: #ffffff;
+
+    
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.icones {
+    
+   
+
+}
