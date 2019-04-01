@@ -1,0 +1,22 @@
+body{
+    margin:0;
+}
+
+.nav{
+background:#674584;
+position: fixed;
+width: 100%;
+top: 0;
+}
+
+.container{
+width: 960px;
+margin: 0 auto;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 85px;
+}
