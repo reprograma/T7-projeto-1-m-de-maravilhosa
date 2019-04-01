@@ -1,0 +1,125 @@
+/* --- MOBILE FIRST - iPhone 7 - width < 768px --- */
+/* --- GERAL --- */
+/*
+unidades preferidas para esse CSS
+margin, padding: rem
+font-size: rem
+width: %
+max-width: % ou px
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px; /* definir uma font-size padrão */
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+    width: 100%;
+}
+
+/* define o tamanho da caixa */
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+/* --- BOTAO --- */
+
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+}
+
+.btn_roxo {
+    color: white;
+    background-color: #C083B9;
+    display: block;
+    max-width: 250px;
+    text-align: center;
+    transition: all .5s;
+    margin: 0 auto;
+}
+
+.btn_roxo:hover,
+.btn_roxo:focus {
+    transform: translateY(-1rem);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    background-color: rgb(192, 156, 188);
+}
+
+.btn_roxo:active {
+    transform: translateY(-.5rem);
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+
+.btn_center {
+    margin: 0 auto;
+}
+
+/* --- NAV --- */
+.navegacao {
+    background-color: #674582;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    padding: 20px 100px; /*1.5rem;*/
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navegacao__logo {
+    max-width: 200px;
+}
+
+.navegacao__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacao__menu-hamburguer {
+    display: none;
+}
+
+
+.cabecalho {
+    background-image: url("../img/janis_joplin_banner.jpg");
+    min-height: 80vh;
+    padding-top: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
