@@ -1,4 +1,4 @@
-# Projeto 1 - M de Maravilhosa - Mayumi
+# Projeto 1 - M de Maravilhosa
 
 ## Cronograma
 - **01/04**: 
