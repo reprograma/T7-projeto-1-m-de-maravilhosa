@@ -5,31 +5,65 @@
 }
 
 html {
-    font-size: 10px;
     scroll-behavior: smooth;
 }
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    
 }
+
+h3 {
+    color: #63458a;
+    font-weight: boldo;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #63458a;
+    font-size: 16px;
+
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+ }
+
 
 .navegacao {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     background: #674582;
     text-transform: uppercase;
     width: 100%;
-    padding: 15px;
+    padding: 1.5rem;
     position: fixed;
     top: 0;
+    z-index: 99;
 }
 
+.icones {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    
+    
+}
 .navegacao__logo {
-height: 50px;    
+    height: 50px; 
 }
 
 .menu >li {
-    display: inline-block;
     list-style: none;   
 }
 
@@ -42,14 +76,20 @@ a {
     margin: 0 10px;
 }
 
+.nav__mobile {
+    display: none;
+
+}
+
 .banner {
-    background: url(../img/bg-banner-escuro.png);
-    margin-top: 80px;
+    background: url(../img/maria-penha-bg.png);
+    margin-top: 85px;
     text-align: center;
-    height: 400px;
+    height: 600px;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;  
+    position: relative; 
 }
 
 .banner__title {
@@ -57,15 +97,68 @@ a {
     color: rgba(255, 255, 255, .9);
     text-transform: uppercase;
     font-weight: bold;   
-  }
-
-
-.introducao {
-    display: flex;
-    justify-items: center;
+    position: relative;
+    top: 85%;
 }
 
-.introducao__foto{
-    height: 300px;
-    border-radius: 
+
+
+ .introducao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.introducao__texto {
+    color: #63458a;
+    margin-left: 20px;
+}
+
+.introducao__texto p{
+    margin-top: 50px;
+
+}
+.introducao_titulo {
+    text-align: center;
+}
+
+.citacao {
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px 40px;
+    border: 1px solid #63458a;
+}
+
+.historia {
+    margin-top: 50px;
+}
+
+.sua_historia {
+    margin-top: 20px;
+    align-items: center;
+}
+
+.historia__texto {
+    margin: 20px 0;
+}
+
+.autora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rosybrown;
+    width: 100%;
+}
+
+.foto__autora {
+    height: 200px;
+    width: 200px;
+}
+
+.autora p {
+    margin-left: 20px;
+    font-weight: bold;
+
 }
