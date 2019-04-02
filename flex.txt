@@ -1,0 +1,88 @@
+﻿* {
+    
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.navegacao {
+    background-color: #674582;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navegacao__logo {
+    width: 15vw;
+}
+
+.navegacao__links {
+    margin-right: 20px;
+}
+
+.menu__navegacao {
+    display: flex;
+    align-items: center;    
+}
+
+.navegacao__links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8462rem;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.navegacao__redes-sociais a {
+    margin: 5px;
+}
+
+.cabecalho {
+    background-image: url(../img/tabata-bg.jpg);
+    background-size: cover;
+    background-position: top;
+    min-height: 80vh;
+    position: relative;
+}
+
+.cabecalho__titulo {
+    position: absolute;
+    color: white;
+    bottom: 7%;
+    left: 12%;
+    font-size: 2.9rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.container {
+
+}
+
+.conteudo_historia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo__img-perfil {
+    width: 8%;
+    border-radius: 5%;
+    
+}
+
+.conteudo__apresentacao {
+    width: 380px;
+}
+
+.conteudo__titulo {
+    font-size: 1rem;
+}
+
+.apresentacao__texto {
+    font-size: 1rem;
+}
