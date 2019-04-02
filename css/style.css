@@ -162,13 +162,12 @@ li {
                                 rgba(255, 0, 255, 0.2)),
                 url(../img/turma6.jpeg);
     background-size: cover;
-    background-position: center 14%;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
     text-align: center;
-    padding: 11rem 2rem 5rem 2rem;
     color: white;
+/*    padding: 11rem 2rem 5rem 2rem;*/
 }
 
 .principal__titulo {
@@ -491,7 +490,7 @@ li {
     .rodape__navegacao > li {
         font-size: 1.5rem;;
     }
-   
+
     /** PERSONALIDADE **/
     /* --- OUTRA HEADER --- */
     .header-personalidade {
