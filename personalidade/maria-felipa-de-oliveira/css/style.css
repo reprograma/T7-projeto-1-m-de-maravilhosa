@@ -10,6 +10,7 @@ max-width: % ou px
 
 * {
     box-sizing: border-box;
+    margin:0;
 }
 
 html {
@@ -33,4 +34,111 @@ ul {
 li {
     list-style: none;
 }
+
+.navegacao{
+    background-color:#674582;
+    width: 100%;
+    position: fixed;
+    top:0;
+    
+}
+
+.navegacao__box--container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+
+}
+
+.navegacao__itens{
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+}
+
+.navegacao__nav, ul, li{
+    display: flex;
+    padding-right: 20px;   
+    align-items: center; 
+}
+
+.img-responsive{
+    width: 249px;
+    height: 69px;
+}
+
+.navegacao__redes-sociais,a{
+    margin-right: 10px;
+}
+
+.banner{
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url("../img/maria_felipa_01_01.jpg");
+    background-repeat: repeat-x;
+    background-size:contain,cover;
+    background-position: 55px;
+    height: 70vh;
+    width: 100%;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.resumo__chamada{
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 18px;
+    color:#674582;
+    margin-left: 0;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 
+}
+
+.resumo__conteudo{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    margin: auto 0;
+}   
+
+.container__conteudo img{
+    max-width: 150px;
+}
+
+#img__maria-felipa{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5%;
+}
+
+.resumo__paragrafo{
+    width: 100%;
+    font-size: 16px;
+    color:#63458A;
+    margin: 0 auto;
+}
+
+.artigo__resumo{
+    display: flex;
+    justify-content: center;
+}
+
+.artigo__citacao{
+    margin:0 auto;
+    border: 1px solid #63458A;
+    width: 50%;
+    font-size: 16px;
+    color:#63458A;
+    font-weight: bold;
+    padding: 50px; 
+    text-align: justify;  
+    margin-right: 280px; 
+}
+
+
 
