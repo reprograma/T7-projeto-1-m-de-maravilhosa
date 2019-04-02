@@ -1,22 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 /* Menu */
 
 .navegacao {
     display: flex;
-    
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
     background-color: #674582;
+    
+}
+
+.logo_mulheres {
+    width: 50%;
+    margin-left: 40%;
 }
 
 .menu {
-    display: inline-block;
-    color: #ffffff;
+    padding: 0px;
+    list-style: none;
+    color: #ffffff; 
 }
 
-ul {
-    list-style: none;
+.menu ul, li {
+    display: inline;
+    margin-right: 5%;
+    text-transform: uppercase;
+}
+
+.redes {
+    display: inline;
+    margin-right: 15%;
+    justify-content: space-between;
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    min-height: 80vh;
+    height: 300px;                
+    background: linear-gradient(
+        rgba(103, 69, 130, 0.56), 
+        rgba(103, 69, 130, 0.56)
+      ),url(../img/img-header.jpg);
+      background-size: cover;
+      background-position: center 46%;
+      background-repeat: no-repeat;
+}
+
+/* Conteúdo */
+
+.titulo {
+    text-align: center;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4%;
+    
+}
+
+.container_resumo {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-items: space-between;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 4%;
+}
+
+.container_resumo > p {
+    margin-left: 5%;
+}
+
+.foto_personalidade {
+    width: 50%;
+}
+.container_texto {
+    width: 50%;
+    text-align: left;
+}
+
+.citacao {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: 1px solid #292A2A;
+    margin-bottom: 2%;
+}
+
+.resumo_personalidade {
+    width: 400px;
+}
+
+.historia {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    color: #f8f9fa;
+    background-color: #C083B9;
+    text-transform: uppercase;
+    border-radius: 4%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+
+/* Autora */
+
+.autora {
+    background-color: #d3add0;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+}
+
+.nome_autora {
+    margin-left: 3%;
+}
+
+.foto_autora {
+    width: 150px;
+}
+
+/* Rodapé */
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #323534;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 0;
+    color: #e7e5e5;
+}
+
+.rodape-escuro {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #292A2A;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    color: #e7e5e5;
+}
+
+.contato {
+    display: inline-block;
+    width: 500px;
+    text-align: center;
+}
+
+.logo_facebook {
+    width: 12px;
 }
