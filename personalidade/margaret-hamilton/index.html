@@ -1,3 +1,18 @@
+<!--1) Construindo o site desktop first:
+
+Faz-se no tamanho de 1920px, que vale para de 1920px até tamanhos maiores
+Devemos fazer tamanhos menores então, por exemplo,:
+
+max-1200px
+max-1024px
+max-768px
+max-420px
+
+Deve-se colocar na ordem no CSS, ou seja, da menor tela para a maior
+
+2) Construindo sites mobile first, parte-se da menor tela possível e vai aumentando o tamanho das telas;
+o oposto do desktop first-->
+
 <!DOCTYPE html>
  
 <html lang="PT-BR">
@@ -5,7 +20,7 @@
         <meta charset="UTF-8">
 
         <meta name="viewport" content="width=device-width, inicial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <title>Margaret Hamilton</title>
     </head>
@@ -18,8 +33,8 @@
 
             <nav class="navegacao">
                 <section class="navegacao__menu">
-                    <div>
-                        <img class="navegacao__menu--logo" src="img/logo-white.png" alt="Logo">
+                    <div class="navegacao__menu--logo">
+                        <img class="navegacao__menu--logo-img" src="img/logo-white.png" alt="Logo">
                     </div>
 
                     <div class="navegacao__menu--direita">
@@ -35,11 +50,98 @@
                             <img src="img/icon-linkedin.png" alt="Icone linkedin">
                             <img src="img/icon-twitter.png" alt="Icone twitter">
                         </div>
-
                     </div>
-
                 </section>
             </nav>
+
+            <!--HEADER-->
+
+            <header class="banner">
+                    <h1 class="banner__titulo"> Margaret Hamilton</h1>
+            </header>
+
+            <!--SECTION PERSONALIDADE-->
+
+            <section class="box">
+
+            <section class="personalidade">
+                <div class="personalidade__img"> 
+                    <img class="personalidade__img--foto" src="img/foto_hamilton.jpg" alt="Foto da Margaret Hamilton">
+                </div>
+
+                <div class="personalidade__texto">
+                    <h3>A mulher que tornou possível o primeiro pouso na Lua</h2>
+                    <p>Margaret Heafild Hamilton é uma cientista da computação, engenheira de software e empresária estadunidense. Foi diretora da Divisão de Software no Laboratório de Instrumentação do MIT e é creditada por ter criado o termo “engenharia de software”. 
+                    </p>
+                </div>
+            </section>
+
+            <!--SECTION CITACAO-->
+
+            <section class="citacao">
+                <p>“Não se deve ter medo de dizer ‘eu não sei’ ou ‘eu não entendo’ ou de fazer perguntas ‘bobas’, já que nenhuma pergunta é boba. Continuar mesmo quando as coisas parecem impossíveis; se manter sozinho ou ser diferente; e não ter medo de estar errado ou de cometer e admitir erros, pois apenas aqueles que se atrevem a falhar grandemente podem alcançar a grandeza.”</p>
+            </section>
+
+            <!--SECTION HISTORIA-->
+
+            <section class="historia">
+                <h3>Sua História</h3>
+                <p>Margaret trabalhou no MIT numa época em que ciência da computação e engenharia de software não eram estudadas; a programação era aprendida trabalhando. Iniciou a carreira no departamento de meteorologia e em poucos anos assumiu a liderança da equipe responsável pelo desenvolvimento do software de orientação de bordo da Apollo 11, a primeira missão tripulada à Lua. </p>
+                
+                <img class="historia__img" src="img/foto_hamilton_obama.jpg" alt="Foto da Margaret com o Obama">
+
+                <p>O trabalho de Hamilton evitou que o pouso na lua fosse abortado, devido a arquitetura robusta do software desenvolvido por ela e sua equipe. Ao longo da vida ela recebeu diversos prêmios e reconhecimento e, em 2016, foi premiada com a Medalha Presidencial da Liberdade.</p>
+            </section>
+
+            </section>
+
+            <!--SECTION AUTORA-->
+
+            <section class="autora">
+                <div class="autora__img">
+                    <img class="autora__img--foto" src="img/foto_autora.png" alt="Foto da autora">
+                </div>
+
+                <div class="autora__texto">
+                    <p>Autora: Marília Cavalcanti</p>
+                    <p>Estudante front-end da {reprograma}</p>
+                    <p>Estudante - Ciência da Computação da UFABC</p>
+                    <p><a href="link">GitHub</a></p>
+                    </p>
+                    
+                </div>
+            </section>
+
+            <!--SECTION BOTAO-->
+
+            <section class="botao">
+                <div class="botao__fundo">
+                    <a href="elas">Ver todas elas</a>
+                </div>
+            </section>
+
+            <!--FOOTER-->
+
+            <footer class="rodape">
+                <section class="rodape">
+                    <div>
+                        <p>Home</p>
+                        <p>Conheça a {reprograma}</p>
+                    </div>
+
+                    <div>
+                        <img src="img/logo-white.png" alt="Logo">
+                    </div>
+
+                    <div>
+                        <img src="img/fb-icone.png" alt="Icone facebook">
+                    </div>
+
+                    <div>
+                        <p>/br.mdemaravilhosa</p>
+                    </div>
+                </section>
+            </footer>
 
         </section>
         
