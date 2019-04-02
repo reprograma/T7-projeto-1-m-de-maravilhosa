@@ -102,6 +102,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 90%;
 }
 
 .navegacao__itens {
