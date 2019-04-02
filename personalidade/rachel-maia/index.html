@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<meta charset="utf-8" />
 	<title>M de Maravilhosa</title>
@@ -11,23 +11,26 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon"> -->
 </head>
 <body>
+
 <nav class="navegacao">
-    <div class="container">  
-        <a class="navegacao__logo" href="index.html">
-            <img class="logo-nav__imagem" src="img/logo-white.png" alt="Logo M de Maravilhosa">
-        </a>
-        <div class="dflex">          
-            <div>
-                <ul class="dflex">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
-                    </li>
-                </ul>
-            </div>           
-            <div class="dflex">     
+    <div class="container">
+        <div class="dflex navegacao__elementos">
+            <a class="navegacao__logo" href="index.html">
+                <img class="logo-tamanho" src="img/logo-white.png" alt="Logo M de Maravilhosa">
+            </a>
+            <div class="dflex menu-direita">          
+                <div>
+                    <ul class="dflex">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                </div>  
+
+                <div class="dflex">     
                 <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
                     <img src="img/icon-facebook.png" alt="Íconde do Facebook">
                 </a>
@@ -42,6 +45,7 @@
                 </a>
             </div>
         </div>
+        </div>  
         <!-- <div class="navegacao__menu-hamburguer">
             <a href="#">
                 <img src="img/menu-nav.png" alt="Menu de navegação">
@@ -51,6 +55,7 @@
 </nav>
 
 <header class="banner">
+    <!-- <div class="transparencia-roxo"></div> -->
     <div class="container">
         <div>
             <h1 class="titulo">Rachel Maia</h1>
@@ -58,33 +63,67 @@
     </div>
 </header>
 
-<main>
+<main class="resumo">
+    <div class="container">
+        <div class="dflex personalidade__perfil"> 
+            <img class="imagem-tamanho personalidade__imagem" src="img/rachel-maia.jpg" alt="Foto do perfil da Rachel Maia">
+            <div class="paragrafo">
+                <h3>Título Bafão</h3>
+                <p>Rachel Maia é atualmente a CEO da Lacoste no Brasil, após nove anos à frente da joalheria Pandora. Ela foi responsável pela chegada da Tiffany & Co ao solo brasileiro. Formada em ciências contábeis, pós-graduada na USP em finanças e com cursos de especialização em Vancouver. Rachel é hoje uma das poucas CEOs negras do país. 
+                </p>
+            </div>
+        </div>
+        <div class="citacao">
+            <h2>“Contrariando cada vez mais as estatísticas, ainda mais no universo de luxo – mulher, negra, criada na periferia –, continuei minha trajetória ascendente, enfrentando preconceitos velados e explícitos, afinal, fomos o último país a abolir a escravatura – temos apenas 130 anos de liberdade e um longo caminho a percorrer.”</h2>
+        </div>
+        <section class="historia">
+            <h3>História</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi vero nemo commodi atque porro fuga placeat ipsam, doloremque incidunt hic blanditiis aperiam perspiciatis rerum alias rem autem soluta eaque numquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi vero nemo commodi atque porro fuga placeat ipsam, doloremque incidunt hic blanditiis aperiam perspiciatis rerum alias rem autem soluta eaque numquam.</p>
+            <div class="imagem_container"></div>
+            <!-- <img class="imagem-main" src="img/rachel-maia-main.jpg" alt=""> -->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi vero nemo commodi atque porro fuga placeat ipsam, doloremque incidunt hic blanditiis aperiam perspiciatis rerum alias rem autem soluta eaque numquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi vero nemo commodi atque porro fuga placeat ipsam, doloremque incidunt hic blanditiis aperiam perspiciatis rerum alias rem autem soluta eaque numquam.</p>
+        </section> 
+    </div>
+    <section class="autora">
+            <div class="container dflex autora__tamanho">
+                <img class="imagem-tamanho" src="img/raissa-martins.jpg">
+                <p class="paragrafo paragrafo__autora">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi vero nemo commodi atque porro fuga placeat ipsam.</p>
+            </div>
+    </section>
+    <div class="container">
+        <div class="btn"> 
+            <button class="btn_roxinho">Ver todas elas</button>
+        </div>
+    </div>
 </main>
 
 <footer class="rodape">
 		<div class="container">
-			<ul class="navegacao__rodape">
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
-				</li>
-			</ul>
-			<div class="rodape__logo">
-				<img class="logo-rodape__imagem" src="img/logo-white.png" alt="logo M de Maravilhosa">
-			</div>
-			<div class="dflex">
-				<a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
-					<img src="img/fb-icone.png" alt="Icone do facebook Reprograma">
-					<span>/br.mdemaravilhosa</span>
-				</a>
-			</div>
+            <div class="dflex rodape__espacamento">
+			    <ul class="navegacao__rodape">
+				    <li>
+					    <a href="index.html">Home</a>
+				    </li>
+				    <li>
+					    <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+				    </li>
+			    </ul>
+			    <div class="rodape__logo">
+				    <img class="logo-tamanho" src="img/logo-white.png" alt="logo M de Maravilhosa">
+			    </div>
+			    <div class="dflex alinhamento-rodape">
+				        <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+					    <img class="icone-facebook" src="img/fb-icone.png" alt="Icone do facebook Reprograma">
+					    <span>/br.mdemaravilhosa</span>
+				    </a>
+                </div>
+            </div>
         </div>  
-        <div class="rodape__cc">
-			<p>Creative Commons 2019 | Feito com amor por Reprograma</p>
-        </div>
 </footer>
+
+    <div class="rodape__cc">
+        <p>Creative Commons 2019 | Feito com amor por Reprograma</p>
+    </div>
 
 </body>
 </html>

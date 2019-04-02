@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+li {
+    list-style-type: none; 
+    padding: 0 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 5px;
+}
+
+h3 {
+    margin-bottom: 45px;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    /* border: 1px solid black; */
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+}
+
+.navegacao {
+    background-color: #674582;
+    padding: 10px;
+}
+
+.navegacao__elementos {
+    justify-content: space-between;
+}
+
+.menu-direita {
+    justify-content: space-around;
+    width: 55%;
+}
+
+.logo-tamanho {
+    width: 200px;
+}
+
+.banner {
+    background: url(../img/rachel-maia-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -120px;
+    height: 350px;
+    position: relative;
+}
+
+.transparencia-roxo {
+    background: #674582;
+    height: 350px;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 99px;
+}
+
+.titulo {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 530px;
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.resumo {
+    color: #674582;
+}
+
+.personalidade__perfil {
+    /* border: 1px solid black; */
+    margin: 40px 0;
+}
+
+.personalidade__imagem {
+    border-radius: 10px;
+}
+
+.paragrafo {
+    /* border: 1px solid black; */
+    width: 60%;
+    margin: 0 45px;
+}
+
+.citacao {
+    border: 1px solid #674582;
+    padding: 50px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #674582;
+    margin-bottom: 45px;
+}
+
+.imagem-tamanho {
+    width: 200px;
+}
+
+.imagem_container {
+    background: url(../img/rachel-maia-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -100px;
+    height: 350px;
+    margin: 40px 0;
+}
+
+/* colocar essa imagem em uma div e adicionar ela
+como background e dar um width de acordo
+com o container */
+
+.imagem-main {
+    width: 960px;
+}
+
+.autora {
+    width: 100%;
+    background-color: #e4b7e5;
+    margin: 45px 0;
+}
+
+.autora__tamanho {
+    width: 820px;
+}
+
+.paragrafo__autora {
+    font-weight: bold;
+    color: #674582;
+
+}
+
+.btn {
+    width: 216px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.btn_roxinho {
+    margin-bottom: 45px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #e4b7e5;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navegacao__rodape {
+    text-align: center;
+}
+
+.navegacao__rodape li {
+    margin-bottom: 8px; 
+}
+
+.rodape {
+    background-color: #323534;
+    padding: 30px;
+}
+
+.rodape__espacamento {
+    justify-content: space-between;
+}
+
+.icone-facebook {
+    width: 20px;  
+}
+
+.alinhamento-rodape {
+    align-items: center;
+}
+
+.alinhamento-rodape img {
+    position: relative;
+    bottom: -7.5px;
+}
+
+.rodape__cc {
+    background-color: #292A2A;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+    color: #ffffff;
+}
+
