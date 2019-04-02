@@ -1,12 +1,15 @@
-* {`
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
 body {
-    font-family: 
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 .navegacao {
@@ -17,30 +20,52 @@ body {
     text-transform: uppercase;
     width: 100%;
     padding: 15px;
+    position: fixed;
     top: 0;
 }
 
 .navegacao__logo {
-height: 50px;
-margin-left: 30px;
-    
+height: 50px;    
 }
 
 .menu >li {
     display: inline-block;
-    list-style: none;
-    color: #ffffff;
-
-    
+    list-style: none;   
 }
 
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: white;
 }
 
-.icones {
-    
-   
+.icones img {
+    margin: 0 10px;
+}
 
+.banner {
+    background: url(../img/bg-banner-escuro.png);
+    margin-top: 80px;
+    text-align: center;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.banner__title {
+    font-size: 40px;
+    color: rgba(255, 255, 255, .9);
+    text-transform: uppercase;
+    font-weight: bold;   
+  }
+
+
+.introducao {
+    display: flex;
+    justify-items: center;
+}
+
+.introducao__foto{
+    height: 300px;
+    border-radius: 
 }
