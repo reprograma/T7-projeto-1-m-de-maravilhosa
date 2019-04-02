@@ -4,56 +4,61 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <title>Page Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mietta Santiago</title>
 </head>
 
 <body>
     <!-- INICIO DO MENU -->
-    <nav>
-        <div>
-            <div>
-                <img src="./img/logo-white.png" alt="logo m de maravilhosa">
+    <nav class="navegacao">
+        <div class="container__navegacao">
+            <a href="#" class="logo__navegacao">
+                <img src="./img/logo-white.png" alt="logo m de maravilhosa" class="img-responsive">
+            </a href="#">
+
+            <div class="navegacao__itens">
+
+                <div class="ul__navegacao ul__navegacao--links ">
+                    <ul>
+                        <li>
+                            <a href="../../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.reprograma.com.br/">Conheça a {reprograma}</a>
+                        </li>
+                    </ul>
+                    <!--/pag do site-->
+                </div>
+                <!--/div paginas-->
+
+                <div class="ul__navegacao">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./img/icon-facebook.png" alt="icone facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/icon-instagram.png" alt="ícone instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/icon-linkedin.png" alt="ícone likkedin">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/icon-twitter.png" alt="ícone twitter"></a>
+                        </li>
+                    </ul>
+                    <!--/ ul media social-->
+                </div>
             </div>
-            <!--/div img-->
-            <div>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Conheça a {reprograma}</a>
-                    </li>
-                </ul>
-                <!--/pag do site-->
-            </div>
-            <!--/div paginas-->
-            <div>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="./img/icon-facebook.png" alt="icone facebook">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/icon-instagram.png" alt="ícone instagram">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/icon-linkedin.png" alt="ícone likkedin">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./img/icon-twitter.png" alt="ícone twitter"></a>
-                    </li>
-                </ul>
-                <!--/ ul media social-->
-            </div>
-            <!--/ media social-->
+            <!--/navegacao__itens-->
         </div>
-        <!--/ container nav-->
+        <!--/container__navegacao-->
     </nav>
     <!--FIM DO MENU-->
 
@@ -65,16 +70,16 @@
 
     <!--INICIO MAIN-->
     <main>
-        <section>
-            <div>
+        <section class="persona">
+            <div class="container__persona">
                 <!--INICIO INTRODUÇAÕ-->
-                <div>
+                <article class="introducao">
 
                     <h2>Título bafão</h2>
 
-                    <div>
-                        <div>
-                            <img src="" alt="foto Mietta Santiago">
+                    <div class="container__intrudocao">
+                        <div class="img__introducao">
+                            <img src="./img/perfil-mietta.jpg" alt="foto Mietta Santiago" class="img-responsive">
                         </div>
                         <!--/img mietta santiago-->
                         <div>
@@ -87,22 +92,23 @@
                         <!--/parágrafo apresentação-->
                     </div>
                     <!--/apresentação-->
-                </div>
+                </article>
                 <!--FIM DA INTRODUÇÃO-->
 
                 <!--INICIO DA CITAÇÃO-->
-                <div>
+                <article>
 
                     <div>
-                        <p>aqui vai aquele poema do drummond</p>
+                        <p>“Mietta Santiago, loura poeta bacharel conquista, por sentença de juiz, direito de votar e
+                            ser votada…”. (Drummond, Carlos Andrade. Mulher Eleita. 1928)</p>
                     </div>
 
-                </div>
+                </article>
                 <!--/container-->
                 <!--FIM DA CITAÇÃO-->
 
                 <!--INICIO DA HISTÓRIA-->
-                <div>
+                <article>
 
                     <h2>História</h2>
 
@@ -122,11 +128,9 @@
 
                         </p>
                     </div>
-                    <!--/parágrafo1-->
                     <div>
-                        <img src="" alt="">
+                        <img src="./img/historia-mietta.jpg" alt="medalha mietta santiago">
                     </div>
-                    <!--/img-->
                     <div>
                         <p>
                             Escritora, advogada criminalista, oradora, escritora, poeta, sufragista e feminista, Mietta
@@ -137,8 +141,7 @@
 
                         </p>
                     </div>
-                    <!--/paragrafo2-->
-                </div>
+                </article>
                 <!--/container-->
                 <!--FIM DA HISTÓRIA-->
 
@@ -148,27 +151,57 @@
     </main>
     <!--FIM MAIN-->
 
+    <!--INICIO SOBRE A AUTORA-->
     <section>
         <div>
             <div>
                 <div>
-                    <img src="" alt="foto da autora">
-                </div><!--/foto autora-->
+                    <img src="./img/autora-may.jpg" alt="foto da autora">
+                </div>
                 <div>
                     <p>
-
+                        Autora: Mayara Cristina Manso<br>
+                        Front-End |
                     </p>
+                    <a href="https://github.com/myrmanso">Git Hub</a>
                 </div>
-            </div><!--/sobre autora-->
+            </div>
+            <!--/sobre autora-->
             <div>
                 <a href="#">
                     ver todas elas
                 </a>
-            </div><!--/todas elas-->
+            </div>
+            <!--/todas elas-->
         </div>
     </section>
-
-    
+    <!--FIM SOBRE A AUTORA-->
+    <!--INCIO DO FOOTER-->
+    <footer class="rodape">
+        <div class="rodape__principal">
+            <ul class="rodape__navegacao">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+                </li>
+            </ul>
+            <div class="rodape__logo">
+                <img class="img-responsive" src="img/logo-white.png" alt="logo M de Maravilhosa">
+            </div>
+            <div class="rodape__redes-sociais">
+                <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+                    <img src="img/fb-icone.png" alt="Icone do facebook Reprograma">
+                    <span>/br.mdemaravilhosa</span>
+                </a>
+            </div>
+        </div>
+        <div class="rodape__cc">
+            <p>Creative Commons 2019 | Feito com amor por Reprograma</p>
+        </div>
+    </footer>
+    <!--FIM DO FOOTER-->
 </body>
 
 </html>
