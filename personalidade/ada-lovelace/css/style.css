@@ -69,12 +69,16 @@ li {
     transition: right 1s;
 }
 
+
+
+
+
 .header {
     min-height: 80vh;
     height: 500px;
     background: linear-gradient(rgba(255, 0, 255, 0.2),
                                 rgba(255, 0, 255, 0.2)),
-                url(../img/download.jfif);
+                url(../img/Premio-Ada-Byron-mujer-tecnologa_2101299921_9849500_1971x1024.jpg);
     background-size: cover;
     background-position: center 14%;
     background-repeat: no-repeat;
@@ -91,6 +95,156 @@ li {
     font-weight: 900;
 }
 
+.apresentacao{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center; 
+    padding-left: 27%;
+}
+
+.img__apresentacao,.img__autora{
+    max-width: 19%;
+    margin:0 auto; 
+    padding: 80px 0;
+}
+
+.citacao{
+    border-style: solid; 
+    border-color: #C083B9; 
+    text-align: center;
+    padding: 46px;
+    width: 50%;
+    margin: 0 auto;
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+.historia{
+    margin-top: 50px; 
+    text-align: center;
+    background-color: #C083B9;
+}
+
+.autora{
+    flex-direction: row;
+    align-items: center; 
+    
+}
+
+.autora__texto{}
+
+
+h4 p{
+    text-align: Left;
+    font-size: 20px; 
+}
+
+
+h3{
+    width:610px;
+}
+button{
+    color: white;
+    background-color: #C083B9;
+    display: block;
+    max-width: 250px;
+    text-align: center;
+    transition: all .5s;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- FOOTER --- */
+.rodape {
+    background-color: #323534;
+    color: white;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .8rem;
+}
+
+.rodape__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.rodape__principal > * {
+    margin: 1rem 0;
+}
+
+.rodape__navegacao > li {
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+
+.rodape__navegacao a {
+    transition: all .5s;
+}
+
+.rodape__navegacao a:hover {
+    color: #C083B9;
+}
+
+.rodape__logo {
+    max-width: 200px;
+}
+
+.rodape__redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.rodape__redes-sociais a:hover {
+    color: #C083B9;
+}
+
+.rodape__redes-sociais img {
+    max-width: 10px;
+    margin-right: .5rem;
+}
+
+.rodape__redes-sociais span {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.rodape__cc {
+    width: 100%;
+    background-color: #292A2A;
+    font-size: 1rem;
+    opacity: 0.5;
+    text-align: center;
+}
+
 
 @media (min-width: 768px) {
     /* --- NAV --- */
@@ -101,3 +255,4 @@ li {
         width: auto;
     }
 }
+
