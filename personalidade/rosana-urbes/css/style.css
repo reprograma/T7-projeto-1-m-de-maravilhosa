@@ -10,6 +10,7 @@ max-width: % ou px
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 html {
@@ -18,7 +19,6 @@ html {
 
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    margin: 0;
 }
 
 a {
@@ -34,4 +34,135 @@ li {
     list-style: none;
 }
 
+/* navegacao */
 
+.navegacao {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background: #674582;
+}
+
+.navegacao__box {
+    display: flex;
+    width: 100%;
+    max-width: 960px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.navegacao__itens {
+    display: flex;
+    align-items: center;
+}
+
+.navegacao__nav > li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.navegacao__nav {
+    margin: 20px;
+}
+
+.navegacao__nav a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.navegacao__logo img {
+    width: 210px;
+}
+
+.navegacao__redes-sociais a{
+    margin: 10px;
+}
+
+/* menu responsivo */
+.navegacao__menu-hamburguer {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navegacao__menu-hamburguer {
+        display: block;
+    }
+}
+
+/* header */
+
+.cabecalho {   
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( 
+        rgba(100, 60, 100, 0.40),
+        rgba(103, 69, 130, 0.56)), url(../../rosana-urbes/img/ro-urbes.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.principal__titulo {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 45px;
+    position: relative;
+    top: 190px;
+}
+
+/* conteudo */
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.titulo__com-serifa {
+    font-family: Roboto Slab;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    color: #63458A;
+}
+
+.section__apresentacao-autora {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foto__apresentacao-autora img {
+    width: 210px;
+    margin-right: 30px;
+}
+
+.apresentacao__texto {
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 27px;
+    color: #63458A;
+    margin-left: 30px;
+}
+
+.citacao__personalidade {
+    width: 100%;
+    height: 180px;
+    border: 1px solid #63458A;
+}
+
+.texto__sem-serifa {
+    padding: 50px 70px;
+    font-family: Montserrat;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    color: #63458A;
+}
