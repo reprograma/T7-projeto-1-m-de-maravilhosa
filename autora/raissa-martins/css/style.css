@@ -79,16 +79,15 @@ h3 {
 /* **** banner **** */
 
 .banner {
-    background: linear-gradient(rgba(103, 69, 130, 0.56), rgba(103, 69, 130, 0.56)), url(../img/rachel-maia-banner.jpg);
+    background: url(../img/bg-banner-claro.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /* min-height: 60vh; */
+    background-position: center;
     height: 400px;
 }
 
 .banner__titulo {
     text-align: center;
-    text-transform: uppercase;
     font-weight: bold;
     margin: 0 auto;
     padding-top: 330px;
@@ -112,13 +111,13 @@ h3 {
     margin: 40px 0;
 }
 
-.conteudo__perfil > img {
+/* .conteudo__perfil > img {
     border-radius: 10px;
-}
+} */
 
 .paragrafo {
-    width: 60%;
-    margin: 0 45px;
+    width: 70%;
+    margin-left: 45px;
 }
 
 /* **** conteudo__citacao **** */
@@ -135,7 +134,7 @@ h3 {
 /* **** conteudo__historia **** */
 
 .conteudo__historia-imagem {
-    background: url(../img/rachel-maia-main.jpg);
+    background: url(../img/bg-banner-claro.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 -100px;
