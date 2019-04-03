@@ -9,19 +9,26 @@ font-family: 'Roboto Slab', serif;
      box-sizing: border-box;
  }
 
+a:hover {
+    color: #C083B9;
+ }
+
  body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #63458A;
  }
+
  .container {
-    width: 70.3125%;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;    
+    padding: 0 10px;
  }
 
  .navegacao {
-     background-color: #674582;
-     display: flex;
+    background-color: #674582;
+    width: 100%;
  }
 
  .navegacao__content {
@@ -32,8 +39,6 @@ font-family: 'Roboto Slab', serif;
 
  .logo {
     width: 250px;
-    max-width: 100%;
-    height: auto;
 
  }
 
@@ -51,6 +56,10 @@ font-family: 'Roboto Slab', serif;
 
  }
  
+ .menu a:hover {
+    color: #C083B9;
+ }
+
  .icone {
      margin-right: 10px;
  }
@@ -98,9 +107,6 @@ font-family: 'Roboto Slab', serif;
 
  }
 
- .personalidade__texto {
-    
-}
 
  .foto {
      width: 100%;
@@ -164,7 +170,7 @@ font-family: 'Roboto Slab', serif;
 
 .btn__content {
     width: 100%;
-    max-width: 200px;
+    max-width: 215px;
 
 }
 .btn {
@@ -216,7 +222,7 @@ font-family: 'Roboto Slab', serif;
     text-align: center;
 }
 
-.rodape__nav a {
+.rodape__nav a  {
     color: #fff;
     text-transform: uppercase;
     font-weight: 300;
@@ -225,6 +231,21 @@ font-family: 'Roboto Slab', serif;
     margin-left: 20px;
     margin-top: 5px;
 }
+
+.rodape__facebook a {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+
+
+.rodape__nav a:hover, .rodape__facebook  a:hover {
+    color: #C083B9;
+ }
 
 .menu__mobile {
     display: none;

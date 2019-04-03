@@ -16,14 +16,15 @@
     <!-- navegação -->
     <nav class="navegacao">
         <div class="container navegacao__content">
-            <div class="logo">
+            <a class="logo">
                 <img src="img/logo-white.png" alt="logo M de Maravilhosa" class="logo-img">
-            </div>
+            </a>
             
             <div class="menu">
                 <a href="#">Home</a>
                 <a href="#">Conheça a {reprograma}</a>
             </div>
+            
             <div class="rede-social">
                 <a href="#"><img src="img/icon-facebook.png" alt="icone do facebook" class="icone"></a>
                 <a href="#"><img src="img/icon-instagram.png" alt="icone do instagram" class="icone"></a>
@@ -32,8 +33,9 @@
             </div>
 
             <div class="menu__mobile">
-                <!-- <i class="fas fa-bars"></i> -->
-                <img src="img/menu-nav.png" alt="icone do menu">
+                <a href="#">
+                    <img src="img/menu-nav.png" alt="icone do menu">
+                </a>
             </div>
         </div>
     </nav>
@@ -65,7 +67,11 @@
 
             <p class="historia__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sunt, aliquam recusandae fugit aperiam labore ullam nam. Quo nobis inventore aliquid quod ea voluptatum ipsum dolor veniam laudantium. Dicta, porro!</p>
 
-            <img src="img/maravilhosas.jpg" alt="foto da turma 7" class="historia__foto">
+            
+            <figure>
+                <img src="img/maravilhosas.jpg" alt="foto da turma 7" class="historia__foto">
+                <figcaption class="historia__legenda">Lindas da Turma 7</figcaption>
+            </figure>
 
             <p class="historia__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad porro possimus maxime deserunt pariatur dolore numquam, aperiam impedit explicabo at nulla magni amet inventore ea beatae? Minus quam reiciendis veniam.</p>
         </div>
@@ -77,18 +83,24 @@
             <h2 class="personalidade__titulo">Outras Maravilhosas</h2>
             <div class="maravilhosa__content">
                 <div class="maravilhosa__perfil">
-                    <img src="img/marta-perfil.jpg" alt="" class="maravilhosa__foto">
-                    <p>Nome da Personalidade</p>
+                    <a href="#">
+                        <img src="img/marta-perfil.jpg" alt="foto de Miêtta Santiago" class="maravilhosa__foto">
+                        <p>Miêtta Santiago</p>
+                     </a>
                 </div>
 
                 <div class="maravilhosa__perfil">
-                    <img src="img/marta-perfil.jpg" alt="" class="maravilhosa__foto">
-                    <p>Nome da Personalidade</p>
+                    <a href="#">
+                        <img src="img/marta-perfil.jpg" alt="foto de Nise da Silvera" class="maravilhosa__foto">
+                        <p>Nise da Silvera</p>
+                    </a>
                 </div>
 
                 <div class="maravilhosa__perfil">
-                    <img src="img/marta-perfil.jpg" alt="" class="maravilhosa__foto">
-                    <p>Nome da Personalidade</p>
+                    <a href="#">
+                        <img src="img/marta-perfil.jpg" alt="foto de Oprah Winfrey" class="maravilhosa__foto">
+                        <p>Oprah Winfrey</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -110,13 +122,16 @@
                 <img src="img/logo-white.png" alt="logo M de Maravilhosa" class="logo">
 
                 <div class="rodape__facebook">
-                    <p><i class="fab fa-facebook-f"></i>/br.mdemaravilhosa</p>
+                    <a href="#"><i class="fab fa-facebook-f"></i>/br.mdemaravilhosa</a>
                 </div>
             </div>
             
         </div>
-        <div class="container rodape__copyright">
-            <p>Feito com amor por Andrezza Almeida</p>
+        
+        <div class="rodape__copyright">
+            <div class="container">
+                <p>Feito com amor por Andrezza Almeida</p>
+            </div>
         </div>
     </footer>
 
