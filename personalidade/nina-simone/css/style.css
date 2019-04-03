@@ -1,13 +1,3 @@
-/* --- MOBILE FIRST - iPhone 7 - width < 768px --- */
-/* --- GERAL --- */
-/*
-unidades preferidas para esse CSS
-margin, padding: rem
-font-size: rem
-width: %
-max-width: % ou px
-*/
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +5,7 @@ max-width: % ou px
 }
 
 html {
-    font-size: 10px; /* definir uma font-size padrão */
+    font-size: 10px; 
 }
 
 body {
@@ -36,55 +26,17 @@ li {
     list-style: none;
 }
 
-/* define que as imagens tem que ter o tamanho máximo da div mãe */
 .img-responsive {
     width: 100%;
 }
 
-/* define o tamanho da caixa */
 .container {
     margin: 0 auto;
     width: 100%;
     max-width: 960px;
 }
 
-/* --- BOTAO --- */
-
-.btn {
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 1rem 3rem;
-    border-radius: 5px;
-    font-size: 1.8rem;
-}
-
-.btn_roxo {
-    color: white;
-    background-color: #C083B9;
-    display: block;
-    max-width: 250px;
-    text-align: center;
-    transition: all .5s;
-    margin: 0 auto;
-}
-
-.btn_roxo:hover,
-.btn_roxo:focus {
-    transform: translateY(-1rem);
-    box-shadow: 0 10px 10px rgba(0,0,0,.2);
-    background-color: rgb(192, 156, 188);
-}
-
-.btn_roxo:active {
-    transform: translateY(-.5rem);
-    box-shadow: 0 5px 5px rgba(0,0,0,.2);
-}
-
-.btn_center {
-    margin: 0 auto;
-}
-
-/* --- NAV --- */
+/* ----------------- NAV ------------------- */
 .navegacao {
     background-color: #674582;
     color: white;
@@ -112,7 +64,6 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    right: -700px;
     text-align: center;
     padding: 3rem 0;
     transition: right 1s;
@@ -158,44 +109,58 @@ li {
     margin: 0 1rem;
 }
 
-
 .navegacao__menu-hamburguer {
     display: none;
 }
 
-/*----------CABEÇALHO*----------------*/
+@media (max-width: 768px) {
+    .navegacao__itens, .navegacao__redes-sociais {
+        display: none;
+
+    }
+
+    .navegacao__menu-hamburguer {
+        display: block;
+        
+    }
+
+    .navegacao__menu-hamburguer img {
+        width: 40px;
+        margin-right: 20px;
+    }
+}
+
+/*---------------- CABEÇALHO  ----------------*/
 
 
 .cabecalho {
     background: linear-gradient(
         rgba(103, 69, 130, 0.56), 
         rgba(103, 69, 130, 0.56)
-      ),url("../img/janis_joplin_banner.jpg");
+      ),url("../img/banner.jpg");
     min-height: 80vh;
-    padding-top: 200px;
+    padding-top: 12.5rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    display: flex;
     opacity: 0.8;
-    align-items: center;
-    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
     color: #fff;
-    position: relative;
-    
+         
 }
 
 .cabecalho h1 {
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 60px;  
     text-align: center;
-    position: absolute;
-    top: 88%;
-    font-size: 60px;   
+    width: 100%; 
 
 }
 
-/* ---------- INTRO ------------- */
+
+/* ---------------------- INTRO ------------------- */
 
 .intro {
     margin: 0 auto;
@@ -208,7 +173,7 @@ li {
     align-items: center;
     flex-direction: column;
     margin-top: 70px;
-   
+
 }
 
 .intro__flex-container h3 {
@@ -228,9 +193,8 @@ li {
 }
 
 .intro__conteudo p {
-    margin-right: 225px;
+    margin-left: 25px;
     font-size: 20px;
-    width: 50%;
     text-align: left;
     line-height: 1.4;
 }
@@ -245,4 +209,234 @@ li {
     font-size: 20px;
     text-align: center;
 
+}
+
+@media (max-width: 768px) {
+    .intro__conteudo {
+        flex-direction: column;
+    }
+
+    .intro__conteudo p { 
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+        
+    }
+}
+
+@media (max-width: 420px) {
+    .intro__flex-container h3 {
+            font-size: 29px;
+    }
+}
+
+
+/* ------------------------ RESUMO ----------------------- */
+
+.resumo {
+    margin: 0 auto;
+    width: 60%;
+    color: #63458a;
+}
+
+.resumo__flex-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.resumo__img {
+    display: block;
+    margin: 40px auto;
+    width: 100%;
+}
+
+.resumo__flex-container h3 {
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.resumo__flex-container p {
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 1.4;
+}
+
+/* ------------------------ AUTORA ------------------------ */
+
+.autora {
+    width: 100%;
+    background-color: #e4b7e5;
+    margin-top: 50px;
+}
+
+.autora__flex-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.autora__img {
+    width: 300px;
+}
+
+.autora__descricao {
+    font-size: 20px;
+    font-weight: bold;
+    color: #63458a;
+    margin-left: 20px;
+    
+}
+
+@media (max-width: 768px) {
+    .autora__flex-container {
+        width: 60%;
+    }
+
+    .autora__img {
+        width: 40%;
+    }
+
+    .autora__descricao {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 14px;
+
+    }
+}
+
+@media (max-width: 420px) {
+    .autora__descricao {
+        font-size: 11px;
+        margin-left: 12px;
+
+    }
+
+    .autora__flex-container {
+        width: 70%;
+    }
+        
+
+}
+
+
+/* ----------------------------- BTN ---------------------- */
+
+.btn__section {
+    width: 100%;
+    margin: 70px auto;
+    
+    
+}
+
+.btn {
+    color: white;
+    background-color: #C083B9;
+    display: block;
+    text-align: center;
+    transition: all .5s;
+    margin: 0 auto;
+    border: none;
+    padding: 20px 50px;
+    font-size: 40px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+
+.btn:hover,
+.btn:focus {
+    transform: translateY(-1rem);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    background-color: rgb(192, 156, 188);
+}
+
+.btn:active {
+    transform: translateY(-.5rem);
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+
+@media (max-width: 420px) {
+    .btn {
+        padding: 20px 35px;
+        font-size: 20px;
+
+    }
+}
+
+/* --------------------------- RODAPÉ ------------------------- */
+
+.rodape {
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    background-color: #323534;
+
+}
+
+.rodape__flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.rodape__menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+    
+}
+
+.logo-rodape {
+    width: 300px;
+}
+
+.rodape__facebook {
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo-facebook {
+    width: 20px;
+}
+
+.creditos {
+    background-color: #292a2a;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    
+}
+
+@media (max-width: 768px) {
+    .rodape__flex-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo-rodape {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 420px) {
+    .rodape__flex-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .logo-rodape {
+        margin: 20px auto;
+    }
 }
