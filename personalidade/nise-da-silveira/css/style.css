@@ -231,17 +231,14 @@ margin-left: 260px;
 
 .citacao {
     font-size: 18px;
-    width: 50%;
-    color:#674582;
+    color: #674582;
     border: 1px solid purple;
-    padding: 20px;
-
-    
+    padding: 30px;
 }
 
 .container__historia {
   margin: 0 auto;
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
 }
@@ -257,13 +254,13 @@ margin-left: 260px;
 
 .img__historia {
   width: 350px;
-  margin-left: 150px;
+  margin-left: 200px;
   padding: 15px;
 }
 
 .conteudo__historia {
   color: #674582;
-  font-size: 14px;
+  font-size: 18px;
   line-height: normal;
   text-align: start;
   padding: 20px;

@@ -269,7 +269,7 @@ padding: 5%;
   font-size: 14px;
   display: flex;
   justify-content: center;
-  padding: 5px;
+  padding: 15px;
 }
 .btn__container {
   height: 100px;
@@ -326,3 +326,8 @@ padding: 5%;
     width: 10px;
   }
   
+  @media (max-width:950px){
+    .navegacao__nav {
+      margin-left: 20px;
+  }
+  }
