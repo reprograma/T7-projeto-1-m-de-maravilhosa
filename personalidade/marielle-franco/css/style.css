@@ -71,6 +71,10 @@ p {
     padding-right: 1.5vw;
 }
 
+.link-menu:hover {
+    color: #C083B9;
+}
+
 .menu-redes-sociais li {
     display: inline-block;
     list-style: none;
@@ -168,6 +172,7 @@ p {
     border: 1px solid #63458A;
     text-align: center;
     padding: 30px;
+    font-size: 1.1rem;
     font-weight: bold;
     margin: 50px 0;
 }
@@ -213,6 +218,10 @@ p {
     color: #63458A;
 }
 
+.link-git:hover {
+    color: #fff;
+}
+
 @media (max-width: 768px) {
     .autora-conteudo {
         width: 70%;
@@ -220,12 +229,14 @@ p {
     
     .autora-foto {
         width: 40%;
+        min-width: 150px;
     }
 }
 
 @media (max-width: 420px) {
     .autora-conteudo {
-        font-size: 0.8rem;  
+        font-size: 0.8rem; 
+        width: 90%;
     }
 
     .autora-texto {
@@ -243,9 +254,13 @@ p {
     text-align: center;
     background-color: #C083B9;
     border-radius: 10px;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
-    padding: 10px 30px;
+    padding: 15px 30px;
+}
+
+.link-todas:hover {
+    background-color: #63458A;
 }
 
 .rodape-reprograma {
@@ -266,6 +281,10 @@ p {
 .rodape-menu li {
     text-align: center;
     list-style: none;
+}
+
+.rodape-menu li:hover {
+    color: #C083B9;
 }
 
 .rodape-logo {
