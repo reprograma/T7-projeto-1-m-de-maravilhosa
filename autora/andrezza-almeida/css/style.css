@@ -56,7 +56,7 @@ font-family: 'Roboto Slab', serif;
  }
 
  .banner {
-    background: url("../img/marta-banner.jpg");
+    background: url("../img/bg-banner-claro.png");
     background-size: cover;
     text-align: center;
     background-position: center;
@@ -69,7 +69,6 @@ font-family: 'Roboto Slab', serif;
 
  .banner h1 {
     color: #fff;
-    text-transform: uppercase;
     font-size: 3rem;
     font-weight: 800;
     width: 100%;
@@ -95,6 +94,7 @@ font-family: 'Roboto Slab', serif;
      font-size: 22px;
      font-family: 'Roboto Slab', serif;
      margin-bottom: 30px;
+     text-align: center;
 
  }
 
@@ -110,14 +110,16 @@ font-family: 'Roboto Slab', serif;
 
  }
 
-.citacao {
-    border: 1px solid #63458A; 
-    font-weight: 800;
-    padding: 30px;
-    text-align: center;
-    margin: 50px 0;
+.hr {
+    border-bottom: 1px solid #63458A; 
+    width: 300px;
+    margin: 0 auto;    
+    margin-top: 80px;
+    max-width: 100%;
 }
-
+.historia {
+    margin-top: 80px;
+}
 .historia__texto {
     margin-top: 10px;
 }
@@ -127,40 +129,32 @@ font-family: 'Roboto Slab', serif;
     margin: 20px 0 10px 0;
 }
 
-.resumo-autora {
+.maravilhosa {
     width: 100%;
-    background-color: #E4B7E5;
-    margin: 40px 0;
+    margin: 60px 0;
 }
 
-.autora__content {
+.maravilhosa__content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+}
+ 
+.maravilhosa__perfil {
+    /* width: 33%; */
 }
 
-.resumo-autora__foto {
-    width: 50%;
-}
-
-.resumo-autora__texto  {
-    width: 50%;
-    padding-left: 30px;
-    font-weight: 800;
-}
-
-.resumo-autora__texto a:link {
-    color: #63458A; 
-}
-
-.resumo-autora__texto a {
-    text-decoration: none;
-}
-.autora__foto {
+.maravilhosa__foto {
     width: 100%;
     max-width: 200px;
+    border-radius: 5px;
 }
+
+.maravilhosa__perfil p {
+    text-align: center;
+    margin-top: 5px;
+}
+
 
 .btn__content {
     width: 100%;
@@ -175,7 +169,7 @@ font-family: 'Roboto Slab', serif;
     margin-bottom: 40px;
     text-decoration: none;
     color: #fff;
-    text-transform: uppercase;
+    font-weight: 800;
     border-radius: 5px;
     display: block;
 
@@ -230,6 +224,12 @@ font-family: 'Roboto Slab', serif;
     display: none;
 }
 
+@media (max-width: 900px) {
+    .maravilhosa__perfil  {
+        margin-left: 20px;
+    }        
+}
+
 @media (max-width: 768px) {
     .menu__mobile {
         color: #fff;
@@ -268,7 +268,7 @@ font-family: 'Roboto Slab', serif;
         
     }
 
-    .personalidade__foto, .personalidade__content, .resumo-autora__foto, .resumo-autora__texto {
+    .personalidade__foto, .personalidade__content, .maravilhosa__perfil {
         width: 100%;
         
     }
@@ -288,20 +288,17 @@ font-family: 'Roboto Slab', serif;
         margin-top: 0;
     }
 
-    .autora__content {
+    .maravilhosa__content {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
     }
 
-    .resumo-autora__texto {
-        padding-left: 0; 
+    .maravilhosa__perfil  {
         margin-top: 20px;
-        margin-bottom: 20px;
-        text-align: center
     }
 
-    .autora__foto {
+    .maravilhosa__foto {
         width: 100%;
         max-width: 100%;
         margin-top: 20px;
@@ -317,12 +314,5 @@ font-family: 'Roboto Slab', serif;
         flex-direction: column;
     }
 
-
-}
-
-
-@media (max-width: 420px) {
- 
-    
 
 }
