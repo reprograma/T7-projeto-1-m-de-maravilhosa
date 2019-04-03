@@ -206,6 +206,7 @@ li {
         border-radius: 5px;
         border: none;
         margin: 4rem;
+        font-size: 1.5rem;
     }
 
     .chamada-autoras button:hover {
