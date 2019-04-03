@@ -105,7 +105,7 @@ li {
     height: 500px;
     background: linear-gradient(rgba(255, 0, 255, 0.2),
                                 rgba(255, 0, 255, 0.2)),
-                url(../img/Premio-Ada-Byron-mujer-tecnologa_2101299921_9849500_1971x1024.jpg);
+                url(../img/bg-banner-claro.png);
     background-size: cover;
     background-position: center 14%;
     background-repeat: no-repeat;
@@ -116,13 +116,15 @@ li {
     color: white;
 }
 
-
-.maravilhosa__nome {
+.sobre__autora {
     text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: 900;
 }
 
+h1{
+    font-size: 30px; 
+}
 
 .apresentacao{
     display: flex;
@@ -132,128 +134,23 @@ li {
     padding-left: 15%;
 }
 
-
 .apresentacao__texto{
     margin-left: -10%;
     color: #674582;
 }
 
-
-.apresentacao__maravilhosa{
+.apresentacao__autora{
     font-size: 25px;
     text-align: left;
     margin-left: 18%;
 }
 
 
-.img__apresentacao{
+.img__autora{
     max-width: 19%;
     margin:0 auto; 
     padding: 80px 0;
 }
-
-
-.img__autora{
-    max-width: 19%;
-    padding: 25px 0;
-}
-
-
-.citacao {
-    text-align: center;
-    padding: 46px;
-    width: 50%;
-    margin: 0 auto;
-}
-
-
-.citacao__texto{
-    font-weight: bold;
-    color: #674582; 
-    text-align: center;
-    padding: 1rem;
-    font-size: 1.7rem;
-}
-
-
-.container__citacao{
-    border-style: solid; 
-    border-color: #C083B9; 
-    margin: 0 auto;
-    width: 100%;
-    max-width: 959px;
-}
-
-
-.historia{
-    margin-top: 50px; 
-    text-align: center;   
-}
-
-
-.intro_historia{
-    font-weight: bold;
-    color: #674582; 
-    padding: 1rem;
-    font-size: 1.7rem;
-    text-align: left; 
-}
-
-
-.historia__1{
-    color: #674582; 
-    padding: 1rem;
-    font-size: 17px;
-    text-align: left;
-}
-
-
-.img__historia{
-    max-width: 42%;
-    margin:0 auto;
-}
-
-
-.autora{
-    text-align: center;
-    background-color: #e4b7e5;
-    display: flex;
-    justify-content: center;
-}
-
-
-.autora > div {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-
-.img__autora{
-    max-width: 150px;
-}
-
-
-.autora__texto {
-    color: #63458a;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    margin-top: 1rem;
-    padding-left: 4%;
-}
-
-
-.autora__texto p {
-    margin: 0;
-}
-
-
-.autora a {
-    font-style: italic; 
-}
-
 
 h4 p{
     text-align: Left;
@@ -268,19 +165,93 @@ h3{
     text-align: left;
 }
 
+.redes__autora{
+    display: flex; 
+    margin: 0 auto; 
+    text-align: center; 
+}
 
-.btn__autora{
-    padding: 5% 39%; 
+.container__autora{
+    width: 60%; 
+    max-width: 953px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.historia__maravilhosa{
+    width: 100%
+}
+.img__historia{
+    max-width: 100%;
+    width:100%; 
+}
+
+.icones__redes{
+    margin-left:-39%;
+}
+
+.historia__maravilhosa{
+    margin-top: 50px; 
+    text-align: center;   
+     
+}
+
+
+.intro_historia{
+    font-weight: bold;
+    color: #674582; 
+    padding: 1rem;
+    font-size: 1.7rem;
+}
+
+
+.historia__1{
+    color: #674582; 
+    padding: 1rem;
+    font-size: 17px;
+    text-align: left;
+}
+
+.maravilhosas__foto{
+    width:50%;
+    background-color: #674582;
+    border-radius:2%
+}
+
+.outras__maravilhosas{
+    text-align: center;
+    color: #674582;
+    padding-bottom: 5%;
+    width: 80%;
+    margin: 0 auto; 
+}
+
+
+.caixinhas{
+  display:flex; 
+  align-items:  center;
+  justify-content: space-around; 
+}
+
+
+
+h5{
+    font-size: 20px; 
+    padding: 4%; 
+}
+
+
+.btn__home{
+    padding: 4% 39%;
 }
 
 
 button{
-    text-transform: uppercase;
     font-weight: bold;
     padding: 1rem 3rem;
     border-radius: 5px;
     font-size: 1.8rem;
-    border:none; 
+   
 }
 
 
@@ -293,7 +264,6 @@ button{
     transition: all .5s;
     margin: 0 auto;
 }
-
 
 /* --- FOOTER --- */
 .rodape {
@@ -385,7 +355,6 @@ button{
     padding: 1rem 0;
 }
 
-/* --- NAV ---*/
 @media (min-width: 768px) {
      
     .navegacao__itens {
@@ -397,26 +366,30 @@ button{
     .navegacao__menu-hamburguer {
         display: none;
     }
+  
 }
+    
 
 @media(max-width: 768px){
+    .icones__redes{
+        margin-left:-25%; 
+    }
     .apresentacao{
         flex-direction: column; 
         padding-left: 0; 
     }
-    .img__apresentacao {
+    .img__autora {
         max-width: 84%;
         margin: 0 auto;
         padding: 29px 0px;
     }
-    .citacao {
-        text-align: center;
-        padding: 8px;
-        width: 50%;
-        margin: 0 auto;
-    }
     .rodape__principal{
         flex-direction: column;
+    }
+    .maravilhosas__foto{
+        width: 80%;
+        color: #674582;
+        margin:0;  
     }
 }
 
