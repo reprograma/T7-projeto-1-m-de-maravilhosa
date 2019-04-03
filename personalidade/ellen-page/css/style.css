@@ -74,6 +74,10 @@ li {
     align-content: space-between;
 }
 
+.navegacao__itens {
+    display: none;
+}
+
 .navegacao__itens li > a {
     transition: all .2s;
 }
@@ -107,7 +111,7 @@ li {
 /* MAIN */
 
 .about {
-    margin: 0 15rem;
+    margin: 0 5rem;
     font-size: 1.5rem;
     color: #674582;
 }
@@ -126,11 +130,11 @@ li {
 }
 
 .about__intro {
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
+    text-align: center;
 }
 
-.about__ellen {
+.about__ellen-img {
     border-radius: 5px;
     height: 150px;
 }
@@ -142,14 +146,18 @@ li {
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
+    line-height: 3.5rem;
 }
 
 .about__resume {
-    padding: 2.5rem;
+    text-align: left;
+    margin: 2.5rem 0;
+    line-height: 2.3rem;
 }
 
 .about__story {
     margin: 2.5rem 0;
+    line-height: 2.3rem;
 }
 
 .autora__text {
@@ -157,7 +165,6 @@ li {
     color: #674582;
     margin: 0;
     font-weight: bold;
-
 }
 
 .autora__ro {
@@ -337,6 +344,22 @@ li {
 
     .principal__btn {
         margin: 0;
+    }
+
+/* --- MAIN --- */
+
+    .about {
+        margin: 0 15rem;
+    }
+
+    .about__intro {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .about__resume {
+        padding: 0 2.5rem;
     }
 
 /* --- FOOTER --- */
