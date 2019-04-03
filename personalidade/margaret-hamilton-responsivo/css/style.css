@@ -60,7 +60,7 @@ a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 1rem; /*equivale a 16px, que é o valor da font-size declarado no body*/
 
 }
 
@@ -75,7 +75,7 @@ a {
 .navegacao__menu--direita {
     display: flex;
     align-items: center;
-    margin-right: 50px;
+    margin-right: 3.125rem;
 }
 
 .navegacao__menu--direita-texto {
@@ -83,7 +83,7 @@ a {
 }
 
 .navegacao__menu--direita-texto a{
-    margin-left: 0.022em;
+    margin-left: 1.25rem;
 }
 
 .navegacao__menu--direita-icones {
@@ -92,7 +92,7 @@ a {
 }
 
 .navegacao__menu--direita-icones img {
-    padding: 8px;
+    padding: 0.5rem;
 }
 
 /*HEADER*/
@@ -122,7 +122,7 @@ a {
 .personalidade {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 .personalidade__img {
@@ -146,22 +146,22 @@ a {
 
 .personalidade__texto h3 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 }
 
 .personalidade__texto p {
-    margin-left: 80px;
+    margin-left: 5rem;
 }
 
 /*SECTION CITACAO*/
 
 .citacao {
     text-align: center;
-    margin: 50px auto;
+    margin: 3.125rem auto;
     border: 1px solid #674582;
     color: #674582;
     font-weight: 600;
-    padding: 35px;
+    padding: 2.1875rem;
 }
 
 /*SECTION HISTORIA*/
@@ -172,12 +172,12 @@ a {
 }
 
 .historia__img {
-    width: 550px;
-    padding: 30px 0;
+    width: 61%;
+    padding: 1.875rem 0;
 }
 
 .historia h3 {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 /*SECTION AUTORA*/
@@ -189,7 +189,7 @@ a {
     align-items: center;
     color: #674582;
     font-weight: 700;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 .autora__img {
@@ -198,12 +198,12 @@ a {
 
 .autora__img--foto {
     width: 100%;
-    margin-left: 100px;
+    margin-left: 6.25rem;
 }
 
 .autora__texto {
     width: 40%;
-    margin-right: 80px;
+    margin-right: 5rem;
 }
 
 .autora__texto a {
@@ -215,7 +215,7 @@ a {
 /*SECTION BOTAO*/
 
 .botao {
-    margin-top: 50px;
+    margin-top: 3.125rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -224,8 +224,8 @@ a {
 .botao__fundo a{
     font-weight: 700;
     background: #C083B9;
-    padding: 15px 40px;
-    border-radius: 10px;
+    padding: 1rem 2.5rem;
+    border-radius: 0.625rem;
 }
 
 /*FOOTER*/
@@ -242,7 +242,7 @@ a {
     margin: 0 auto;
     width: 70%;
     height: 120px;
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 
 .rodape__menu {
@@ -253,7 +253,7 @@ a {
 
 .rodape a {
     text-transform: none;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .rodape__logo--img {
@@ -273,8 +273,66 @@ a {
     width: 100%;
     height: 40px;
     background-color: #292A2A;
-    font-size: 10pt;
+    font-size: 0.625rem;
     color: whitesmoke;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 1.25rem;
+}
+
+@media(max-width: 768px) {
+    .navegacao {
+        font-size: 0.8125rem
+    }
+
+    .box {
+        width: 800px;
+    }
+
+    .navegacao__menu--logo-img {
+        width: 200px;
+        margin-left: 1.25rem;
+    }
+
+    .navegacao__menu--direita-texto {
+        width: 18.75rem;
+    }
+
+    .navegacao__menu--direita-icones {
+        margin-right: 2.5rem;
+    }
+
+    .navegacao__menu--direita-icones img {
+        width: 15.625rem;
+    }
+
+    .personalidade__img {
+        margin-left: 1.875rem;
+    }
+
+    .personalidade__texto {
+        margin-right: 1.875rem;
+    }
+
+    .personalidade__texto h3 {
+        width: 25rem;
+    }
+
+    .citacao {
+        width: 39.6875rem;
+        margin-left: 28px;
+    }
+
+    .historia {
+        padding: 1.875rem;
+        margin-right: 1.875rem;
+    }
+
+    .autora__texto {
+        margin-left: 2.5rem;
+    }
+
+    .autora__texto p {
+        font-size: 0.875rem;
+    }
+
 }
