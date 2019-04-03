@@ -1,164 +1,270 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    line-height: 25px;
-    
-}
-
-h3 {
-    color: #63458a;
-    font-weight: boldo;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-p {
-    color: #63458a;
-    font-size: 16px;
-
-}
-
-.container {
-    width: 960px;
-    margin: 0 auto;
- }
-
-
-.navegacao {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: #674582;
-    text-transform: uppercase;
-    width: 100%;
-    padding: 1.5rem;
-    position: fixed;
-    top: 0;
-    z-index: 99;
-}
-
-.icones {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    
-    
-}
-.navegacao__logo {
-    height: 50px; 
-}
-
-.menu >li {
-    list-style: none;   
+    margin: 0;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+.img-responsive {
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+/* NAVEGACAO */
+.navegacao {
+    background-color: #674582;
     color: white;
-}
-
-.icones img {
-    margin: 0 10px;
-}
-
-.nav__mobile {
-    display: none;
-
-}
-
-.banner {
-    background: url(../img/maria-penha-bg.png);
-    margin-top: 85px;
-    text-align: center;
-    height: 600px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;  
-    position: relative; 
-}
-
-.banner__title {
-    font-size: 40px;
-    color: rgba(255, 255, 255, .9);
     text-transform: uppercase;
-    font-weight: bold;   
-    position: relative;
-    top: 85%;
+    box-shadow: 0px;
+    padding: 1.5rem;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
+.navegacao__logo {
+    max-width: 200px;
+    
+}
 
-
- .introducao {
+.navegacao__nav {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    justify-content: space-between;
 }
 
-
-.introducao__texto {
-    color: #63458a;
-    margin-left: 20px;
-}
-
-.introducao__texto p{
-    margin-top: 50px;
-
-}
-.introducao_titulo {
+.navegacao__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     text-align: center;
+    padding: 3rem 0;
+    background-color: #674582;
 }
 
-.citacao {
+.nav__menu > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.navegacao__menu {
+    margin-right: 2rem;
+}
+
+.navegacao__menu li {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.redes-sociais a {
+    margin: 1rem;
+}
+
+
+.navegacao__menu-hamburguer {
+    display: none;
+}
+
+/* CABECALHO */
+
+.cabecalho {
+    background: linear-gradient(
+        rgba(103, 69, 130, 0.56), 
+        rgba(103, 69, 130, 0.56)
+      ),url("../img/maria-da-penha-lei-instituto-mulher-fala.jpg");
+    min-height: 80vh;
+    padding-top: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    position: relative;
+    
+}
+
+.cabecalho h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    font-size: 50px;   
+
+}
+
+/* INTRODUÇÃO */
+
+.introducao {
+    margin: 0 auto;
+    width: 60%;
+    color: #63458a;
+}
+
+.introducao-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+   
+}
+
+.introducao-container h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.introducao__texto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 2.5rem;
+
+    
+}
+
+.introducao__texto p {
+    font-size: 16px;
+    margin-left: 50px;
+}
+.introducao__img {
+    border-radius: 15px;
+}
+
+.introducao__citacao {
+    font-size: 25px;
+    font-weight: bold;
     margin-top: 50px;
     text-align: center;
     padding: 30px 40px;
     border: 1px solid #63458a;
+    width: 100%;
+
 }
 
-.historia {
+.resumo {
+    width: 60%;
+    margin: 0 auto; 
+}
+
+.resumo-container {
+    font-size: 16px;
     margin-top: 50px;
-}
-
-.sua_historia {
-    margin-top: 20px;
-    align-items: center;
-}
-
-.historia__texto {
-    margin: 20px 0;
-}
-
-.autora{
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+    line-height: 2.5rem;
+    color: #63458a;
+    
+   
+
+}
+
+.resumo__img {
+    width: 50%;
+    display: flex;
+}
+.autora{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.autora-container {
+    display: flex;
+    align-items: center;
     justify-content: center;
     align-items: center;
-    background-color: rosybrown;
-    width: 100%;
+    background-color: #e4b7e5;
+   
 }
 
-.foto__autora {
-    height: 200px;
-    width: 200px;
+.autora__img  {
+    width: 10%;
 }
 
-.autora p {
+.autora__texto {
+    color: #63458a;
+    font-size: 16px;
     margin-left: 20px;
-    font-weight: bold;
 
+    
+}
+
+/* RODAPÉ */
+
+.rodape {
+    width: 100%;
+    background-color: #323534;
+    color: white;
+    height: 10%;
+    text-decoration: none;
+    margin: 0 auto;
+    position: absolute;
+    padding: 1.5rem;
+    margin-top: 70px;
+}
+
+.rodape__logo img {
+    width: 33%;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.rodape__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rodape__facebook {
+    display: flex;
+    align-items: center;
+}
+
+.rodape__facebook img {
+    width: 20px;
+}
+
+.creditos {
+    text-align: center;
+    background-color: #292A2A;
+    width: 100%;
+    font-size: 1rem;
+    opacity: 0.5;
+    
 }
