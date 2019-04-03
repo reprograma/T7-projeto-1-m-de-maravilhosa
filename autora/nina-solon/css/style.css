@@ -213,7 +213,13 @@ p {
 
 .sobre-foto {
     width: 100%;
-    margin: 2vh 0 5vh 0;
+    margin: 2vh 0;
+}
+
+.legenda-foto {
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
 }
 
 .outras-conteudo {
