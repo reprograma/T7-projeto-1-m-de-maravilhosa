@@ -113,7 +113,7 @@ li {
 .header {
     min-height: 80vh;
     height: 500px;
-    background: linear-gradient(rgba(103, 69, 130, 0.56),rgba(103, 69, 130, 0.56)), url(../img/IAm_Tour_3.jpg);            
+    background: linear-gradient(rgba(103, 69, 130, 0.56),rgba(103, 69, 130, 0.56)), url(../imagens/vivyheader.jpg);            
     background-size: cover;
     background-position: center 14%;
     background-repeat: no-repeat;
