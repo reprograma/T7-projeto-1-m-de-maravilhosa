@@ -1,44 +1,45 @@
- html{
+ html {
     margin: 0;
-   
  }
-body{
+/* BODY */
+body {
     width: 100%;
     margin: 0;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    color: rgb(184, 42, 184);
+    color:#674582;
 }
-header{
-    background: linear-gradient(
-        rgba(103, 69, 130, 0.56), rgba(103, 69, 130, 0.56)), url("../img/obama.jpg");
+
+/* HEADER */
+header {
+    background: linear-gradient(rgba(103, 69, 130, 0.56), rgba(103, 69, 130, 0.56)), url("../img/obama.jpg");
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;
-    padding: 0;
-   
+    padding: 0;  
 }
-
-.container{
-    width: 80%;
+/* CONTAINER PARA NAV */
+.container {
+    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.menu{
+/* MENU */
+.menu {
     align-items: center;
     background-color: #674582;
     display: flex;
     justify-content: center;
     width: 100%;
 }
+
 .menu__home {
     display: flex;
     flex-direction: row;
     width: 160px;
     justify-content: space-between;
-
 }
 
 .menu__centralizador {
@@ -46,161 +47,143 @@ header{
     justify-content: space-around;
     width: 100%;
 }
-.menu__lista{
+.menu__lista {
     display: flex;
     flex-direction: row;
     width: 260px;
     justify-content: space-evenly;
     padding-left: 0;
 }
+
 .menu__lista li,
 .menu__lista li a {
     text-decoration: none;
     list-style: none;
     font-size: 14px;
     color: white;
-    
 }
-.menu__alinhar{
+
+.menu__alinhar {
     display: flex;
     align-items: center;
 }
-h1{
-   
-    text-align: center;
-    color: white;
-    font-size: 5vw;
-}
-
-.cabecalho{
+/* CABECALHO */
+.cabecalho {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 500px;
     padding-top: 14%;
 }
-
-.logo{
+.cabecalho h1 {
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+}
+.logo {
     width: 200px;
 }
 
-.perfil__malala{
+.perfil__malala {
     display: flex;
     margin: 0 auto;
     justify-content: space-evenly;
     margin-top: 30px;
 }
 
-.perfil__malala__foto{
+.perfil__malala__foto {
     width: 100px;
-    padding-left: 0;
+    margin: 20px;
     border-radius:5px;
-    
 }
 
-.perfil__malala__separar{
+.perfil__malala__separar {
     display: flex;
     justify-content: space-between;
     width: 90%;
-
 }
 
-.perfil__malala__texto p{
+.perfil__malala__texto p {
     width: 100%;
-    
 }
-/* 
-.container .perfil__malala{
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-} */
 
-.perfil__malala__resumo{
+.perfil__malala__resumo {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    
-    
 }
 
-.perfil__malala__resumo h3{
-    padding-left: 125px;
+.perfil__malala__resumo h3 {
+    padding-left: 165px;
 }
-
-
-.perfil__malala__resumo p{
+.perfil__malala__h4{
+    padding: 30px;
+    box-sizing: border-box;
+    
+}
+.perfil__malala__resumo p {
     padding-left: 25px;
 }
 
-
-.perfil__malala__h4{
-
+.perfil__malala__h4 {
     text-align: center;
     border: 0.5px solid rgb(194, 42, 186);
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-   
-
 }
 
-.perfil__historia h4{
+.perfil__historia h4 {
     width: 100%;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
 }
 
-.perfil__historia{
+.perfil__historia {
     flex-direction: column;
     text-align: justify;
     display: flex;
     justify-content: center;
     align-content: center;
-    
-    
 }
 
-.conteudo{
-    width: 50%;
+.conteudo {
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-  
 }
 
-.malala__img{
+.malala__img {
     max-width: 100%;
 }
 
-.autora{
+.autora {
     background-color: #e4b7e5;
     height: 140px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .perfil__pri {
     width: 130px;
     border-radius: 50%;
-    
 }
 
-.autora__descricao{
+.autora__descricao {
     width: 200px;
     margin-left: 40px;
 }
 
 
-.btn__ver{
+.btn__ver {
     background-color: #c083b9;
     padding: .4rem 1rem;
     border-radius: 5px;
@@ -212,7 +195,7 @@ main{
     text-transform: uppercase;
 }
 
-.botao{
+.botao {
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -220,7 +203,7 @@ main{
     align-items: center;
 }
 
-.rodape{
+.rodape {
     height: 70px;
     background-color: rgba(0, 0, 0, 0.644);
     color: white;
@@ -229,17 +212,16 @@ main{
     justify-content: space-between;
 }
 
-.logo__fb{
+.rodape .logo__fb {
     width: 10px;
 }
 
-.rodape p{
+.rodape p {
     text-align: center;
     font-size: 8px;
-  
 }
 
-.rodape__fim{
+.rodape__fim {
     height: 20px;
     width: 100%;
     background-color: rgb(0, 0, 0);
@@ -249,17 +231,24 @@ main{
     justify-content: center;
 }
 
-.rodape__fim p{
+.rodape__fim p {
     font-size: 6px;
     text-align: center;
-
 }
 
-.logo__rodape{
+.logo__rodape {
     width: 150px;
 }
 
-
+.rodape__alinhamento {
+    display: flex;
+    justify-content: space-between;
+}
+.logo__fb__alinhamento{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
 
 @media(max-width:420px) {
     .menu__alinhar{
@@ -298,16 +287,86 @@ main{
         display: flex;
         justify-content: center;
         align-content: center;
-        
     }
-}
+}     
 
-
-@media(min-width:720px) {
+@media(min-width: 420px) {
     .hamburguer{
         display:none;
     }
-    
+}
+
+
+/* ---------------------------SOBRE-------------------------------- */
+
+/* FOTO PERFIL */
+.perfil__pri__introducao {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.perfil__pri__introducao p {
+    width: 400px;
+    padding-left: 30px;
+    margin-top: 0;
     
 }
 
+.perfil__priscila__foto {
+    height: 200px;
+}
+span{
+    font-weight: bold;
+}
+
+.linha__alinhar{
+    height: 192px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linha{
+    background-color: #674582;
+    height: 1px;
+    width: 300px;
+
+}
+
+.perfil__pri__alinhar{
+    height: 250px;
+}
+
+.resumo__pri{
+    margin: 0%;
+    padding-left: 20px;
+    width: 400px;
+    
+}
+
+.maravilhosas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.outras__maravilhosas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.outras{
+    height: 100px;
+    border-radius: 5px;
+}
+
+.maravilhosas .italico{
+    font-style:italic;
+    font-size: 14px;
+    color:rgba(128, 128, 128, 0.5);
+}
