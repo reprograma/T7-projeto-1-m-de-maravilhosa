@@ -1,4 +1,3 @@
-
 /* GERAL */
 
 * {
@@ -36,6 +35,7 @@ h3 {
     font-weight: 700;
     font-size: 2.5rem;
     font-family: 'Roboto Slab';
+    text-align: center;
 }
 
 ul {
@@ -46,6 +46,7 @@ li {
     list-style: none;
     line-height: 2rem;
 }
+
 
 .container {
     margin: 0 auto;
@@ -104,13 +105,13 @@ li {
         height: 500px;
         background: linear-gradient(rgba(255, 0, 255, 0.2),
                     rgba(255, 0, 255, 0.2)),
-                    url(./../img/janejacobs-1.jpg);
+                    url(../img/turma-7.jpg);
         background-size: cover;
-        background-position: center 8%;
+        background-position: center 47%;
         background-repeat: no-repeat;
         display: flex;
         align-items: flex-end;
-        padding: 11rem 2rem 5rem 2rem;
+        padding: 5rem 2rem 2rem 2rem;
         color: white;
         justify-content: center;
         margin-bottom: 3rem;
@@ -134,10 +135,6 @@ li {
         font-size: 1.8rem;
     }
 
-    .intro h3 {
-        text-align: center;
-    }
-
     .intro__conteudo {
         display: flex;
         align-items: center;
@@ -148,19 +145,17 @@ li {
         border-radius: 5%;
     }
     
-    .intro__conteudo p {
-        margin-left:3rem;
+    .conteudo-autora {
+        margin-left: 3rem;
         text-align: justify;
-        width: 55%;
     }
 
-    .quote {
-        padding: 3rem 4.5rem;
-        border: 1px solid #674582;
-        font-size:2rem;
-        font-weight: 700;
-        text-align: center;
-        line-height: 3rem;
+    .conteudo-autora p {
+        margin: 2rem 0;
+    }
+
+    .conteudo-autora a {
+        font-weight: 600;
     }
 
     .historia {
@@ -171,35 +166,40 @@ li {
         margin: 2rem 0;
     }
 
-    /* PERFIL  */
-
-    .autora {
-        background-color: #E4B7E5;
-        width: 100%;
+    .divisoria{
+        width: 400px;
+        height: 1px;
+        border: 1px solid;
+        display: block;
+        margin: 8rem auto;
     }
-
-    .autora__perfil {
-        display: flex;  
+    /* OUTRAS  */
+    
+    .maravilhosas__box {
+        display: flex;
         align-items: center;
-        justify-content: center; 
+        justify-content: space-around;
+
+    }
+    .maravilhosas__box > div {
+        max-width: 200px;
+        margin: 5rem;
     }
 
-    .autora__perfil img {
-        width: 200px;
-        height: 100%;
-        margin-right:3rem;
-    }
-
-    .autora__perfil li {
-        font-size: 1.8rem;
-        font-weight: 700;
-    }
-
-    .chamada-autoras {
+    .maravilhosas__perfil p {
+        font-size: 1.5rem;
         text-align: center;
     }
+   
 
-    .chamada-autoras button {
+    .container--maravilhosas {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
         text-transform: uppercase;
         color: white;
         font-weight: 700;
@@ -207,11 +207,11 @@ li {
         padding: 1rem 2rem;
         border-radius: 5px;
         border: none;
-        margin: 4rem;
+        margin-bottom: 5rem;
         font-size: 1.5rem;
     }
 
-    .chamada-autoras button:hover {
+    button:hover {
         background-color: #674582;
     }
 
@@ -261,7 +261,9 @@ li {
         }
 
         .cabecalho {
-            min-height: 250px;
+            min-height: 35vh;
+            height:270px;
+            width: 100%;
             background-position: 38% 30px;
         }
 
@@ -288,20 +290,21 @@ li {
             margin-left: 0;
         }
 
-        .autora__perfil li{
-            font-size: 1.5rem;
-        }
-
-        .foto-autora {
-            max-width: 30vw;
-        }
-
         .footer_b {
             flex-direction: column;
         }
 
         .footer_b > * {
             margin: 1rem 0;
+        }
+
+        .divisoria {
+            width: 100px;
+        }
+
+        .maravilhosas__box > div {
+            max-width: 200px;
+            margin: 1rem;
         }
     }
 
@@ -311,6 +314,8 @@ li {
             display: none;
         }
     }
+
+   
 
     @media (min-width: 420px) and (max-width: 800px)
     {
@@ -327,4 +332,4 @@ li {
             display: none;
         }
         
-    }
+    } 
