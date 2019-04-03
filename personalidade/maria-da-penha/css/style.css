@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    font-size: 10px;
+}
+
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     margin: 0;
@@ -39,7 +43,7 @@ li {
     color: white;
     text-transform: uppercase;
     box-shadow: 0px;
-    padding: 1.5rem;
+    padding: 10px;
     z-index: 99;
     position: fixed;
     width: 100%;
@@ -62,7 +66,7 @@ li {
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    padding: 3rem 0;
+    padding: 10px 0;
     background-color: #674582;
 }
 
@@ -87,9 +91,13 @@ li {
 }
 
 
+
 .navegacao__menu-hamburguer {
     display: none;
 }
+
+
+
 
 /* CABECALHO */
 
@@ -98,8 +106,8 @@ li {
         rgba(103, 69, 130, 0.56), 
         rgba(103, 69, 130, 0.56)
       ),url("../img/maria-da-penha-lei-instituto-mulher-fala.jpg");
-    min-height: 80vh;
-    padding-top: 200px;
+    margin-top: 79px;
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -107,18 +115,16 @@ li {
     align-items: center;
     flex-direction: column;
     color: #fff;
-    position: relative;
-    
+    position: relative;  
 }
 
-.cabecalho h1 {
+.cabecalho__titulo {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     position: absolute;
     top: 80%;
     font-size: 50px;   
-
 }
 
 /* INTRODUÇÃO */
@@ -129,20 +135,19 @@ li {
     color: #63458a;
 }
 
-.introducao-container {
+.introducao__intro {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 70px;
-   
+    margin-top: 70px; 
 }
 
-.introducao-container h3 {
+.introducao__intro h3 {
     font-size: 30px;
     margin-bottom: 30px;
 }
 
-.introducao__texto{
+.introducao__texto {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,6 +160,7 @@ li {
     font-size: 16px;
     margin-left: 50px;
 }
+
 .introducao__img {
     border-radius: 15px;
 }
@@ -167,39 +173,42 @@ li {
     padding: 30px 40px;
     border: 1px solid #63458a;
     width: 100%;
-
 }
 
+/* RESUMO */
 .resumo {
     width: 60%;
     margin: 0 auto; 
 }
 
-.resumo-container {
+.resumo h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.resumo__texto {
     font-size: 16px;
-    margin-top: 50px;
+    margin-top: 70px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 70px;
     line-height: 2.5rem;
     color: #63458a;
-    
-   
-
 }
 
 .resumo__img {
-    width: 50%;
-    display: flex;
+    width: 70%;
+    
 }
-.autora{
+
+/* AUTORA */
+.autora {
     width: 100%;
     margin: 0 auto;
     margin-top: 70px;
 }
 
-.autora-container {
+.autora__info {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,28 +224,44 @@ li {
 .autora__texto {
     color: #63458a;
     font-size: 16px;
-    margin-left: 20px;
+    margin-left: 20px;   
+}
 
-    
+/* BOTÃO */
+.btn {
+    border-radius: 3px;
+    color: #fff;
+    background-color: #63458a;
+    font-weight: bold;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    border: none;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 45%;
+
 }
 
 /* RODAPÉ */
 
 .rodape {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #323534;
     color: white;
-    height: 10%;
     text-decoration: none;
     margin: 0 auto;
-    position: absolute;
-    padding: 1.5rem;
     margin-top: 70px;
 }
 
 .rodape__logo img {
-    width: 33%;
+    width: 20%;
+    margin-left: 70px;
 }
+
 
 .rodape a {
     text-decoration: none;
@@ -245,10 +270,12 @@ li {
     font-size: 12px;
 }
 
-.rodape__links {
+.rodape__menu {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    width: 100%;
 }
 
 .rodape__facebook {
@@ -260,11 +287,88 @@ li {
     width: 20px;
 }
 
+/* CREDITOS */
 .creditos {
     text-align: center;
     background-color: #292A2A;
     width: 100%;
     font-size: 1rem;
-    opacity: 0.5;
+    
+    
+}
+
+@media (max-width: 420px) {
+
+    .navegacao__menu-hamburguer {
+        display: block;
+    }
+
+    .redes-sociais {
+        display: none;
+    }
+
+    .resumo__img {
+        max-width: 300px;
+    }
+
+    .cabecalho {
+        margin-top: 98px;
+        height: 300px;
+    }
+    .cabecalho__titulo {
+        font-size: 30px;
+    }
+
+    .introducao__intro h3 {
+        font-size: 19px;
+    }
+    
+    .introducao__texto {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .resumo__img {
+        width: 100%;
+    }
+
+    .autora__texto {
+        font-size: 15px;
+    }
+
+    .autora__img {
+        width: 40%;
+    }
+
+    .autora__info {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .btn {
+        margin-left: 28%;
+    }
+
+    .rodape__link {
+        display: inline-block;
+    }
+
+    .rodape__menu {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .rodape__logo img {
+        text-align: center;
+        width: 30%;
+    }
+
+    .rodape a {
+        font-size: 10px;
+    }
+
+
     
 }

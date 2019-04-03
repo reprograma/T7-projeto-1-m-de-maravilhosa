@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Janis Joplin</title>
+    <title>Maria da Penha</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
         rel="stylesheet">
@@ -58,17 +58,16 @@
 
     <!-- CABECALHO -->
     <header class="cabecalho">
-        <h1>Maria da Penha</h1>
+        <h1 class="cabecalho__titulo">Maria da Penha</h1>
     </header>
 
     <!-- INTRODUÇÃO -->
     <section class="introducao">
-        <div class="introducao-container">
+        <div class="introducao__intro container">
             <h3>A mulher por trás da Lei</h3>
             <div class="introducao__texto">
 
                 <img src="./img/images.jpg" alt="logo_introdução" title="Foto Maria da Penha" class="introducao__img">
-
                 <p>Maria da Penha Maia Fernandes (Fortaleza, Ceará, 1945) é uma farmacêutica brasileira que lutou para
                     que
                     seu agressor viesse a ser condenado. E hoje é líder de movimentos de defesa dos direitos das
@@ -83,8 +82,9 @@
         </div>
     </section>
 
+    <!-- RESUMO -->
     <section class="resumo">
-        <div class="resumo-container">
+        <div class="resumo__texto container">
             <h3>Sua história</h3>
             <p>Em 1983, seu marido, o professor colombiano Marco Antonio Heredia Viveros, tentou matá-la duas vezes.
                 Na primeira vez atirou simulando um assalto, na segunda tentou eletrocutá-la enquanto ela tomava
@@ -94,14 +94,15 @@
                 O episódio chegou à Comissão Interamericana dos Direitos Humanos da Organização dos Estados
                 Americanos (OEA) e foi considerado, pela primeira vez na história, um crime de violência doméstica.
             </p>
-            <img class="resumo__resumo" src="./img/maria-da-penha-lei-instituto-mulher-fala.jpg"
+            <img class="resumo__img" src="./img/maria-da-penha-lei-instituto-mulher-fala.jpg"
                 alt="Foto Maria da Penha" title="Foto Maria da Penha">
 
         </div>
     </section>
 
+    <!-- AUTORA -->
     <section class="autora">
-        <div class="autora-container">
+        <div class="autora__info">
             <img src="./img/autora.jpg" alt="Foto autora" class="autora__img">
             <div class="autora__texto">
                 <p>Autora: Kamila Viveiros</p>
@@ -111,23 +112,32 @@
             </div>
         </div>
     </section>
+
+    <!-- BOTOM -->
+    <div class="container">
+        <button class="btn">ver todas elas</button>
+    </div>
+
+    <!-- RODAPE -->
     <footer class="rodape">
-        <section class="rodape__links">
-            <div>
+        <section class="rodape__menu container">
+            <div class="rodape__link">
                 <a href="#">Home</a>
-                <a href="">Conheça a {reprograma}</a>
+                <a href="#">Conheça a {reprograma}</a>
             </div>
             <div class="rodape__logo">
-                <img src="./img/logo-white.png" alt="">
+                <img src="./img/logo-white.png" alt="rodape__logo">
             </div>
             <div class="rodape__facebook">
                 <img src="./img/fb-icone.png" alt="facebook">
                 <a href="www.facebook.com/reprograma">/br.mdemaravilhosa</a>
             </div>
         </section>
-        <section class="creditos">
-            <small>Creative Commons 2018 | Feito com amor por Reprograma</small>
-        </section>
+
+        <!-- CREDITOS -->
+        <div class="creditos">
+            <p>Creative Commons 2018 | Feito com amor por Reprograma</p>
+        </div>
     </footer>
 </body>
 
