@@ -44,7 +44,7 @@ ul {
 
 li {
     list-style: none;
-    font-height: 2rem;
+    line-height: 2rem;
 }
 
 .container {
@@ -94,6 +94,7 @@ li {
 .menu__redes-sociais a {
     margin-left: 1.3rem;
 }
+
 
 /* CABEÇALHO  */
 
@@ -222,7 +223,7 @@ li {
         justify-content: space-around;
         color: white;
         font-size: 1.3rem;
-        padding:30px;
+        padding:3rem;
     }
 
     .footer_b > img {
@@ -260,12 +261,23 @@ li {
 
         .cabecalho {
             min-height: 250px;
-            background-position: center 15%;
+            background-position: 38% 30px;
+
         }
 
         .container {
-            width: 90%;
+            width: 80%;
         }
+
+        .menu-responsivo img {
+            background-color: #C083B9;
+            border-radius: 5px;
+        }
+
+        .navegacao__menu {
+            display: none;
+        }
+
         .intro__conteudo {
             flex-direction: column;
         }
@@ -277,5 +289,32 @@ li {
 
         .autora__perfil li{
             font-size: 1.5rem;
+        }
+
+        .foto-autora {
+            max-width: 30vw;
+        }
+
+        .footer_b {
+            flex-direction: column;
+        }
+
+        .footer_b > * {
+            margin: 1rem 0;
+        }
+    }
+
+    @media (min-width:420px) {
+       
+        .menu-responsivo {
+            display: none;
+        }
+    }
+
+    @media (min-width: 420px) and (max-width: 800px)
+    {
+        .container {
+            width: 80vw;
+
         }
     }
