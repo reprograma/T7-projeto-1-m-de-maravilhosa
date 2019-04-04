@@ -369,14 +369,15 @@ hr {
 
 /* ----------------------------- BTN ---------------------- */
 
-.btn__section {
+.link-home__section {
     width: 100%;
     margin: 80px auto;
     
     
 }
 
-.btn {
+.link-home {
+    width: 25%;
     color: white;
     background-color: #C083B9;
     display: block;
@@ -391,20 +392,20 @@ hr {
     
 }
 
-.btn:hover,
-.btn:focus {
+.link-home:hover,
+.link-home:focus {
     transform: translateY(-1rem);
     box-shadow: 0 10px 10px rgba(0,0,0,.2);
     background-color: rgb(192, 156, 188);
 }
 
-.btn:active {
+.link-home:active {
     transform: translateY(-.5rem);
     box-shadow: 0 5px 5px rgba(0,0,0,.2);
 }
 
 @media (max-width: 420px) {
-    .btn {
+    .link-home {
         padding: 20px 35px;
         font-size: 20px;
 
@@ -425,7 +426,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     padding: 40px;
 }
