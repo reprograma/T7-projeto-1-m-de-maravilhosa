@@ -288,12 +288,25 @@ header {
     .perfil__malala__resumo h3 {
         padding-left: 110px;
     }
+    .rodape__alinhamento p{
+        padding-right: 10px;
+        }
+        .autora h4{
+            font-size: 12px;
+        }
+        body p{
+            text-align: center;
+        }
+        main h5{
+            text-align: center;
+        }
 }
 
 @media(min-width: 420px) {
     .hamburguer{
         display:none;
     }
+
 }
 
 
