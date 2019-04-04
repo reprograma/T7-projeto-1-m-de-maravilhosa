@@ -78,6 +78,10 @@ a {
     margin-right: 3.125rem;
 }
 
+.navegacao__hamburguer {
+    display: none;
+}
+
 .navegacao__menu--direita-texto {
     width: 400px;
 }
@@ -126,7 +130,7 @@ a {
 }
 
 .personalidade__img {
-    width: 25%;
+    width: 35%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,7 +144,7 @@ a {
 }
 
 .personalidade__texto {
-    width: 85%;
+    width: 55%;
     color: #674582;
 }
 
@@ -172,7 +176,7 @@ a {
 }
 
 .historia__img {
-    width: 61%;
+    width: 80%;
     padding: 1.875rem 0;
 }
 
@@ -183,27 +187,30 @@ a {
 /*SECTION AUTORA*/
 
 .autora {
-    display: flex;
     background-color: #E4B7E5;
-    justify-content: space-evenly;
-    align-items: center;
     color: #674582;
     font-weight: 700;
     margin-top: 1.875rem;
+    width: 100%;
+}
+
+.autora__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .autora__img {
-    width: 15%;
+    width: 40%;
+    margin-left: 8.25rem;
 }
-
 .autora__img--foto {
     width: 100%;
-    margin-left: 6.25rem;
+    max-width: 200px;
 }
-
 .autora__texto {
-    width: 40%;
-    margin-right: 5rem;
+    width: 60%;
 }
 
 .autora__texto a {
@@ -284,46 +291,43 @@ a {
         font-size: 0.8125rem
     }
 
-    .navegacao__menu {
-        
-    }
-
-    .box {
-        width: 800px;
-    }
-
     .navegacao__menu--logo-img {
         width: 200px;
         margin-left: 1.25rem;
     }
 
-    .navegacao__menu--direita-texto {
-        width: 18.75rem;
+    .navegacao__menu--direita {
+        display: none;
     }
 
-    .navegacao__menu--direita-icones {
-        margin-right: 2.5rem;
+    .navegacao__hamburguer {
+        display: block;
     }
 
-    .navegacao__menu--direita-icones img {
-        width: 15.625rem;
+    .banner {
+        background-position-y: 20%;
+    }
+
+    .banner__titulo {
+        flex: display;
+        flex-wrap: wrap;
     }
 
     .personalidade__img {
         margin-left: 1.875rem;
     }
 
+    .personalidade__img--foto {
+        max-width: 200px;
+    }
+
     .personalidade__texto {
         margin-right: 1.875rem;
     }
 
-    .personalidade__texto h3 {
-        width: 25rem;
-    }
-
     .citacao {
-        width: 39.6875rem;
-        margin-left: 28px;
+        margin-left: 1.75rem;
+        margin-right: 1.75rem;
     }
 
     .historia {
@@ -339,4 +343,23 @@ a {
         font-size: 0.875rem;
     }
 
+}
+
+@media(max-width: 420px) {
+    .navegacao {
+        width: 46.88rem;
+    }
+
+    .navegacao__menu--direita {
+        display: none;
+    }
+
+    .personalidade {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .personalidade__img {
+        margin-bottom: 5%;
+    }
 }
