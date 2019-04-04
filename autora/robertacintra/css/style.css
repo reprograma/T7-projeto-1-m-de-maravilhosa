@@ -176,10 +176,9 @@ hr {
 }
 
 .autora__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     min-height: 150px;
+    
 }
 
 .autora__button {
@@ -359,6 +358,12 @@ hr {
         padding: 0 2.5rem;
         display: flex;
         flex-direction: column;
+    }
+
+    .autora__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
 /* --- FOOTER --- */
