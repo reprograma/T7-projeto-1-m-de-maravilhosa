@@ -1,215 +1,454 @@
 * {
-    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    color: #674582
+    font-size: 20px;
 }
 
 body {
     margin: 0;
-}
+    box-sizing: border-box;
+    color: #674582;
+    font-family: 'Monserrat', sans-serif;
 
-/* CABEÇALHO */
+}
 
 a {
     text-decoration: none;
-    color: white;
-    text-transform: uppercase;
+    color: #674582;
     font-size: 12px;
-    margin: 1%;
+    text-transform: uppercase;
+    font-family: 'Monserrat', sans-serif;
 }
 
-.cabecalho__conteudo {
-    display: flex;
-    background-color: #674582;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 10vh;
+h3 {
+    font-family: Roboto, sans-serif;
 }
 
-.cabecalho__logo img {
-    width: 150px;
-}
-
-.cabecalho__menu {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.cabecalho__redes {
-    display: flex;
-    justify-content: space-between;
-    width: 15%;
-}
-
-.cabecalho__redes img {
-    margin: 15%;
-}
+/* MENU */
 
 .menu {
-    width: 90%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: #674582;
+    position: fixed;
+    top: 0;
+    padding: 1.25%;
+    z-index: 100; 
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    transition-duration: 1s;
 }
 
-.menu-hamburguer {
+.img__logo {
+    width: 37vw;
+}
+
+.menu__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__links {
+    display: flex;
+    width: 30vw;
+}
+
+.menu__links > a {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.menu__redes img{
+    width: 50%;
+    margin: 0 5%;
+}
+
+.menu-hamburguer img {
+    width: 6vh;
+}
+
+.menu__caixa {
     display: none;
 }
 
+
+/* HEADER */
+
 .banner {
-    background: linear-gradient(rgba(103,69,130,0.56), rgba(103,69,130,0.8)), url(../img/frida-kahlo-2.jpg);
-    filter: grayscale(1);
-    height: 67vh;
+    background: linear-gradient(rgba(128, 128, 128, 0.164),rgba(0, 0, 0, 0.795)), url(../../frida-kahlo/img/frida-kahlo-2.jpg);
+    background-size: cover;
+    height: 35vh;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background-size: cover;
-    background-position-y: center;
+    font-size: 18px;
+    margin-top: 10vh;
+    filter: grayscale(.5);
+    text-transform: uppercase;
     color: white;
 }
 
-/* CONTEÚDO */
 
-.conteudo__pagina {
-    width: 50vw;
-    margin: 5% auto;
-}
-
-
-.conteudo {
-    width: 50vw;
-    margin: 0 auto;
-    background-color: aquamarine;
-}
+/* INTRODUÇÃO */
 
 .introducao {
-    display: flex;
-    background-color: yellow;
+    margin: 5% auto;
 }
 
 .introducao__imagem {
     display: flex;
-    justify-content: space-between;
-    width: 90%;
+    justify-content: center;
     align-items: center;
+    
 }
 
 .introducao__imagem img {
-    width: 90%;
-    margin: 2%;
-}
-
-.introducao__texto {
-    margin: auto;
-    margin-left: 10%;
-}
-
-.citacao {
-    border: 1px solid black;
-    text-align: center;
     width: 50vw;
 }
 
-.conteudo__sobre {
-    width: 70%;
+.introducao__texto {
+    width: 90vw;
+    text-align: center;
+    margin: auto;
+}
+
+.introducao__texto h3 {
+    text-align: center;
+}
+
+/* CITAÇÃO */
+
+.citacao {
+    border: 1px solid rgba(0, 0, 0, 0.555);
+    width: 70vw;
+    margin: 0 auto;
+    padding: 5vw;
+    text-align: center;
 }
 
 
-.sobre img {
-    width: 50%;
+/* HISTÓRIA */
+
+.historia__texto {
+    width: 90vw;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.sobre__img {
+.historia__imagem {
     display: flex;
-}
-
-.conteudo__sobre {
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
+
+.historia__imagem img {
+    width: 50vw;
+}
+
+
+/* AUTORA */
 
 .autora {
-    display: flex;
-    align-items: center;
-    background-color: #e4b7e5;
-    width: 100%;
-}
-
-.autora-faixa {
-    display: flex;
+    width: 100vw;
     background-color: #e4b7e5;
 }
 
-.autora__img img {
-    width: 36%;
+.caixa__autora {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    margin: 0 auto;
 }
 
-.autora__img {
+.autora__imagem img {
+    width: 30vw;
+}
+
+.autora__imagem {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+}
+
+.autora__texto {
+    text-decoration: none;
+    color: #674582;
+    margin-left: 10%;
+}
+
+.autora__texto p {
+    margin: 0;
+}
+
+.autora__texto p a {
+    text-transform: none;
 }
 
 .botao a {
-    background-color: #c083b9;
-    text-decoration: none;
-    padding: 2%;
-    text-transform: uppercase;
-    margin-top: 5%;
-    border-radius: 5px;
+    background-color: #e4b7e5;   
+    padding: 4%;
+    border-radius: 10px;
+    border: 1px solid rgba(41, 42, 42, 0.322);
 }
 
 .botao {
     display: flex;
-    align-items: center;
     justify-content: center;
+    margin: 5% 0;
 }
+
 
 /* RODAPÉ */
 
 .rodape {
-    width: 100%;
+    transition-duration: 0s;
     background-color: #323534;
-    color: white;
-    height: 10%;
-    margin: auto;
-    text-decoration: none;
-    margin: 0 auto;
-    position: absolute;
-}
-
-.rodape__logo img {
-    width: 33%;
-}
-
-.rodape a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 12px;
 }
 
 .rodape__links {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    height: 7vh;
 }
 
-.rodape__facebook {
-    display: flex;
-    align-items: center;
+.links a {
+    display: none;
 }
 
-.rodape__facebook img {
-    width: 20px;
-}
-
-.creditos {
-    height: 10%;
+.rodape__creditos {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #292A2A;
-    margin: 0;
+    height: 4vh;
+    font-size: 10px;
+    color: white;
 }
 
+.rodape__logo img {
+    width: 30vw;;
+}
+
+.rodape__facebook img {
+    display: none;
+    width: 5vw;
+}
+
+.rodape__facebook > p {
+    display: none;
+}
+
+
+@media all and (min-width: 768px) {
+    body {
+        transition-duration: 1s;
+    }
+
+    .banner {
+        height: 50vh;
+        font-size: 25px;
+    }
+    
+    .img__logo {
+        max-width: 33vh;
+    }
+    
+    .introducao__texto {
+        width: 70vw;
+        text-align: justify;
+        font-size: 16px;
+        margin-left: 5%;
+    }
+    
+    .introducao__texto > p {
+        margin: 0;
+        text-align: left;
+    }
+    
+    .introducao {
+        transition-duration: 2s;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 80vw;
+        
+    }
+    
+    .introducao__imagem {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .introducao__imagem img {
+        max-width: 36vw;
+    }
+    
+    .citacao {
+        font-size: 25px;
+    }
+    
+    .historia__texto {
+        width: 80vw;
+        font-size: 16px;
+        text-align: justify;
+    }
+    
+    .historia__imagem img {
+        width: 78vw;;
+    }
+    
+    h3{
+        text-align: center;
+    }
+    .autora__texto, .botao{
+        font-size: 16px
+    }
+    
+    .rodape__links {
+        height: 8vh;
+    }
+    
+    .rodape__links img {
+        width: 40vw;
+    }
+    
+    .rodape__creditos {
+        height: 6vh;
+        font-size: 16px;
+    }
+}
+
+
+@media all and (min-width: 900px) {
+    
+    .menu-hamburguer {
+        display: none;
+    }
+
+    .menu__caixa {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu__redes {
+        display: flex;
+        width: 15vw;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu__links > a {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu__links{
+        width: 25vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .banner {
+        background: linear-gradient(rgba(128, 128, 128, 0.164),rgba(0, 0, 0, 0.795)), url(../../frida-kahlo/img/frida-banner.jpg);
+        filter: none;
+        background-position: center;
+        background-size: cover;
+        height: 50vh;
+    }
+    
+    .introducao {
+        width: 50%;
+    }
+
+    .introducao__imagem img {
+        width: 20vw;
+    }
+
+    .citacao {
+        width: 40vw;
+        padding: 0 5vw;
+    }
+
+    .historia__texto {
+        width: 50vw;
+    }
+
+    .historia__imagem img {
+        width: 50vw;
+    }
+
+    .autora__imagem img {
+        width: 14vw;
+    }
+
+    .autora{
+        height: 14vw;
+    }
+
+    *{
+        font-size: 15px;
+    }
+
+    .caixa__autora {
+        width: 50vw;
+    }
+
+    .botao a {
+        font-size: 15px;
+        padding: 2%;
+    }
+
+    .rodape__links {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 15vh;
+        color: white;
+    }
+    
+   
+    .rodape__creditos {
+        height: 7vh;
+    }
+
+    .rodape__creditos > small {
+        font-size: 10px;
+    }
+    
+    .rodape__logo img {
+        width: 20vw;;
+    }
+    
+    .rodape__facebook img {
+        display: flex;
+        width: 35%;
+        margin: 0;
+    }
+
+    .links a {
+        color: white;
+        font-size: 12px;
+    }
+    
+    .rodape__facebook {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rodape__facebook > p {
+        display: flex;
+        color: white;
+        margin: 0;
+    }
+
+    .links a {
+        display: flex;
+    }
+}
