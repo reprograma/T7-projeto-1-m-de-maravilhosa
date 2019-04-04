@@ -92,6 +92,7 @@ li {
     z-index: 99;
     position: fixed;
     width: 100%;
+    justify-content: space-around;
 }
 
 .navegacao__logo {
