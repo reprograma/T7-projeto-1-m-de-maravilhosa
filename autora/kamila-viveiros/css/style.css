@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> d8051e601021509764e7d73133e50940371c097b
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,12 +15,9 @@ body {
     line-height: 3rem;
 }
 
-<<<<<<< HEAD
 p {
     font-size: 16px;
 }
-=======
->>>>>>> d8051e601021509764e7d73133e50940371c097b
 
 a {
     text-decoration: none;
@@ -91,7 +85,7 @@ li {
 
 /* CABEÇALHO  */
 
-    .cabecalho {
+.cabecalho {
         background: linear-gradient(
         rgba(103, 69, 130, 0.56), 
         rgba(103, 69, 130, 0.56)
@@ -107,30 +101,19 @@ li {
     color: #fff;
     position: relative;  
 }
+
+
+h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    font-size: 50px;   
     }
 
-    h1 {
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-        position: absolute;
-        top: 80%;
-        font-size: 50px;   
-    }
-
-    /* INTRODUÇÃO */
-<<<<<<< HEAD
-=======
-   
-    .intro__intro {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 70px; 
-    }
->>>>>>> d8051e601021509764e7d73133e50940371c097b
-
-    h3 {
+/* INTRODUÇÃO */
+h3 {
         font-size: 30px;
         margin-top: 50px;
         text-align: center;
@@ -150,13 +133,13 @@ li {
     }
 
 
-<<<<<<< HEAD
     .introducao__autora img {
-=======
-    .intro__intro img {
->>>>>>> d8051e601021509764e7d73133e50940371c097b
         height: 200px;
         border-radius: 5%;
+    }
+
+    .dados__autora {
+        text-align: center;
     }
     
     .historia {
@@ -168,32 +151,20 @@ li {
     }
 
     .legenda {
-<<<<<<< HEAD
         font-size: 1.3rem;
         text-align: center;
         margin-top: 0;
         color: #a7a7a7;
     }
 
-    .linha{
-=======
-        font-size: 1rem;
-        text-align: center;
-        margin-top: 0 !important;
-        color: #a7a7a7
-    }
-
     .divisoria{
->>>>>>> d8051e601021509764e7d73133e50940371c097b
         width: 400px;
         height: 1px;
         border: 1px solid;
         display: block;
         margin: 8rem auto;
     }
-<<<<<<< HEAD
-    OUTRAS 
-    
+       
     .maravilhosas {
         text-align: center;
         display: flex;
@@ -201,49 +172,18 @@ li {
         align-items: center;
     } 
 
-    .maravilhosas__perfil {
+    .maravilhosas__personalidade {
         display: flex;
         align-items: center;
         justify-content: space-around;
     }
+
     .maravilhosas__perfil > div {
         max-width: 200px;
         margin: 5rem;
     }
-    .perfil__personalidade p {
-=======
-    /* OUTRAS  */
     
-    /* .maravilhosas__box {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-
-    }
-    .maravilhosas__box > div {
-        max-width: 200px;
-        margin: 5rem;
-    }
-
-    .maravilhosas__perfil p {
->>>>>>> d8051e601021509764e7d73133e50940371c097b
-        font-size: 1.5rem;
-        text-align: center;
-    }
-   
-<<<<<<< HEAD
-      button {
-=======
-
-    .container--maravilhosas {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
-
-    button {
->>>>>>> d8051e601021509764e7d73133e50940371c097b
+     button {
         text-transform: uppercase;
         color: white;
         font-weight: 700;
@@ -256,134 +196,40 @@ li {
     }
 
     
-    /* RODAPE  */
+/* RODAPÉ */
 
-    .rodape {
-        background-color: #323534;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        color: white;
-        font-size: 1.3rem;
-        padding:3rem;
-    }
+.rodape {
+    background-color: #323534;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 1.3rem;
+    padding:3rem;
+}
 
-    .rodape > img {
-        height: 60px;
-    }
+.rodape > img {
+    height: 60px;
+}
 
-    .rodape ul {
-        text-align: center;
-    }
+.rodape ul {
+    text-align: center;
+}
 
-    .icone-facebook {
-        max-width: 10px;
-        position: relative;
-        bottom: -3px;
-    }
+.icone-facebook {
+    max-width: 10px;
+    position: relative;
+    bottom: -3px;
+}
 
-    .creditos p{
-        text-align: center;
-        font-size: 0.8rem;
-    }
+.creditos p{
+    text-align: center;
+    font-size: 0.8rem;
+}
 
-    .creditos {
-        background-color: #292A2A;
-        color: #ffffff;
-        padding: 0.8rem;
-    }
+.creditos {
+    background-color: #292A2A;
+    color: #ffffff;
+    padding: 0.8rem;
+}
 
-<<<<<<< HEAD
-   
-=======
-    /* RESPONSIVO  */
-
-    /* @media (max-width: 420px) {
-
-        html {
-            font-size: 8px;
-        }
-
-        .cabecalho {
-            min-height: 35vh;
-            height:270px;
-            width: 100%;
-            background-position: 38% 30px;
-        }
-
-        .container {
-            width: 80%;
-        }
-
-        .menu-responsivo img {
-            background-color: #C083B9;
-            border-radius: 5px;
-        }
-
-        .navegacao__menu {
-            display: none;
-        }
-
-        .intro__conteudo {
-            flex-direction: column-reverse;
-        }
-
-        .intro__conteudo p {
-            width: 90%;
-            margin-bottom: 3rem;
-            margin-left: 0;
-        }
-
-        .footer_b {
-            flex-direction: column;
-        }
-
-        .footer_b > * {
-            margin: 1rem 0;
-        }
-
-        .divisoria {
-            width: 100px;
-        }
-
-        .maravilhosas__box > div {
-            max-width: 200px;
-            margin: 1rem;
-        }
-
-        .legenda {
-            font-size: 1.2rem;
-        }
-    }
-
-    @media (min-width: 800px) {
-       
-        .menu-responsivo {
-            display: none;
-        }
-    }
-
-   
-
-    @media (min-width: 420px) and (max-width: 800px)
-    {
-        .container {
-            width: 80vw;
-        }
-
-        .cabecalho {
-            min-height: 53vh;
-
-        }
-
-        .menu-responsivo img {
-            background-color: #C083B9;
-            border-radius: 5px;
-        }
-
-        .navegacao__menu {
-            display: none;
-        }
-        
-    }  */
->>>>>>> d8051e601021509764e7d73133e50940371c097b
