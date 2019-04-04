@@ -319,13 +319,13 @@ header {
 span{
     font-weight: bold;
 }
-/* 
+
 .linha__alinhar{
     height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-} */
+}
 .linha{
     background-color: #674582;
     height: 1px;
