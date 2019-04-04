@@ -102,6 +102,15 @@ li {
     margin-left: 1.3rem;
 }
 
+.menu__redes-sociais img {
+    opacity: 0.6;
+}
+
+.menu__redes-sociais img:hover {
+    opacity: 1;
+}
+
+
 
 /* CABEÇALHO  */
 
@@ -219,6 +228,10 @@ li {
 
     .chamada-autoras button:hover {
         background-color: #674582;
+    }
+
+    button a:hover {
+        color: white;
     }
 
     /* RODAPE  */

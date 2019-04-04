@@ -96,11 +96,16 @@ li {
     font-size: 1.2rem;
     
 }
-.navegacao__menu > a {
+.navegacao__menu a {
     margin-left: 1.3rem;
 }
-.menu__redes-sociais a {
-    margin-left: 1.3rem;
+
+.menu__redes-sociais img {
+    opacity: 0.6;
+}
+
+.menu__redes-sociais img:hover {
+    opacity: 1;
 }
 
 
@@ -226,6 +231,10 @@ li {
 
     button:hover {
         background-color: #674582;
+    }
+
+    button a:hover {
+        color: white;
     }
 
     /* RODAPE  */
