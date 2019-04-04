@@ -314,7 +314,16 @@ header {
 } */
 
 .perfil__priscila__foto {
-    height: 200px;
+
+    width: 200px;
+
+}
+
+@media(max-width: 768px){
+    .perfil__priscila__foto {
+        margin: 0 auto;
+    }
+
 }
 span{
     font-weight: bold;
