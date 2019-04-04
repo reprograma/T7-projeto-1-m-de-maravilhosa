@@ -104,7 +104,69 @@ nav ul>li{
         top: 18vh;
         text-align: center;
     }
+
 }
+
+@media (max-width: 420px){
+    /*menu*/
+    .navigation_lista, .navigation_media{
+     display: none;
+    }
+    .cabeçalho{
+        background:
+        linear-gradient(
+        rgba(103,69,130,0.30),
+        rgba(103,69,130,0.30)
+        ),    
+        url(../img/bg-banner-claro.png);
+        height: 50vh;
+        max-height: 21.25rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        position: relative;
+    }
+
+    .navigation_maravilhosas{
+       height: 5vh;
+    }
+
+    .menu_hamburger{
+        display: flex;
+    }
+    .nome{
+        color: white;
+        top: 28vh;
+        text-align: center;
+    }
+  
+    /*main*/
+    
+  .resumo2{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .sobre_autora{
+     text-align: center;
+  }
+     
+  /*Footer*/
+   .menu{
+       display:none;
+   }
+
+   .logo{
+       height: 10px;
+   }
+   .andressa{
+    height: 100px
+    }
+}
+   
 
 main{
     width: 100%;
@@ -113,16 +175,20 @@ main{
 /* Primeira Section */
 
 .conteudo{
-    width: 90vw;
+    width: 70%;
     margin: 0 auto;
+    display:flex;
+    justify-content: center;
 }
 
-.resumo {
+/* .resumo{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    margin-top: 3%;
+    width: 100%;
+} */
+
+.resumo h1{
+    text-align: center;
 }
 
 .resumo2{
@@ -131,18 +197,17 @@ main{
     justify-content: center;
 }
 
-
-.autora{
-    margin: 0 1.25rem;
-    margin-top: 2.5rem;
-}
+ /* .autora{
+     margin-top: 2.5rem; 
+    width: 40%;
+}   */
 
 .autora_img{
-    max-height: 30vh;
+    width:80%;
+    height: auto;
 }
 
 .sobre_autora{
-    width: 30%;
     font-family: 'Montserrat' ;
     text-transform: initial;
     text-align: left;
@@ -154,7 +219,7 @@ main{
 .sobre_autora p{
     padding-bottom: 10px;
     margin-top: 20px;
-    word-spacing: 3px;
+    /* word-spacing: 3px; */
 }
 
 .sobre_autora em{
@@ -193,7 +258,7 @@ ul>li a{
 .maravilhosas{
     margin-top: 4%;
     border-top: 2px solid #63458A;
-    width: 30%;
+    width: 40vw;
     padding: 4%;
 }
 
@@ -219,37 +284,36 @@ h3{
     height: auto;
 }
 
-.alunas1{
+.teste{
+    width: 100%;
     display: flex;
-    justify-content: center;
-    
+    flex-direction: column;
 }
 
-#alunas{
+.teste2{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+ #alunas{
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    width: 30vw;
-}
-
-#alunas li{
-    margin-right: 6.25rem;
-    background-color: #65478b;
-    border-radius: 0.625rem;
-    -webkit-border-radius: 0.625rem;
-    -moz-border-radius: 0.625rem;
-    -ms-border-radius: 0.625rem;
-    -o-border-radius: 0.625rem;
-}
+    display: flex;
+    list-style: none;
+} 
 
 .alunas-img{
-    max-height: 10vh;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    width: 60%;
+    max-height: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 0;
 }
 
 .btn{

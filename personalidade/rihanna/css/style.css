@@ -150,7 +150,11 @@ nav ul>li{
     .introdução{
         width: 100%;
     }
-
+    .conteudo{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
     /*Footer*/
    .menu{
        display:none;
@@ -173,7 +177,7 @@ main{
 }
 
 .conteudo{
-    width: 90vw;
+    width: 70%;
     margin: 0 auto;
 }
 
