@@ -41,6 +41,7 @@ align-items: center;
 
 *{
     margin: 0;
+    width: 100%;
 }
 
 .nav_menu{
@@ -73,7 +74,7 @@ width: 100%;
 .container1{
 display: flex;
 justify-content: center;
-background: url(../img/maju.jpg);
+background: url(../img/bg-banner-claro.png);
 height: 80vh;
 margin-top: 55.59px;
 background-repeat: no-repeat;
@@ -122,7 +123,11 @@ margin-left: 30px;
 padding: 30px;
 width:50%;
 line-height: 1.5rem;
+margin-top: 10px;
+margin-bottom: 40px;
 }
+
+
 
 .img_personalidade{
 max-width:201px;
@@ -153,13 +158,14 @@ padding-bottom:2%;
 .historia p{
     width: 100%;
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     
 }
 
 .historia h1{
     width: 100%;
+    text-align: center;
 }
 
 .titulo_historia{
@@ -178,6 +184,7 @@ color:#674584
 .flex_container{
     margin:0 auto;
     max-width: 960px;
+    margin-bottom: 80px;
 }
 
 .container2{
@@ -188,7 +195,7 @@ color:#674584
     padding: 0;
     color:#674584;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 60px;
     
 }
 
@@ -217,15 +224,16 @@ max-width: 30%
     margin-left: 20px
 } 
 .autora{
-    background-color:#C083B9;
+    text-decoration: none;
+    
     color:#674584;
     width: 100%;
     display: flex;
 }
 
-.teste{
-    background-color:#C083B9;
 
+a{
+    text-decoration: none;
 }
 
 
@@ -314,8 +322,32 @@ letter-spacing:4px;
     padding: 10px;
 }
 
-    
+.autora_maravilhosas{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
+h2{
+    text-align: center;
+    color: #674584
+}
+    
+#linha{
+    border: 1px solid #674584;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.maravilhosas__perfil{
+
+}
+
+.p{
+    text-decoration: none;
+}
 
 
 
@@ -340,6 +372,7 @@ letter-spacing:4px;
 
 .img-responsive{
     max-width: 200px;
+    text-decoration: none;
 }
 
 @media(max-width:768px){
@@ -358,3 +391,10 @@ letter-spacing:4px;
     }
 }
 
+@media(max-width:768px){
+    .autora_maravilhosas{
+    display: flex;
+    flex-direction: column;
+
+    }
+}
