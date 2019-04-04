@@ -219,12 +219,18 @@ h3{
     height: auto;
 }
 
+.alunas1{
+    display: flex;
+    justify-content: center;
+    
+}
+
 #alunas{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    width: 100%;
+    width: 30vw;
 }
 
 #alunas li{
@@ -235,11 +241,10 @@ h3{
     -moz-border-radius: 0.625rem;
     -ms-border-radius: 0.625rem;
     -o-border-radius: 0.625rem;
-
 }
 
 .alunas-img{
-    max-height: 20vh;
+    max-height: 10vh;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -248,6 +253,11 @@ h3{
 }
 
 .btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn--rosa{
     margin-top: 3%;
     border: none;
     background-color: #C083B9;
