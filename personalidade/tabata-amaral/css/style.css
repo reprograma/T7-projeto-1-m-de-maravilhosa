@@ -1,11 +1,11 @@
 html {
     font-size: 16px;
-  }  
+}
 
 * {
     margin: 0;
     box-sizing: border-box;
-    }
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -15,26 +15,22 @@ body {
 
 .navegacao {
     background-color: #674582;
-    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
     width: 100%;
     position: fixed;
-    padding: 1%;
+    padding: 1.5rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;      
+    justify-content: space-evenly;
 }
 
 .navegacao__logo {
     width: 15vw;
 }
 
-.navegacao__links {
-    margin-right: 20px;
-}
-
 .menu__navegacao {
     display: flex;
-    align-items: center;    
+    align-items: center;
 }
 
 .navegacao__links a {
@@ -42,21 +38,17 @@ body {
     text-transform: uppercase;
     font-size: 0.8462rem;
     color: #ffffff;
-    margin: 10px;
+    margin-right: 0.875rem;
 }
 
 .navegacao__redes-sociais a {
-    margin: 5px;
+    margin: 0.625rem;
 }
 
 /* Cabeçalho */
 
 .cabecalho {
-    background: linear-gradient(
-        rgba(103, 69, 130, 0.56), 
-        rgba(103, 69, 130, 0.56)
-        ),url(../img/tabata-bg.jpg);
-    background-size: cover;
+    background: linear-gradient( rgba(103, 69, 130, 0.56), rgba(103, 69, 130, 0.56)), url(../img/tabata-bg.jpg);
     background-position: top;
     min-height: 80vh;
     display: flex;
@@ -90,8 +82,8 @@ main {
 .apresentacao__img-perfil {
     display: inline-block;
     width: 10%;
-    border-radius: 6%; 
-    margin: 0 10px; 
+    border-radius: 6%;
+    margin: 0 10px;
 }
 
 .apresentacao__trecho {
@@ -108,7 +100,7 @@ main {
 }
 
 .apresentacao__texto {
-    font-size: 0.9375rem;
+    font-size: 1rem;
 }
 
 .conteudo_citacao {
@@ -136,7 +128,7 @@ main {
 
 .historia__texto {
     margin-top: 2%;
-    font-size: 0.9375rem;
+    font-size: 1rem;
 }
 
 .historia__foto {
@@ -151,7 +143,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3%; 
+    margin-top: 3%;
 }
 
 .autora__foto {
@@ -186,10 +178,10 @@ main {
 
 /* Rodapé */
 
- .rodape {
+.rodape {
     display: flex;
     flex-direction: column;
- }
+}
 
 .rodape-main {
     background-color: #323534;
@@ -199,7 +191,6 @@ main {
     padding: 10px;
 }
 
-
 .rodape__links {
     display: flex;
     flex-direction: column;
@@ -207,16 +198,15 @@ main {
     font-size: 0.75rem;
 }
 
-
 .rodape__links a {
     color: #ffffff;
     text-decoration: none;
     margin: 2px 0;
 }
 
- .rodape__logo {
-     width: 16%;
- }
+.rodape__logo {
+    width: 16%;
+}
 
 .rodape-final {
     background-color: #292a2a;
@@ -234,4 +224,21 @@ main {
     color: #ffffff;
     text-decoration: none;
     font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    
+    .cabecalho {
+        background-position: top;
+        background-size: cover;
+        min-height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+        font-weight: 900;
+        
+    }
 }
