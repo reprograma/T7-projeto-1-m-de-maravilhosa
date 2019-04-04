@@ -1,0 +1,243 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
+    color: #674582;
+}
+
+hr {
+    margin: 50px auto;
+    width: 300px;
+    
+}
+
+.navegacao {
+    width: 100%;
+    background-color: #674582;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    align-items: center;
+    top: 0;
+}
+
+.navegacao__barra {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+}
+
+.navegacao__logo{
+    justify-content: left
+}
+
+.logo {
+    width: 200px;
+}
+
+.navegacao__menu {
+    list-style: none; 
+    display: flex;
+}
+
+.navegacao__menu a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+
+.menu__icone a {
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.cabecalho {
+    background: linear-gradient(
+        rgba(103, 69, 130, 0.25), 
+        rgba(103, 69, 130, 0.40)
+      ),url(../img/tst3.jpg);
+    background-size: cover;
+    min-height: 500px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-size: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.cabecalho__titulo {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.conteudo__titulo {
+     margin: 30px;
+
+}
+
+.conteudo h2 {
+    text-align: center;
+    margin-left: 100px;
+}
+
+.introducao {
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto__introducao {
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.texto__introducao span {
+    font-weight: bold;
+
+}
+
+.foto__introducao {
+    width: 200px;
+    height: 200px;
+}
+
+.trajetoria {
+    margin: 30px 0 50px 0;
+}
+
+.trajetoria h2 {
+    text-align: center;
+    margin: 0;
+}
+.foto__trajetoria {
+    width: 100%;
+    margin:40px 0;
+}
+
+/* .h2 {
+    text-align: center;
+} */
+.demais__autoras {
+    text-align: center;
+    margin: 0
+}
+
+.demais__autoras img {
+    width: 110px;
+    border-radius: 5px;
+}
+
+.icone__quadrado {
+    border-radius: 5px;
+    background-color: #674582;
+    height: 110px;
+}
+
+.icone__quadrado p {
+    margin: 0;
+    font-size: 12px;
+    color: black;
+}
+
+.demais__autoras p {
+    text-align: center;
+}
+
+.icone__img {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+}
+
+
+.botao a {
+    text-decoration: none;
+    background-color: #C083B9;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.rodape {
+    width: 100%;
+    background-color: #323534;
+}
+
+.rodape__principal {
+    width: 100%;
+    display:  flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    
+   
+}
+
+
+.rodape__home {
+    list-style: none;  
+    text-align: center;
+}
+
+.rodape__home a {
+    text-decoration: none;
+    color: white;
+}
+
+.foto__rodape img {
+    width: 200px;
+}
+
+.logo__facereprograma {
+    width: 10px;
+    padding: 3px;
+}
+
+.logo__facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__urlface {
+    color: white;  
+}
+
+.logo__facebook a {
+    text-decoration: none;
+} 
+
+.rodape__secundario {
+    width: 100%;
+    text-align: center;
+    background-color: #2e302f;
+    padding: 10px;
+    
+}
+
+.rodape__secundario p {
+    margin: 0;
+    color: white;
+    font-size: 10px;
+}
