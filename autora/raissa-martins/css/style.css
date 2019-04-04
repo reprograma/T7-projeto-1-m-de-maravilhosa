@@ -39,6 +39,10 @@ h3 {
     background-color: #674582;
     padding: 10px;
     width: 100%;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    position: fixed;
+    z-index: 99;
+    top: 0;
 }
 
 .logo {
@@ -55,6 +59,7 @@ h3 {
     align-items: center;
     text-align: center;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 .navegacao__redes-sociais a {
@@ -84,13 +89,16 @@ h3 {
     background-size: cover;
     background-position: center;
     height: 400px;
+    margin-top: 79px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .banner__titulo {
     text-align: center;
     font-weight: bold;
     margin: 0 auto;
-    padding-top: 330px;
+    margin-bottom: 15px;
     font-size: 2.5rem;
     color: #ffffff;
 }
@@ -111,24 +119,36 @@ h3 {
     margin: 40px 0;
 }
 
-/* .conteudo__perfil > img {
-    border-radius: 10px;
-} */
+.conteudo h3 {
+    text-align: center;
+    margin-top: 40px;
+}
 
 .paragrafo {
     width: 70%;
     margin-left: 45px;
 }
 
-/* **** conteudo__citacao **** */
+.paragrafo__perfil p {
+    margin-bottom: 28px;
+}
 
-.conteudo__citacao {
-    border: 1px solid #674582;
-    padding: 50px;
-    line-height: 40px;
-    font-size: 14px;
+.paragrafo__perfil span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.paragrafo__perfil a {
     color: #674582;
-    margin-bottom: 45px;
+    font-weight: bold;
+}
+
+/* **** conteudo__linha **** */
+
+.conteudo__linha {
+    border-bottom: 1px solid #674582;
+    width: 30%;
+    margin: 80px auto;
 }
 
 /* **** conteudo__historia **** */
@@ -137,44 +157,53 @@ h3 {
     background: url(../img/bg-banner-claro.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 -100px;
+    /* background-position: 0 -100px; */
+    background-position: center;
+    /* height: 350px; */
     height: 350px;
-    margin: 40px 0;
+    margin: 40px 0 20px 0;
 }
 
-/* **** conteudo__autora **** */
+.conteudo__historia legend {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    color: #323534;
+    margin-bottom: 40px;
 
-.conteudo__autora {
-    width: 100%;
-    background-color: #e4b7e5;
-    margin: 45px 0;
 }
 
-.conteudo__autora-container {
-    width: 550px;
+/* **** conteudo__maravilhosas **** */
+
+.conteudo__maravilhosas {
+    margin-bottom: 45px;
 }
 
-.conteudo__autora-paragrafo {
-    font-weight: bold;
-    color: #674582;
-    text-align: left;
+.maravilhosas__imagens {
+    justify-content: space-between;
 }
 
-.dflex-colunm {
+.maravilhosas__imagens div {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    margin-left: 50px;
+    justify-content: space-around;
 }
 
-.conteudo__autora-github {
-    font-weight: bold;
-    color: #674582;
+.maravilhosas__imagens img {
+    width: 120px;
+    background-color: #674582;
+    border-radius: 5%;
+}
+
+.maravilhosas__imagens p {
+    margin-top: 8px;
 }
 
 /* **** btn **** */
 
 .btn {
-    width: 216px;
+    width: 267px;
     margin: 0 auto;
 }
 
@@ -185,7 +214,7 @@ h3 {
     padding: 10px 25px;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: #e4b7e5;
+    background-color:  #C083B9;
     font-family: Montserrat;
     font-weight: bold;
     font-size: 18px;
@@ -244,12 +273,12 @@ h3 {
         display: none;
     }
 
-    .conteudo__historia-imagem {
-        background-position: top;
-    }
+    /* .conteudo__historia-imagem {
+        background-position: center;
+    } */
 
     .rodape__cc {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
@@ -295,7 +324,11 @@ h3 {
         margin: 0;
     }
 
-    .paragrafo__perfil > h3 {
+    .foto {
+        margin-bottom: 40px;
+    }
+
+    h3 {
         text-align: center;
         margin-top: 45px;
         font-size: 25px;
@@ -305,10 +338,14 @@ h3 {
         font-size: 20px;
     }
 
-    .conteudo__historia > h3 {
+    .paragrafo__perfil a {
+        font-size: 20px;
         text-align: center;
-        margin-top: 45px;
-        font-size: 25px;
+    }
+
+    .paragrafo__perfil-links {
+        width: 92%;
+        margin: 0 auto;
     }
 
     .conteudo__historia > p {
@@ -324,5 +361,10 @@ h3 {
 
     .dflex-colunm p {
         margin-bottom: 8px;
+    }
+
+    .paragrafo__perfil-links {
+        display: flex;
+        flex-direction: column;
     }
 }

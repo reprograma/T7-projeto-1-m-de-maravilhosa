@@ -39,7 +39,10 @@ h3 {
     background-color: #674582;
     padding: 10px;
     width: 100%;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
     position: fixed;
+    z-index: 99;
+    top: 0;
     
 }
 
@@ -57,6 +60,7 @@ h3 {
     align-items: center;
     text-align: center;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 .navegacao__redes-sociais a {
@@ -84,9 +88,11 @@ h3 {
     background: linear-gradient(rgba(103, 69, 130, 0.56), rgba(103, 69, 130, 0.56)), url(../img/rachel-maia-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* min-height: 60vh; */
+    /* min-height: 80vh; */
     height: 400px;
-    /* padding-top: 79.59px; */
+    margin-top: 79px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .banner__titulo {
@@ -94,7 +100,8 @@ h3 {
     text-transform: uppercase;
     font-weight: bold;
     margin: 0 auto;
-    padding-top: 330px;
+    margin-bottom: 15px;
+    /* padding-top: 330px; */
     font-size: 2.5rem;
     color: #ffffff;
 }
@@ -189,7 +196,7 @@ h3 {
     padding: 10px 25px;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: #e4b7e5;
+    background-color:  #C083B9;
     font-family: Montserrat;
     font-weight: bold;
     font-size: 18px;
@@ -253,7 +260,7 @@ h3 {
     }
 
     .rodape__cc {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
