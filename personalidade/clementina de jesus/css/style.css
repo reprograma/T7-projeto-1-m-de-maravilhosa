@@ -10,7 +10,8 @@ html {
 
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    margin: 0;
+    color: #63458a;
+    font-size: 15px;
 }
 
 nav, main, footer {
@@ -31,8 +32,10 @@ nav, main, footer {
     padding: 1.5rem;
     z-index: 99;
     position: fixed;
+    top: 0;
     width: 100%;
-}
+    height: 100px;
+}   
 
 .navegacao__box {
     display: flex;
@@ -53,12 +56,14 @@ nav, main, footer {
     width: 600px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .navegacao__nav {
     width: 260px;
     display: flex;
     flex-direction: row;
+    font-size: 10px;
 }
 
 /* .navegacao__nav > a {
@@ -77,8 +82,20 @@ nav, main, footer {
 }
 
 .banner {
-    background: url(../../img/Clementina-de-Jesus-Blog-Jornal-do-Brasil.jpg);
+    background: linear-gradient(
+        rgba(103, 69, 130, 0.56), 
+        rgba(103, 69, 130, 0.56)
+      ),url(../img/clementinabanner.jpg);
+    margin-top: 100px;
+    min-height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
 }
+
 .flex {
     display: flex;
     justify-content: space-between;
@@ -94,4 +111,89 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.titulo {
+    font-size: 35px;
+    color: aliceblue;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    margin: 5vh 0;
+}
+
+.titulo-intro {
+    text-align: center;
+}
+.introducao {
+    display: flex;
+    align-items: center;
+    
+}
+
+.img-perfil {
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+
+.citacao {
+    border: 1px solid #674582;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin: 5vh 0;
+
+}
+
+.principal p, .img-texto {
+
+margin-bottom: 10px;
+width: 100%;
+}
+
+.autora {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.img-autora {
+    width: 200px;
+}
+
+.cor-autora {
+    background-color: #e4b7e5;
+    margin: 5vh 0;
+    font-weight: bold;
+}
+
+.link {
+    font-weight: bold;
+    background-color: #e4b7e5;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 10px;
+    text-transform: uppercase;
+
+
+
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 5vh 0;
+    
+    
+
 }
