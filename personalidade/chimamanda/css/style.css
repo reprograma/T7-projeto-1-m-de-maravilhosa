@@ -1,417 +1,432 @@
 * {
-    box-sizing: border-box;
+     box-sizing: border-box;
    }
 
-   body {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
-        margin: 0;
-        color: #63458A;
+     body {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 14px;
+          margin: 0;
+          color: #63458A;
    }
 
-   h1 {
-        margin-top: 2%;
-        margin-bottom: 4%;
-        font-family: 'Roboto Slab', serif;
+     h1 {
+          margin-top: 2%;
+          margin-bottom: 4%;
+          font-family: 'Roboto Slab', serif;
    }
 
-   a {
-    text-decoration: none;
-    color: #ffffff;
+     a {
+          text-decoration: none;
+          color: #ffffff;
    }
 
-   /* Menu */
-   .navegacao {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 10px;
-        background-color: #674582;
+/* Menu */
+
+     .navegacao {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          padding: 10px;
+          background-color: #674582;
    }
 
-   .container_logo {
-        display: flex;
-        align-items: center;
+     .container_logo {
+          display: flex;
+          align-items: center;
    }
 
-   .logo_mulheres {
-        width: 46%;
+     .logo_mulheres {
+          width: 46%;
    }
 
-   .menu {
-        padding: 0px;
-        list-style: none;
-        color: #ffffff;
-        text-transform: uppercase;
+     .menu {
+          padding: 0px;
+          list-style: none;
+          color: #ffffff;
+          text-transform: uppercase;
    }
 
-   .menu > a {
-        margin-left: 30px;
-        
+     .menu > a {
+          margin-left: 30px;
    }
 
-   .redes {
-        display: flex;
-        justify-content: space-around;
+     .redes {
+          display: flex;
+          justify-content: space-around;
    }
 
-   .logo_redes {
-        margin-left: 15px;
+     .logo_redes {
+          margin-left: 15px;
    }
 
-   /* Menu responsivo */
+/* Menu responsivo */
 
    @media (min-width: 1024px) {
-    .navegacao-hamburguer {
-        display: none;
+     .navegacao-hamburguer {
+          display: none;
     }
 
-   .menu, .redes {
-       display: flex;
-       justify-content: space-around;
+     .menu, .redes {
+          display: flex;
+          justify-content: space-around;
    }
 }
 
-   @media (max-width: 768px) {
-    .menu, .redes {
-        display: none;
+     @media (max-width: 768px) {
+     .menu, .redes {
+          display: none;
     }
     
     .navegacao-hamburguer {
-     display: flex;
+          display: flex;
     }
 }
  
-   /* Cabeçalho */
-   .cabecalho {
-        display: flex;
-        width: 100%;
-        align-items: flex-end;
-        justify-content: center;
-        color:#ffffff;
-        font-weight: 800;
-        font-size: 40px;
-        text-transform: uppercase;
-        min-height: 70vh;
-        height: 19,53124%;
-        background: linear-gradient(
-        rgba(103, 69, 130, 0.56),
-        rgba(1, 0, 2, 0.75)
-        ),url(../img/img-header.jpg);
-        background-size: cover;
-        background-position: center 40%;
-        background-repeat: no-repeat;
+/* Cabeçalho */
+
+     .cabecalho {
+          display: flex;
+          width: 100%;
+          align-items: flex-end;
+          justify-content: center;
+          color:#ffffff;
+          font-weight: 800;
+          font-size: 40px;
+          text-transform: uppercase;
+          min-height: 70vh;
+          height: 19,53124%;
+          background: linear-gradient(
+          rgba(103, 69, 130, 0.56),
+          rgba(1, 0, 2, 0.75)
+          ),url(../img/img-header.jpg);
+          background-size: cover;
+          background-position: center 40%;
+          background-repeat: no-repeat;
    }
 
-   /* Cabeçalho responsivo */
-   @media (max-width: 1024px) {
-    .cabecalho {
-        font-size: 30px;
-    }
+/* Cabeçalho responsivo */
+
+     @media (max-width: 1024px) {
+          .cabecalho {
+               font-size: 30px;
+          }
    }
 
-   @media (max-width: 768px) {
-    .cabecalho {
-        font-size: 30px;
-    }
+     @media (max-width: 768px) {
+          .cabecalho {
+               font-size: 30px;
+          }
    }
 
-   @media (max-width: 480px) {
-    .cabecalho {
-        font-size: 20px;
-    }
+     @media (max-width: 480px) {
+          .cabecalho {
+               font-size: 20px;
+          }
    }
 
-   @media (max-width: 320px) {
-    .cabecalho {
-        font-size: 10px;
-    }
+     @media (max-width: 320px) {
+          .cabecalho {
+               font-size: 10px;
+          }
    }
 
-   /* Conteúdo */
-   .container {
-        text-align: center;
-   }
+/* Conteúdo */
 
-   .container_personalidade {
-        display:flex;
-        flex-direction: column;
-        text-align: center;
-        margin-top: 4%;
-   }
+     .container {
+          text-align: center;
+     }
 
-   .container_resumo {
-        display: flex;
-        align-items: center;
-        width: 60%;
-        justify-items: space-between;
-        margin: 0 auto;
-        text-align: left;
-        margin-bottom: 4%;
-    }
+     .container_personalidade {
+          display:flex;
+          flex-direction: column;
+          text-align: center;
+          margin-top: 4%;
+     }
 
-   .container_resumo > p {
-        margin-left: 5%;
-   }
+     .container_resumo {
+          display: flex;
+          align-items: center;
+          width: 60%;
+          justify-items: space-between;
+          margin: 0 auto;
+          text-align: left;
+          margin-bottom: 4%;
+     }
 
-   .foto_personalidade {
-        width: 50%;
-   }
+     .container_resumo > p {
+          margin-left: 5%;
+     }
 
-   .container_texto {
-        width: 50%;
-        text-align: left;
-   }
+     .foto_personalidade {
+          width: 50%;
+     }
 
-   .citacao {
-        display: block;
-        margin: 0 auto;
-        width: 60%;
-        text-align: center;
-        font-weight: bold;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        border: 1px solid #292A2A;
-        margin-bottom: 2%;
-   }
+     .container_texto {
+          width: 50%;
+          text-align: left;
+     }
 
-   .resumo_personalidade {
-        width: 400px;
-   }
+     .citacao {
+          display: block;
+          margin: 0 auto;
+          width: 60%;
+          text-align: center;
+          font-weight: bold;
+          padding-top: 2%;
+          padding-bottom: 2%;
+          border: 1px solid #292A2A;
+          margin-bottom: 2%;
+     }
 
-   .historia {
-        display: block;
-        width: 60%;
-        margin: 0 auto;
-        text-align: left;
-        margin-bottom: 10%;
-   }
+     .resumo_personalidade {
+          width: 400px;
+     }
 
-   .foto_conteudo {
-        width: 100%;
-        padding-top: 3%;
-   }
+     .historia {
+          display: block;
+          width: 60%;
+          margin: 0 auto;
+          text-align: left;
+          margin-bottom: 10%;
+     }
 
-   .legenda {
-    font-size: 11px;
-   }
+     .foto_conteudo {
+          width: 100%;
+          padding-top: 3%;
+     }
 
-   /* Conteúdo responsivo */
-   @media (max-width: 768px) {
-       .foto_personalidade {
-           display: block;
-           margin: 0 auto;
-       }
+     .legenda {
+          font-size: 11px;
+     }
 
-       .citacao {
-            display: block;
-            width: 80%;
-            padding: 5%;
-       }
+/* Conteúdo responsivo */
 
-       .historia {
-        display: block;
-        width: 80%;
-        text-align: justify;
-       }
+     @media (max-width: 768px) {
+          .foto_personalidade {
+               display: block;
+               margin: 0 auto;
+          }
 
-       .container_titulo {
-        display: block;
-        width: 80%;
-        margin: 0 auto;
-    }
-   }
+          .citacao {
+               display: block;
+               width: 80%;
+               padding: 5%;
+          }
 
-   @media (max-width: 480px) {
-    .container_resumo {
-         display: block;
-         width: 80%;
-         text-align: justify;
-    }
+          .historia {
+               display: block;
+               width: 80%;
+               text-align: justify;
+          }
 
-    .foto_personalidade {
-        display: block;
-        margin: 0 auto;
-    }
+          .container_titulo {
+               display: block;
+               width: 80%;
+               margin: 0 auto;
+          }
+     }
 
-    .citacao {
-         display: block;
-         width: 80%;
-         padding: 5%;
-    }
+     @media (max-width: 480px) {
+          .container_resumo {
+               display: block;
+               width: 80%;
+               text-align: justify;
+          }
 
-    .historia {
-     display: block;
-     width: 80%;
-     text-align: justify;
-    }
+          .foto_personalidade {
+               display: block;
+               margin: 0 auto;
+          }
 
-    .container_titulo {
-        display: block;
-        width: 80%;
-        margin: 0 auto;
-    }
-}
+          .citacao {
+               display: block;
+               width: 80%;
+               padding: 5%;
+          }
 
-@media (max-width: 320px) {
-    .container_resumo {
-         display: block;
-         text-align: justify;
-    }
+          .historia {
+               display: block;
+               width: 80%;
+               text-align: justify;
+          }
 
-    .foto_personalidade {
-        display: block;
-        margin: 0 auto;
-    }
+          .container_titulo {
+               display: block;
+               width: 80%;
+               margin: 0 auto;
+          }
+     }
 
-    .citacao {
-         display: block;
-         width: 80%;
-         padding: 5%;
-    }
+     @media (max-width: 320px) {
+          .container_resumo {
+               display: block;
+               text-align: justify;
+          }
 
-    .historia {
-     display: block;
-     width: 80%;
-     text-align: justify;
-    }
+          .foto_personalidade {
+               display: block;
+               margin: 0 auto;
+          }
 
-    .container_titulo {
-        display: block;
-        width: 80%;
-        margin: 0 auto;
-    }
-}
+          .citacao {
+               display: block;
+               width: 80%;
+               padding: 5%;
+          }
+
+          .historia {
+               display: block;
+               width: 80%;
+               text-align: justify;
+          }
+
+          .container_titulo {
+               display: block;
+               width: 80%;
+               margin: 0 auto;
+          }
+     }
 
 /* Botâo */
-   .btn {
-        width: 170px;
-        height: 40px;
-        border: none;
-        color: #f8f9fa;
-        background-color: #C083B9;
-        text-transform: uppercase;
-        border-radius: 10px;
-        margin-top: 6%;
-        margin-bottom: 6%;
-        text-align: center;
-        font-weight: bold;
-        font-size: 13px;
-   }
 
+     .btn {
+          width: 170px;
+          height: 40px;
+          border: none;
+          color: #f8f9fa;
+          background-color: #C083B9;
+          text-transform: uppercase;
+          border-radius: 10px;
+          margin-top: 6%;
+          margin-bottom: 6%;
+          text-align: center;
+          font-weight: bold;
+          font-size: 13px;
+     }
 
 /* Autora */
-   .autora {
-        background-color: #d3add0;
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: left;
-        justify-content: center;
-        font-size: 14px;
-   }
 
-   .nome_autora {
-        margin-left: 3%;
-   }
+     .autora {
+          background-color: #d3add0;
+          display:flex;
+          flex-direction: row;
+          align-items: center;
+          text-align: left;
+          justify-content: center;
+          font-size: 14px;
+     }
 
-   .foto_autora {
-        width: 150px;
-   }
+     .nome_autora {
+          margin-left: 3%;
+     }
 
-   /* Rodapé */
-   .rodape {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: #323534;
-        margin-bottom: 0;
-        color: #e7e5e5;
-        min-height: 20vh;
-        height: 60px;
-   }
+     .foto_autora {
+          width: 150px;
+     }
 
-   .rodape-escuro {
-        display: flex;
-        background-color: #292A2A;
-        width: 100%;
-        height: 50px;
-        justify-content: center;
-        align-items: center;
-        color: #e7e5e5;
-        font-size: 11px;
-   }
+/* Rodapé */
 
-   .contato {
-        display: flex;
-        text-align: center;
-        width: 20%;
-   }
-   
-   .logo_facebook {
-        width: 12px;
-   }
-
-   .logo_mulheres--rodapé {
-        width: 200px;
-   }
-
-   .links ul, li {
-        display: block;
-        width: 100%;
-        text-align: center;
-   }
-
-   /* Rodapé responsívo */
-
-   @media (max-width: 768px) {
-       .rodape {
-           display: block;
-           width: 100%;
-           height: 30%;
-           padding: 2%;
-           margin: 0 auto;
-       }
-
-       .logo_rodape, .contato {
-            display: block;
-            width: 100%;
-            text-align: center;
-       }   
-   }
-
-   @media (max-width: 480px) {
-    .rodape {
-        display: block;
-        width: 100%;
-        height: 30%;
-        padding: 2%;
-        margin: 0 auto;
-    }
-
-    .logo_rodape, .contato {
-         display: block;
-         width: 100%;
-         text-align: center;
-    }
-}
-
-@media (max-width: 320px) {
-    .rodape {
-        display: block;
-        width: 100%;
-        height: 30%;
-        padding: 2%;
-        margin: 0 auto;
-    }
-
-    .rodape-escuro {
-        text-align: center;
-    }
+     .rodape {
+          display: flex;
+          width: 70%;
+          justify-content: space-evenly;
+          align-items: center;
+          background-color: #323534;
+          color: #e7e5e5;
+          min-height: 20vh;
+          height: 60px;
+          margin: 0 auto;
+     }
+  
+     .bg__footer {
+          width: 100%;
+          background-color: #323534;  
+     }
  
-    .logo_rodape, .contato {
-         display: block;
-         width: 100%;
-         text-align: center;
-    }  
-}
+     .rodape-escuro {
+          display: flex;
+          background-color: #292A2A;
+          width: 100%;
+          height: 50px;
+          justify-content: center;
+          align-items: center;
+          color: #e7e5e5;
+          font-size: 11px;
+     }
+  
+     .contato {
+          display: flex;
+          text-align: center;
+          width: 20%;
+          padding: 0;
+          justify-content: center;
+     }
+     
+     .logo_facebook {
+          width: 12px;
+     }
+  
+     .logo_mulheres--rodapé {
+          width: 200px;
+     }
+  
+     .links ul, li {
+          padding: 0;
+          display: block;
+          width: 100%;
+          text-align: center;    
+     }
+  
+     /* Rodapé responsívo */
+  
+     @media (max-width: 768px) {
+         .rodape {
+               display: block;
+               width: 100%;
+               height: 30%;
+               padding: 2%;
+               margin: 0 auto;
+          }
+  
+         .logo_rodape, .contato {
+               display: block;
+               width: 100%;
+               text-align: center;
+          }   
+     }
+  
+     @media (max-width: 480px) {
+          .rodape {
+               display: block;
+               width: 100%;
+               height: 30%;
+               padding: 2%;
+               margin: 0 auto;
+          }
+  
+          .logo_rodape, .contato {
+               display: block;
+               width: 100%;
+               text-align: center;
+          }
+     }
+  
+     @media (max-width: 320px) {
+          .rodape {
+               display: block;
+               width: 100%;
+               height: 30%;
+               padding: 2%;
+               margin: 0 auto;
+          }
+  
+          .rodape-escuro {
+               text-align: center;
+          }
+   
+          .logo_rodape, .contato {
+               display: block;
+               width: 100%;
+               text-align: center;
+          }  
+     }
