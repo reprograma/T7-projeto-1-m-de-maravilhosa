@@ -17,6 +17,7 @@ p {
 
 a {
     text-decoration: none;
+    color: #63458A;
 }
 
 li {
@@ -92,38 +93,41 @@ li {
     background: linear-gradient(
         rgba(103, 69, 130, 0.56), 
         rgba(103, 69, 130, 0.56)
-      ),url("../img/plath_0.jpg");
+      ),url("../img/WhatsApp\ Image\ 2019-03-15\ at\ 17.24.07.jpeg");
     min-height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 8%;
+    background-position-y: 20%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 .cabecalho__titulo {
-    color:  rgb(255, 255, 255);
-    text-transform: uppercase;
+    color: rgb(255, 255, 255);
 }
 
-/*RESUMO*/
-
-.resumo {
+/* AUTORA */
+.autora {
     margin-top: 5%;
 }
 
-.resumo__titulo {
-    text-align: left;
-    font-family: 'Roboto Slab';
-    font-size: 1.56rem;
+.autora__titulo {
+    text-align: center;
+    font-family:'Roboto Slab';
+    margin-bottom: 1%;
 }
 
-.resumo__bloco-div {
+.autora__bloco {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.resumo__foto {
+.autora__paragrafo {
+    margin-bottom: 1rem;
+}
+
+.autora__imagem  {
     max-width: 100%;
     height: auto;
     display: block;
@@ -131,26 +135,39 @@ li {
     width: 200px;
 }
 
-/* QUOTE */
-.quote {
-    margin: 5.29% 0;
-    border: 1px solid #63458A;
-
+.texto__sylvia-plath {
+    font-weight: bold;
+    font-style: italic;
 }
 
-.quote__paragrafo {
-    text-align: center;
-    color: #63458A;
+.autora__redes-sociais {
+    font-weight: bold;
 }
 
-/* HISTÓRIA */
-.historia__titulo {
+/* TRAÇO */
+.traco {
+    margin-top: 7%;
+}
+.traco-div {
+    margin-top: 4%;
+    border-top: 2px solid #63458A;
+    width: 30%;
+    margin: 0 auto;
+}
+
+/* SOBRE O M DE MARAVILHOSA */
+.m-de-maravilhosa__bloco {
+    margin-top: 5%;
+}
+
+.m-de-maravilhosa__titulo {
     color: #63458a;
     font-family: 'Roboto Slab';
-    font-size: 1.56rem;
+    text-align: center;
+    margin: 0;
 }
 
-.historia__imagem {
+.m-de-maravilhosa__imagem {
     margin-bottom: 10px;
     width: 100%;
     max-width: 100%;
@@ -158,37 +175,57 @@ li {
     display: block;
 }
 
-.historia__paragrafo {
-    margin: 2.15% 0;
+.foto__legenda {
+    color: #6D6D6D;
+    font-size: 80%;
+    font-style: italic;
+    text-align: center;
 }
 
-/* PARTE DA AUTORA */
-.autora {
-    background-color: #E4B7E5;
-    margin-top: 1.74%;
-    margin-bottom: 1.74%;
+.m-de-maravilhosa__paragrafo {
+    margin: 4.15% 0;
 }
 
-.autora__conteudo {
+/* OUTRAS MARAVILHOSAS */
+.outras-maravilhosas {
+    margin-top: 2.5%;
+}
+
+.outras-maravilhosas__titulo {
+    color: #63458a;
+    font-family: 'Roboto Slab';
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.outra-maravilhosa__img {
+    width: 100%;
+    margin-top: 7%;
+    height: auto;
+}
+.bloco-de-maravilhosas {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
+    align-content: center;
 }
 
-.autora__imagem {
-    margin-right: 6.58%;
-    width: 13%;
-    max-width: 100%;
-    height: auto;
-    display: block;
+.maravilhosa-bloco {
+    max-width: 150px;
+    margin-right: 5rem;
 }
 
-.autora__infos h5, a {
-    margin-bottom: 5.93%;
-    margin-top: 5.93%;
-    color: #63458A;
+.maravilhosa-bloco-3 {
+    margin-right: 0;
+}
+
+.fundo-foto {
+    background-color: #63458a;
+    border-radius: 10%;
+}
+
+.maravilhosa-bloco p {
+    text-align: center;
+    color: #000000;
 }
 
 /* BOTÃO */
@@ -203,7 +240,6 @@ li {
 
 .botao__texto {
     color: rgb(255, 255, 255);
-    text-transform: uppercase;
     font-size: 0.875rem;
     font-family: 'Montserrat';
     font-weight: bold;
@@ -273,7 +309,6 @@ li {
     margin-bottom: 0;
 }
 
-
 /* RESPONSIVO 1*/
 @media (max-width: 1250px) {
     html {
@@ -283,10 +318,6 @@ li {
     .container {
         width: 60%;
         margin: 0 auto;
-    }
-/* HEADER */
-    .cabecalho {
-        background-position-y: 30px;
     }
 
 /* RODAPÉ */
@@ -311,16 +342,10 @@ li {
         width: 35%;
     }
 
-    /* PARTE DA AUTORA */
-    .autora__conteudo {
-        width: 90%;
-    }
-}
-
 /* RESPONSIVO 3: TABLET DE PÉ */
 @media (max-width: 835px) {
     html {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .container {
@@ -336,7 +361,6 @@ li {
         display: none;
     }
 
-
     .logo__menu, .menu-responsivo-img {
         display: flex;
         justify-content: center;
@@ -350,41 +374,30 @@ li {
         width: 70%;
     }
 
-    .cabecalho {
-        background-position-y: 50px;
-    }
+    .autora__titulo {
+        margin-bottom: 5%;
 
-    /* RESUMO */
-    .resumo__foto {
-        width: 150px;
-    }
-
-    .resumo__foto {
-        border-radius: 150px;
-    }
-
-    /* PARTE DA AUTORA */
-    .autora {
-        margin-top: 3%;
-    }
-
-    .autora__conteudo {
-        width: 100%;
-        text-align: center;
     }
 
     .autora__imagem {
-        width: 15%;
-        margin-right: 0;
+        width: 150px;
+        border-radius: 80px;
     }
 
-    .autora__infos {
-        width: 30%;
+    /* OUTRAS MARAVILHOSAS */
+    .fundo-foto, .outra-maravilhosa__img {
+        width: 80%;
+    }
+
+    .outra-maravilhosa__img {
+        margin: 0 9%;
+        margin-top: 5.5%;
     }
 
     /* BOTÃO */
     .botao__texto {
-        font-size: 10px;
+        font-size: 13px;
+        padding: 1% 2.5%;
     }
 
     /* RODAPÉ */
@@ -394,10 +407,9 @@ li {
 }
 
 /* RESPONSIVO 5*/
-@media (max-width: 576px) {
-
+@media (max-width: 650px) {
     html {
-        font-size: 13px;
+        font-size: 15px;
         line-height: 22px;
     }
 
@@ -406,37 +418,32 @@ li {
         padding: 1%;
     }
 
-    /* RESUMO */
-    .resumo__titulo {
-        margin-bottom: 1%;
+    /* HEADER */
+    .cabecalho {
+        min-height: 300px;
+        background-position-y: 9px;
     }
 
-    /* HISTÓRIA */
-    .historia__titulo {
-        margin-bottom: 1%;
-    }
-    .historia__imagem {
-        margin: 5% 0;
-    }
-    
-    .resumo__foto {
-        border-radius: 150px;
-    }
-
-    /* PARTE DA AUTORA */
-    .autora__infos {
-        text-align: initial;
-        margin-left: 5%;
+    /* AUTORA */
+    .autora__bloco {
+        flex-direction: column;
     }
 
     .autora__imagem {
-        width: 23%;
+        margin: 5% 0;
     }
 
-    /* BOTÃO */
-    .botao__bottom {
-        margin-top: 4%;
-        padding: 1% 1.5%;
+    .autora__titulo {
+        margin-top: 9%;
+    }
+
+    .autora__paragrafo, .autora__redes-sociais {
+        text-align: center;
+    }  
+
+    /* OUTRAS MARAVILHOSAS */
+    .outras-maravilhosas__titulo {
+        margin-top: 9%;
     }
 
     /* RODAPÉ */
@@ -454,8 +461,8 @@ li {
 }
 
 /* RESPONSIVO 6: CELULAR */
-@media (max-width: 420px) {
-    
+@media (max-width: 420 px) {
+
     html {
         font-size: 16px;
     }
@@ -477,16 +484,8 @@ li {
         width: 90%;
     }
 
-    .cabecalho {
-        background-position-y: 50px;
-    }
-
-    /* RESUMO */
-    .resumo__titulo {
-        margin-top: 0;
-    }
-
-    .resumo__bloco-div {
-        margin-top: 7%;
+    /* OUTRAS MARAVILHOSAS */
+    .outras-maravilhosas__titulo {
+        margin: 9% 0;
     }
 }
