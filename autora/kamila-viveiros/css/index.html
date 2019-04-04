@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-=======
+/* GERAL */
 
->>>>>>> d8051e601021509764e7d73133e50940371c097b
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,16 +16,26 @@ body {
     line-height: 3rem;
 }
 
-<<<<<<< HEAD
 p {
-    font-size: 16px;
+    text-align: justify;
+
 }
-=======
->>>>>>> d8051e601021509764e7d73133e50940371c097b
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a:hover {
+    color: #C083B9;
+}
+
+h3 {
+    color: #674582;
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: 'Roboto Slab';
+    text-align: center;
 }
 
 ul {
@@ -36,37 +44,39 @@ ul {
 
 li {
     list-style: none;
-    
+    line-height: 2rem;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
 }
 
 .img-responsive {
     width: 100%;
 }
 
-.container {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 960px;
-}
 
 /* NAVEGACAO */
+
+.navegação--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .navegação {
     background-color: #674582;
     color: white;
     text-transform: uppercase;
-    box-shadow: 0px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
     padding: 1.5rem;
     z-index: 99;
     position: fixed;
     top: 0;
     width: 100%;
-}
-
-.navegação__nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .navegacao__logo {
@@ -80,85 +90,74 @@ li {
     font-size: 1.2rem;
     
 }
-.navegacao__menu a,
-.redes-sociais a {
-    margin-left: 1.5rem;
+.navegacao__menu > a {
+    margin-left: 1.3rem;
+}
+.menu__redes-sociais a {
+    margin-left: 1.3rem;
 }
 
-.navegacao__menu-hamburguer {
-    display: none;
-}
 
 /* CABEÇALHO  */
 
     .cabecalho {
-        background: linear-gradient(
-        rgba(103, 69, 130, 0.56), 
-        rgba(103, 69, 130, 0.56)
-      ),url("../img/maria-da-penha-lei-instituto-mulher-fala.jpg");
-    margin-top: 79px;
-    height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;
-    position: relative;  
-}
+        min-height: 80vh;
+        height: 500px;
+        background: linear-gradient(rgba(255, 0, 255, 0.2),
+                    rgba(255, 0, 255, 0.2)),
+                    url(../img/turma-7.jpg);
+        background-size: cover;
+        background-position: center 47%;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: flex-end;
+        padding: 5rem 2rem 2rem 2rem;
+        color: white;
+        justify-content: center;
+        margin-bottom: 3rem;
     }
+
+    /* @media (max-width: 420px) {
+        .cabecalho {
+          height: 400px;
+          background-position: -360px 0;
+        }
+      } */
 
     h1 {
-        font-weight: bold;
         text-transform: uppercase;
-        text-align: center;
-        position: absolute;
-        top: 80%;
-        font-size: 50px;   
+        font-size: 3rem;
+        font-weight: 700;   
     }
 
-    /* INTRODUÇÃO */
-<<<<<<< HEAD
-=======
-   
-    .intro__intro {
+    /* CONTEÚDO  */
+    main {
+        font-size: 1.8rem;
+    }
+
+    .intro__conteudo {
         display: flex;
         align-items: center;
-        flex-direction: column;
-        margin-top: 70px; 
+        margin: 3rem 0; 
     }
->>>>>>> d8051e601021509764e7d73133e50940371c097b
-
-    h3 {
-        font-size: 30px;
-        margin-top: 50px;
-        text-align: center;
-    } 
-
-    .introducao__autora {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        line-height: 2.5rem;
-        
-    }
-    
-    .introducao__autora p {
-        font-size: 16px;
-        margin-left: 50px;
-    }
-
-
-<<<<<<< HEAD
-    .introducao__autora img {
-=======
-    .intro__intro img {
->>>>>>> d8051e601021509764e7d73133e50940371c097b
-        height: 200px;
+    .intro__conteudo img {
+        height: 250px;
         border-radius: 5%;
     }
     
+    .conteudo-autora {
+        margin-left: 3rem;
+        text-align: justify;
+    }
+
+    .conteudo-autora p {
+        margin: 2rem 0;
+    }
+
+    .conteudo-autora a {
+        font-weight: 600;
+    }
+
     .historia {
         margin: 3rem 0;
     }
@@ -168,15 +167,6 @@ li {
     }
 
     .legenda {
-<<<<<<< HEAD
-        font-size: 1.3rem;
-        text-align: center;
-        margin-top: 0;
-        color: #a7a7a7;
-    }
-
-    .linha{
-=======
         font-size: 1rem;
         text-align: center;
         margin-top: 0 !important;
@@ -184,37 +174,15 @@ li {
     }
 
     .divisoria{
->>>>>>> d8051e601021509764e7d73133e50940371c097b
         width: 400px;
         height: 1px;
         border: 1px solid;
         display: block;
         margin: 8rem auto;
     }
-<<<<<<< HEAD
-    OUTRAS 
-    
-    .maravilhosas {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } 
-
-    .maravilhosas__perfil {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .maravilhosas__perfil > div {
-        max-width: 200px;
-        margin: 5rem;
-    }
-    .perfil__personalidade p {
-=======
     /* OUTRAS  */
     
-    /* .maravilhosas__box {
+    .maravilhosas__box {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -226,39 +194,37 @@ li {
     }
 
     .maravilhosas__perfil p {
->>>>>>> d8051e601021509764e7d73133e50940371c097b
         font-size: 1.5rem;
         text-align: center;
     }
    
-<<<<<<< HEAD
-      button {
-=======
 
     .container--maravilhosas {
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
-    } */
+    }
 
     button {
->>>>>>> d8051e601021509764e7d73133e50940371c097b
         text-transform: uppercase;
         color: white;
         font-weight: 700;
         background-color: #C083B9;
         padding: 1rem 2rem;
-        border-radius: 3px;
+        border-radius: 5px;
         border: none;
         margin-bottom: 5rem;
         font-size: 1.5rem;
     }
 
-    
+    button:hover {
+        background-color: #674582;
+    }
+
     /* RODAPE  */
 
-    .rodape {
+    .footer_b {
         background-color: #323534;
         display: flex;
         align-items: center;
@@ -268,37 +234,34 @@ li {
         padding:3rem;
     }
 
-    .rodape > img {
+    .footer_b > img {
         height: 60px;
     }
 
-    .rodape ul {
+    .footer_b ul {
         text-align: center;
     }
 
-    .icone-facebook {
+    .icon {
         max-width: 10px;
         position: relative;
         bottom: -3px;
     }
 
-    .creditos p{
+    .footer_s p{
         text-align: center;
         font-size: 0.8rem;
     }
 
-    .creditos {
+    .footer_s {
         background-color: #292A2A;
         color: #ffffff;
         padding: 0.8rem;
     }
 
-<<<<<<< HEAD
-   
-=======
     /* RESPONSIVO  */
 
-    /* @media (max-width: 420px) {
+    @media (max-width: 420px) {
 
         html {
             font-size: 8px;
@@ -385,5 +348,4 @@ li {
             display: none;
         }
         
-    }  */
->>>>>>> d8051e601021509764e7d73133e50940371c097b
+    } 
