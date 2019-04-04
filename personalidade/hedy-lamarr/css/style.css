@@ -103,6 +103,7 @@ li{
 /* INTRODUÇÃO */
 .introducao{
     color: #63458a;
+
 }
 .introducao h2{
     text-align: center;
@@ -136,6 +137,7 @@ li{
 .introducao__paragrafo{
     padding:30px;
 }
+
 
 /* CITAÇÃO */
 .citacao{
