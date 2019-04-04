@@ -11,6 +11,8 @@ html {
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     margin: 0;
+    color: #674582;
+    line-height: 2.5rem;
 }
 
 a {
@@ -43,17 +45,13 @@ li {
     color: white;
     text-transform: uppercase;
     box-shadow: 0px;
-    padding: 10px;
+    padding: 1.5rem;
     z-index: 99;
     position: fixed;
     width: 100%;
     top: 0;
 }
 
-.navegacao__logo {
-    max-width: 200px;
-    
-}
 
 .navegacao__nav {
     display: flex;
@@ -61,36 +59,21 @@ li {
     justify-content: space-between;
 }
 
+.navegacao__logo {
+    max-width: 200px;  
+}
+
 .navegacao__menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    text-align: center;
-    padding: 10px 0;
-    background-color: #674582;
+    font-size: 1.2rem;    
 }
 
-.nav__menu > ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   
-}
-
-.navegacao__menu {
-    margin-right: 2rem;
-}
-
-.navegacao__menu li {
-    font-size: 1.5rem;
-    margin: 1rem;
-}
-
+.navegacao__menu a,
 .redes-sociais a {
-    margin: 1rem;
+    margin-left: 1.5rem;
 }
-
-
 
 .navegacao__menu-hamburguer {
     display: none;
@@ -118,7 +101,7 @@ li {
     position: relative;  
 }
 
-.cabecalho__titulo {
+h1 {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -127,32 +110,27 @@ li {
     font-size: 50px;   
 }
 
+
 /* INTRODUÇÃO */
 
-.introducao {
-    margin: 0 auto;
-    width: 60%;
-    color: #63458a;
-}
-
-.introducao__intro {
+ .introducao__intro {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 70px; 
 }
 
-.introducao__intro h3 {
+h3 {
     font-size: 30px;
-    margin-bottom: 30px;
-}
+    margin-top: 50px;
+    text-align: center;
+} 
 
 .introducao__texto {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    line-height: 2.5rem;
-
+    
     
 }
 
@@ -161,8 +139,8 @@ li {
     margin-left: 50px;
 }
 
-.introducao__img {
-    border-radius: 15px;
+.introducao__intro img {
+    border-radius: 5%;
 }
 
 .introducao__citacao {
@@ -177,7 +155,6 @@ li {
 
 /* RESUMO */
 .resumo {
-    width: 60%;
     margin: 0 auto; 
 }
 
@@ -192,7 +169,6 @@ li {
     display: flex;
     align-items: center;
     flex-direction: column;
-    line-height: 2.5rem;
     color: #63458a;
 }
 
@@ -228,79 +204,77 @@ li {
 }
 
 /* BOTÃO */
-.btn {
+button {
     border-radius: 3px;
     color: #fff;
-    background-color: #63458a;
-    font-weight: bold;
-    padding: 20px 30px;
+    background-color: #C083B9;
+    font-weight: bold; 
+    padding: 2rem 2rem;
     text-transform: uppercase;
     margin-top: 40px;
     border: none;
-    text-align: center;
     font-size: 1.5rem;
-    margin-left: 45%;
+    margin-bottom: 1.5rem;
+    margin-left: 40%;
 
 }
 
 /* RODAPÉ */
 
 .rodape {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #323534;
-    color: white;
-    text-decoration: none;
-    margin: 0 auto;
-    margin-top: 70px;
-}
-
-.rodape__logo img {
-    width: 20%;
-    margin-left: 70px;
-}
-
-
-.rodape a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 12px;
-}
-
-.rodape__menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 0;
-    width: 100%;
+    justify-content: space-around;
+    color: white;
+    font-size: 1.3rem;
+    padding:3rem;
 }
 
-.rodape__facebook {
-    display: flex;
-    align-items: center;
+.rodape > img {
+    height: 60px;
 }
 
-.rodape__facebook img {
-    width: 20px;
-}
-
-/* CREDITOS */
-.creditos {
+.rodape ul {
     text-align: center;
-    background-color: #292A2A;
-    width: 100%;
-    font-size: 1rem;
-    
-    
 }
 
+.icone-facebook {
+    max-width: 10px;
+    position: relative;
+    bottom: -3px;
+}
+
+.creditos p{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.creditos {
+    background-color: #292A2A;
+    color: #ffffff;
+    padding: 0.8rem;
+}
+
+/* RESPONSIVO */
 @media (max-width: 420px) {
+
+
+    .container {
+        width: 80%;
+    }
+
+    .html {
+        font-size: 8px;
+    }
 
     .navegacao__menu-hamburguer {
         display: block;
+    }
+
+    .navegacao__menu li {
+        font-size: 1rem;
+        margin: 2rem;
     }
 
     .redes-sociais {
@@ -314,19 +288,30 @@ li {
     .cabecalho {
         margin-top: 98px;
         height: 300px;
-    }
-    .cabecalho__titulo {
-        font-size: 30px;
+        /* background-position: -360px 0; */
     }
 
-    .introducao__intro h3 {
-        font-size: 19px;
+    .introducao {
+        width: 90%;
+    }
+
+    . h3 {
+        font-size: 18px;
     }
     
     .introducao__texto {
         display: flex;
         flex-direction: column;
         justify-items: center;
+    }
+
+    .introducao__citacao{
+    font-size: 20px;
+    padding: 20px;
+    }
+
+    .resumo {
+        width: 80%;
     }
 
     .resumo__img {
@@ -346,29 +331,8 @@ li {
     flex-direction: column;
     }
 
-    .btn {
+    buttom {
         margin-left: 28%;
     }
 
-    .rodape__link {
-        display: inline-block;
-    }
-
-    .rodape__menu {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-    }
-
-    .rodape__logo img {
-        text-align: center;
-        width: 30%;
-    }
-
-    .rodape a {
-        font-size: 10px;
-    }
-
-
-    
-}
+ 
