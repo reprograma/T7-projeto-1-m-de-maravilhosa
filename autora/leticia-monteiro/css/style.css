@@ -190,7 +190,7 @@ li {
     
     .maravilhosas__box {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-around;
 
     }
@@ -326,6 +326,10 @@ li {
             line-height: 1.5rem;
         }
 
+        .maravilhosas__perfil img {
+            width: 60px;
+        }
+
         .legenda {
             font-size: 1.2rem;
         }
@@ -344,7 +348,8 @@ li {
 
     @media (min-width: 420px) and (max-width: 800px)
     {
-        .container {
+        .container,
+        .container--nav {
             width: 80vw;
         }
 
@@ -388,4 +393,19 @@ li {
             margin: 0 auto;
         }
 
+        .maravilhosas__perfil p {
+            line-height: 1.5rem;
+        }
     } 
+
+    @media (min-width: 800px) and (max-width: 1200px) {
+        .container, 
+        .container--nav {
+            width: 80vw; 
+        }
+
+        .maravilhosas__perfil p {
+
+            line-height: 1.5rem;
+        }
+    }

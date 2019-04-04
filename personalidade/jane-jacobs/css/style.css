@@ -320,8 +320,10 @@ li {
 
     @media (min-width: 420px) and (max-width: 800px)
     {
-        .container {
+        .container,
+        .container-nav {
             width: 80vw;
+
         }
 
         .menu-responsivo img {
@@ -343,4 +345,11 @@ li {
             margin-left: 0;
         }
         
+    }
+
+    @media (min-width: 800px) and (max-width: 1200px) {
+        .container, 
+        .container--nav {
+            width: 80vw; 
+        }
     }
