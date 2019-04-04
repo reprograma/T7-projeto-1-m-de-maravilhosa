@@ -80,6 +80,11 @@ li{
     margin-right: 30px;
 }
 
+}
+#btnResponsivo{
+    display: none;
+}
+
 /* BANNER */
 .banner{
     background-image: url(../img/bg-banner-claro.png);
@@ -150,6 +155,11 @@ li{
 /* HISTÓRIA */
 .historia{
     color: #63458a;
+
+}
+
+.historia h2{
+    text-align: center;
 }
 
 .historia__imagem{
