@@ -9,7 +9,6 @@ max-width: % ou px
 */
 
 * {
-    box-sizing: border-box;
     margin:0;
 }
 
@@ -19,9 +18,15 @@ html {
 
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
+    width: 100vw;
     max-width: 1440px;;
+}
+
+.container--box{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
 }
 
 a {
@@ -43,23 +48,13 @@ li {
     max-width: 1440px;
     position: fixed;
     top:0;
-    
-}
-
-.nav__logo{
-    margin-left:95px;
 }
 
 .navegacao__box--container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 0 0 150px;
     width: 100%;
-}
-
-.navegacao__menu{
-    margin-right: 300px;
 }
 
 .navegacao__itens{
@@ -83,6 +78,10 @@ li {
     margin-right: 10px;
 }
 
+.navegacao__menu-hamburguer{
+    display: none;
+}
+
 .banner{
     display:flex;
     align-items: flex-end;
@@ -96,7 +95,7 @@ li {
     max-width: 1440px;
     color: #ffffff;
     padding-bottom: 20px;
-    font-size: 14px;
+    font-size: 24px;
 }
 
 .artigo{
@@ -146,8 +145,6 @@ li {
 .artigo__resumo{
     display: flex;
     justify-content: center;
-    width: 550px;
-    margin: 30px auto  30px 315px;
 }
 
 .artigo__citacao{
@@ -159,8 +156,7 @@ li {
     font-weight: bold;
     padding: 60px; 
     text-align: center;  
-    margin-right: 230px; 
-    margin-left: 315px;
+    margin-top: 30px;
 }
 
 .artigo__historia{
@@ -168,12 +164,10 @@ li {
     width: 59.5%;
     font-size: 16px;
     color:#63458A;   
-    margin-right: 230px; 
-    margin-left: 315px;
 }
 
 .historia__titulo{
-    margin:30px 0 20px 0;
+    margin:30px 0;
     font-size: 18px;
     font-weight: bold;
 }
@@ -185,10 +179,12 @@ li {
 .img__mulheres{
     width: 100%;
     margin: 0 auto;
+    max-width: 960px;;
 }
 
 .artigo__historia img{
-    max-width: 805px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .autora{
@@ -252,9 +248,8 @@ li {
     align-items: center;
     text-align: center;
     padding: 1.5rem 0;
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
-    margin-left: 315px;
 }
 
 .rodape__principal > * {
@@ -309,3 +304,230 @@ li {
     font-size: 1rem;
     opacity: 0.5;
     text-align: center;
+}
+
+/*Brakepoints*/
+
+/*Brakepoints 1024px*/  
+@media (max-width: 1024px){
+
+    .banner{
+    font-size: 20px;
+    background-position: 73px;
+    width: 100vw;
+    }
+
+    .autora{
+        width: 100vw;
+    }
+
+    .autora__resumo img{
+        width: 150px;
+    }
+
+    .rodape {
+        padding-top: .6rem;
+    }
+
+    .rodape__principal {
+        padding: 1rem 0;
+    }
+
+}
+
+/*Brakepoints 768px*/ 
+@media (max-width: 768px){
+
+    .navegacao__box--container{
+        width: 90%;
+    }
+
+    .img-responsive{
+        width: 200px;
+        height: 60px;
+    }
+
+    .navegacao__nav, ul, li{
+        display: flex;
+        padding-right: 10px;   
+        align-items: center; 
+    }
+
+    .navegacao__redes-sociais{
+        display: none;
+    }
+    
+    .navegacao__menu-hamburguer{
+        display: flex;
+    }
+
+    .banner{
+    font-size: 16px;
+    background-position: 73px;
+    }
+
+    .artigo__resumo{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .artigo__citacao{
+        font-size: 14px;
+        padding: 40px;
+        margin-top: 15px;
+    }
+
+    .resumo__chamada{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .resumo__paragrafo{
+        font-size: 14px;
+    }
+
+    .container__conteudo{
+        padding-right: 15px;
+        margin-top: 70px;
+    }
+
+    .container__conteudo img{
+        max-width: 105px;
+    }
+    
+    #img__maria-felipa{
+        border-radius: 5%;
+    }
+
+    .historia__titulo{
+        font-size: 16px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .historia__paragrafo{
+        font-size: 14px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .autora__resumo img{
+        width: 120px;
+    }
+
+    .resumo__paragrafo--autora{
+        font-size: 12px;
+    }
+
+    .rodape {
+        padding-top: .4rem;
+    }
+
+    .rodape__principal {
+        padding: 1rem 0;
+    }
+
+    .rodape__cc {
+        font-size: 0.5rem;
+    }
+}
+
+/*Brakepoints 425px*/ 
+@media (max-width: 425px){
+
+    .navegacao__box--container{
+        width: 100%;
+    }
+
+    .img-responsive{
+        width: 100px;
+        height: 30px;
+    }
+
+    .navegacao__nav, ul, li{
+        display: flex;
+        padding-right: 10px;   
+        align-items: center; 
+        font-size: 8px;
+    }
+
+    .navegacao__redes-sociais{
+        display: none;
+    }
+    
+    .navegacao__menu-hamburguer{
+        display: flex;
+    }
+
+    .banner{
+    font-size: 16px;
+    background-position: 73px;
+    }
+
+    .artigo__resumo{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .artigo__citacao{
+        font-size: 14px;
+        padding: 40px;
+        margin-top: 15px;
+    }
+
+    .resumo__chamada{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .resumo__paragrafo{
+        font-size: 14px;
+    }
+
+    .container__conteudo{
+        padding-right: 15px;
+        margin-top: 70px;
+    }
+
+    .container__conteudo img{
+        max-width: 105px;
+    }
+    
+    #img__maria-felipa{
+        border-radius: 5%;
+    }
+
+    .historia__titulo{
+        font-size: 16px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .historia__paragrafo{
+        font-size: 14px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .autora__resumo img{
+        width: 120px;
+    }
+
+    .resumo__paragrafo--autora{
+        font-size: 12px;
+    }
+
+    .rodape {
+        padding-top: .4rem;
+    }
+
+    .rodape__principal {
+        padding: 1rem 0;
+    }
+
+    .rodape__cc {
+        font-size: 0.5rem;
+    }
+}
