@@ -155,6 +155,10 @@ margin-left: 260px;
   margin: 0 1rem;
 }
 
+.hamburger{
+  display: none;
+}
+
 /* --- HEADER --- */
 .header {
   width: 100%;
@@ -197,11 +201,17 @@ margin-left: 260px;
   justify-content: center;
 }
 
+.container{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
 .conteudo__container {
         margin: 0 auto;
-        width: 50%;
+        width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-bottom: 30px;
 }
 
 .conteudo__foto {
@@ -217,16 +227,16 @@ margin-left: 260px;
 }
 .conteudo__artigo{
     color: #674582;
-    font-size: 14px;
+    font-size: 18px;
     line-height: normal;
     text-align: center;
     padding: 5%;
 }
 
-.container__citacao{
+ .container__citacao{
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .citacao {
@@ -234,13 +244,17 @@ margin-left: 260px;
     color: #674582;
     border: 1px solid purple;
     padding: 30px;
+    margin: 0;
+    width: 100%;
+  
 }
 
 .container__historia {
   margin: 0 auto;
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
 }
 
 .titulo__historia {
@@ -254,16 +268,16 @@ margin-left: 260px;
 
 .img__historia {
   width: 350px;
-  margin-left: 200px;
   padding: 15px;
+  margin: 0 auto;
 }
 
 .conteudo__historia {
   color: #674582;
   font-size: 18px;
   line-height: normal;
-  text-align: start;
-  padding: 20px;
+  text-align: justify;
+  /* padding: 20px; */
 }
 
 .container__autora{
@@ -292,6 +306,7 @@ margin-left: 260px;
   color: #674582;
   font-size: 18px;
   margin-left: 15px;
+  font-weight: bold;
 }
 
 .btn__container {
@@ -347,3 +362,48 @@ margin-left: 260px;
   width: 10px;
 }
 
+/*--RESPOSIVO--*/
+
+@media (max-width: 1024px){
+
+  .header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+.container__citacao{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navegacao__nav{
+  display: none;
+}
+
+.navegacao__redes-sociais{
+  display: none;
+}
+
+.hamburger{
+  display: flex;
+  height: 50px;
+}
+
+.conteudo__container {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container__foto{
+  display: flex;
+  justify-content: center;
+}
+.container__historia{
+  padding: 10px;
+}
+
+
+}
