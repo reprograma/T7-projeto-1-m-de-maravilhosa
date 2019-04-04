@@ -53,6 +53,12 @@ li {
     max-width: 800px;
 }
 
+.container--nav {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
 .img-responsive {
     width: 100%;
 }
@@ -325,6 +331,16 @@ li {
 
         .navegacao__menu {
             display: none;
+        }
+        
+        .intro__conteudo {
+            flex-direction: column-reverse;
+        }
+
+        .intro__conteudo p {
+            width: 90%;
+            margin-bottom: 3rem;
+            margin-left: 0;
         }
         
     }

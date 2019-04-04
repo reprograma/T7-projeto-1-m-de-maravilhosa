@@ -54,9 +54,15 @@ li {
     max-width: 800px;
 }
 
+.container--nav {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
 .img-responsive {
     width: 100%;
-}
+} 
 
 
 /* NAVEGACAO */
@@ -174,7 +180,7 @@ li {
     }
 
     .divisoria{
-        width: 400px;
+        width: 80%;
         height: 1px;
         border: 1px solid;
         display: block;
@@ -288,7 +294,7 @@ li {
         }
 
         .intro__conteudo {
-            flex-direction: column-reverse;
+            flex-direction: column;
         }
 
         .intro__conteudo p {
@@ -306,17 +312,25 @@ li {
         }
 
         .divisoria {
-            width: 100px;
+            width: 70%;
+            margin: 0 auto;
         }
 
         .maravilhosas__box > div {
             max-width: 200px;
             margin: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .maravilhosas__perfil p {
+            line-height: 1.5rem;
         }
 
         .legenda {
             font-size: 1.2rem;
         }
+
+
     }
 
     @media (min-width: 800px) {
@@ -348,4 +362,30 @@ li {
             display: none;
         }
         
+        .intro__conteudo {
+            flex-direction: column;
+        }
+
+        .intro__conteudo p {
+            width: 90%;
+            margin-bottom: 3rem;
+            margin-left: 0;
+        }
+
+        .maravilhosas__box > div {
+            max-width: 200px;
+            margin: 1rem;
+            margin-bottom: 3rem;
+        }
+
+
+        .legenda {
+            font-size: 1.2rem;
+        }
+
+        .divisoria {
+            width: 70%;
+            margin: 0 auto;
+        }
+
     } 
