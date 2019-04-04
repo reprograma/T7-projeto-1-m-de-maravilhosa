@@ -177,11 +177,11 @@ p {
     margin: 50px 0;
 }
 
-.resumo h2, .resumo p {
+.historia h2, .historia p {
     margin-bottom: 30px;
 }
 
-.resumo-foto {
+.historia-foto {
     width: 100%;
     margin-bottom: 30px;
 }
@@ -193,7 +193,6 @@ p {
 }
 
 .autora {
-    display: block;
     background-color: #E4B7E5;
     margin: 50px 0;
 }
