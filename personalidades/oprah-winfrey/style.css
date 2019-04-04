@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -29,6 +30,7 @@ body {
 .navegacao a {
     padding-right: 10px;
 }
+
 .navegacao li {
     display: inline-block;
     padding-right: 10px;
@@ -36,7 +38,15 @@ body {
     font-size: 13px;
 }
 
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 .cabecalho {
+    background: cover;
+    background-repeat: no-repeat;
     background-image: url(img/oprah-winfrey-2.jpg);
     background-size: cover;
     width: 100%;
@@ -53,50 +63,53 @@ body {
     color: white;
     text-transform: uppercase;
     font-size: 36px;
-    padding: 18px;
+    padding-bottom: 25px;
 }
 
 .personalidade {
+    padding: 20px 0px;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 30px;
     color: #674582;
 }
 
 .personalidade__titulo {
+    width: 100%;
     text-align: center;
-    padding: 10px;
     color: #674582;
+    padding-bottom: 15px;
 }
 
 .personalidade__intro {
-    padding: 30px;
+    width: 100%;
+    padding-bottom: 30px;
     display: flex;
     margin: 0 auto;
-    width: 800px;
     align-items: center;
 }
 
 .personalidade__intro p {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .personalidade__citacao {
+    width: 100%;
     border: #674582 1px solid;
     margin: 0 auto;
-    width: 800px;
     text-align: center;
-    padding: 25px;
     font-size: 26px;
     font-weight: bold;
 }
 
+.personalidade__citacao p {
+    padding: 25px;
+}
+
 .historia {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
-    padding: 30px;
 }
 
 .historia__titulo {
@@ -111,6 +124,7 @@ body {
 }
 
 .autora {
+    width: 100%;
     background: linear-gradient(
     rgba(255, 0, 255, 0.2),
     rgba(255, 0, 255, 0.2));
@@ -149,8 +163,9 @@ body {
 }
 
 .img-oprah {
-    width: 700px;
-    padding: 20px;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .rodape {
@@ -186,11 +201,11 @@ body {
 }
 
 .img-responsive {
-    width: 402px;
+    width: 200px;
 }
 
 .logo--facebook {
-    width: 25px;
+    width: 15px;
 }
 
 .rodape__redes-sociais {
@@ -198,3 +213,40 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.navegacao__menu-hamburguer {
+    display: none;
+}
+
+@media (max-width: 768px){
+    .rodape__principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .personalidade__intro {
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        text-align: center;
+    }
+    .navegacao__menu {
+        display: none;
+    }
+
+    .navegacao__menu-hamburguer {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navegacao {
+        justify-content: space-between;
+    }
+
+    .personalidade__intro p {
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+}
+
