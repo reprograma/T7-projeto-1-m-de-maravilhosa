@@ -126,10 +126,19 @@ li {
 }
 
 .container > * {
-    padding-bottom: 40px;
+    padding: 40px 0 0 0;
 }
 
 .titulo__com-serifa {
+    font-family: Roboto Slab;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    color: #63458A;
+    padding-top: 40px;
+}
+
+.titulo__com-serifa2 {
     font-family: Roboto Slab;
     font-weight: bold;
     font-size: 25px;
@@ -177,6 +186,10 @@ li {
 
 /* section resumo */
 
+.section__sua-historia {
+
+}
+
 .resumo__sua-historia {
     font-family: Montserrat;
     font-size: 20px;
@@ -194,6 +207,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 40px;
 }
 
 .foto__autora img {
