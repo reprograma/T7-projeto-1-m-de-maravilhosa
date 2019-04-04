@@ -1,8 +1,11 @@
-body {
+* {
     box-sizing: border-box;
-    margin: 0;
     font-family: 'Montserrat', sans-serif;
     color: #674582
+}
+
+body {
+    margin: 0;
 }
 
 /* CABEÇALHO */
@@ -150,7 +153,6 @@ a {
 .botao a {
     background-color: #c083b9;
     text-decoration: none;
-    color: white;
     padding: 2%;
     text-transform: uppercase;
     margin-top: 5%;
