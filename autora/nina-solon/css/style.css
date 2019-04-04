@@ -110,8 +110,7 @@ p {
     background: linear-gradient(
         rgba(103, 69, 130, 0.56), 
         rgba(103, 69, 130, 0.56)
-      ),url(../img/sala-reprograma.jpeg);
-    /* background-image: url(../img/bg-banner-claro.png); */
+      ),url(../img/reprograma-bg.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

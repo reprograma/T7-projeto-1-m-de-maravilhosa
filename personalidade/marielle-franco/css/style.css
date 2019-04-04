@@ -104,7 +104,7 @@ p {
     background: linear-gradient(
         rgba(103, 69, 130, 0.56), 
         rgba(103, 69, 130, 0.56)
-      ),url(../img/header.jpg);
+      ),url(../img/mf-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -214,11 +214,11 @@ p {
     font-weight: bold;
 }
 
-.link-git {
+.link-git, .link-autora {
     color: #63458A;
 }
 
-.link-git:hover {
+.link-git:hover, .link-autora:hover {
     color: #fff;
 }
 
