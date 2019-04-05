@@ -10,7 +10,8 @@ html {
 
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    margin: 0;
+    font-size: 16px;
+
 }
 
 a {
@@ -174,7 +175,7 @@ hr {
     margin: 0 auto;
     width: 70%;
     color: #63458a;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .intro__flex-container {
@@ -223,8 +224,20 @@ hr {
 
 .redes-sociais li {
     margin-left: 5px;
+    
 }
 
+@media (max-width: 1024px) {
+    .intro__conteudo {
+        flex-direction: column;
+    }
+
+    .intro__texto {
+        margin-top: 20px;
+    }
+
+
+}
 
 @media (max-width: 768px) {
     .intro__conteudo {
@@ -237,11 +250,16 @@ hr {
         margin-top: 30px;
         
     }
+
 }
 
 @media (max-width: 420px) {
     .intro__flex-container h3 {
             font-size: 29px;
+    }
+
+    .redes-sociais li {
+        font-size: 20px;
     }
 }
 
@@ -310,7 +328,7 @@ hr {
     align-items: center;
     justify-content: space-around;
     width: 80%;
-    margin: 60px auto;
+    margin: 0 auto;
 }
 
 .autoras {
@@ -335,8 +353,9 @@ hr {
 }
 
 @media (max-width: 768px) {
-    .autora__flex-container {
-        width: 60%;
+    .autoras__flex-container {
+        flex-direction: column;
+        
     }
 
     .autora__img {
@@ -377,7 +396,7 @@ hr {
 }
 
 .link-home {
-    width: 25%;
+    width: 20%;
     color: white;
     background-color: #C083B9;
     display: block;
@@ -385,8 +404,8 @@ hr {
     transition: all .5s;
     margin: 0 auto;
     border: none;
-    padding: 20px 50px;
-    font-size: 35px;
+    padding: 15px;
+    font-size: 1.2em;
     border-radius: 10px;
     font-weight: bold;
     
@@ -404,13 +423,35 @@ hr {
     box-shadow: 0 5px 5px rgba(0,0,0,.2);
 }
 
-@media (max-width: 420px) {
+@media (max-width: 1280px) {
     .link-home {
-        padding: 20px 35px;
-        font-size: 20px;
-
+        width: 25%;
+        
     }
 }
+
+@media (max-width: 1024px) {
+    .link-home {
+        width: 35%;
+        
+    }
+
+}
+
+@media (max-width: 768px) {
+    .link-home {
+        width: 50%;
+        
+    }
+
+}
+
+@media (max-width: 420px) {
+    .link-home {
+        width: 65%;
+    }
+}
+
 
 /* --------------------------- RODAPÉ ------------------------- */
 
@@ -425,8 +466,8 @@ hr {
 .rodape__flex-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 60%;
+    justify-content: space-around;
+    width: 80%;
     margin: 0 auto;
     padding: 40px;
 }
@@ -479,6 +520,14 @@ hr {
     
 }
 
+@media (max-width: 1024px) {
+    .rodape__flex-container {
+        width: 80%;
+    }
+
+
+}
+
 @media (max-width: 768px) {
     .rodape__flex-container {
         display: flex;
@@ -487,7 +536,7 @@ hr {
     }
 
     .logo-rodape {
-        margin: 20px auto;
+        margin: 20px;
     }
 }
 
@@ -500,6 +549,6 @@ hr {
     }
 
     .logo-rodape {
-        margin: 20px auto;
+        margin: 20px;
     }
 }
