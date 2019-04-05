@@ -79,7 +79,7 @@ li {
     margin-left: 1.5rem;
 }
 
-.navegacao__menu-hamburguer {
+.navegacao__menu-hamburger {
     display: none;
 }
 
@@ -89,7 +89,7 @@ li {
         background: linear-gradient(
         rgba(103, 69, 130, 0.56), 
         rgba(103, 69, 130, 0.56)
-      ),url("../img/maria-da-penha-lei-instituto-mulher-fala.jpg");
+      ),url("../img/bg-banner-claro.png");
     margin-top: 79px;
     height: 500px;
     background-size: cover;
@@ -129,7 +129,7 @@ h3 {
     
     .introducao__autora p {
         font-size: 16px;
-        margin-left: 50px;
+        margin-left: 25px;
     }
 
 
@@ -169,7 +169,8 @@ h3 {
         text-align: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
+       align-items: center;
+      
     } 
 
     .maravilhosas__personalidade {
@@ -181,8 +182,16 @@ h3 {
     .maravilhosas__perfil > div {
         max-width: 200px;
         margin: 5rem;
+        
     }
     
+    .perfil img {
+        background: #674582;
+        width: 200px;
+        border-radius: 10px;
+        margin-left: 20px;
+    }
+
      button {
         text-transform: uppercase;
         color: white;
@@ -222,7 +231,7 @@ h3 {
     bottom: -3px;
 }
 
-.creditos p{
+.creditos p {
     text-align: center;
     font-size: 0.8rem;
 }
@@ -233,3 +242,72 @@ h3 {
     padding: 0.8rem;
 }
 
+/* RESPONSIVO */
+
+@media (max-width:768px) {
+    .container {
+        max-width: 70%;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    .introducao__autora p {
+        text-align: center;
+    }
+}
+
+@media (max-width:420px) {
+    .container {
+        max-width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navegacao__menu-hamburger {
+        display: block;
+    }
+
+    .navegacao__menu {
+        display: none;
+    }
+
+    .cabecalho {
+        height: 190px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    .divisoria {
+        width: 270px;
+        margin: 1rem 0;
+    }
+    .maravilhosas__personalidade {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .perfil img {
+        width: 140px;
+    }
+    .introducao__autora {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+
+}
