@@ -80,7 +80,7 @@ a {
 /* HEADER */
 
 .banner {
-    background: linear-gradient(rgba(128, 128, 128, 0.164),rgba(0, 0, 0, 0.795)), url(../../../img/bg-banner-escuro.png);
+    background: linear-gradient(rgba(128, 128, 128, 0.164),rgba(0, 0, 0, 0.795)), url(../img/banner.jpeg);
     background-size: cover;
     height: 35vh;
     display: flex;
@@ -91,6 +91,7 @@ a {
     filter: grayscale(.5);
     text-transform: uppercase;
     color: white;
+    background-position-x: center;
 }
 
 
@@ -129,6 +130,12 @@ a {
 
 .foto__maravilhosas {
     width: 20vw;
+}
+
+h6 {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 2%;
 }
 
 .outras__maravilhosas {
@@ -247,7 +254,7 @@ small {
     }
 
     p {
-        font-size: 20px;
+        font-size: 23px;
     }
 
     .botao a{
@@ -275,6 +282,10 @@ small {
 
 @media all and (min-width: 900px) {
     
+    p{
+        font-size: 18px;
+    }
+
     .menu-hamburguer {
         display: none;
     }
@@ -305,7 +316,7 @@ small {
     }
 
     .banner {
-        background: linear-gradient(rgba(128, 128, 128, 0.164),rgba(0, 0, 0, 0.795)), url(../../../img/header.jpg);
+        background: linear-gradient(rgba(128, 128, 128, 0.164),rgba(0, 0, 0, 0.795)), url(../../../img/bg-banner-claro.png);
         filter: none;
         background-position: center;
         background-size: cover;
@@ -337,7 +348,8 @@ small {
     .foto__mulheres {
         width: 50vw;
         display: flex;
-        margin: 10% auto
+        margin: 5% auto;
+        margin-bottom: 0;
     }
 
     .botao a {
