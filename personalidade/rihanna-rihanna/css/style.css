@@ -2,7 +2,7 @@
     color: #65478b;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box
+    -moz-box-sizing: border-box;
 }
 
 img, {
@@ -12,8 +12,7 @@ img, {
 body{
     margin: 0 auto;
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
 }
 
 /*HEADER*/
@@ -284,6 +283,10 @@ main{
     text-transform: initial;
 }
 
+.andressa_sobre a{
+    text-decoration: none;
+
+}
 .btn{
   text-align: center;
   margin-top: 3%;
