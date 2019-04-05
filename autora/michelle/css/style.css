@@ -1,0 +1,400 @@
+body{
+    margin:0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+
+}
+
+.nav{
+background:#674584;
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 99;
+
+
+}
+.main{
+    width:70%;
+    margin:0 auto;
+}
+.container{
+width: 80%;
+margin: 0 auto;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    display: none;
+    position: fixed;
+    
+}
+
+.logo{
+    width: 200px;
+
+}
+
+*{
+    margin: 0;
+    width: 100%;
+}
+
+.nav_menu{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+width: 100%;
+
+}
+
+.nav_link{
+    text-transform: uppercase;
+    margin-right: 50px;
+    color: white;
+}
+
+.ul,li{
+    list-style: none;
+
+}
+
+.navegacao__redes-sociais{
+    
+    width: 350px;
+    justify-content: space-around;
+    display: flex;
+
+}
+
+.container1{
+display: flex;
+justify-content: center;
+background: url(../img/bg-banner-claro.png);
+height: 80vh;
+margin-top: 55.59px;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.barner__titulo{
+align-self: flex-end;
+justify-content: center;
+font-size: 105px;
+color: rgba(255, 255, 255, .9);
+text-transform: uppercase;
+font-weight: 100;
+letter-spacing: 8px;
+font-size: 40px;
+
+}
+
+.sobre{
+background-color: #ffffff;
+margin-left: 220px;
+padding: 40px;
+color:#674584
+
+}
+
+.introducao{
+    width: 100%;
+    margin: 0 auto;
+    color:#674584; 
+}
+
+.introducao_img{
+    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+    
+
+.text_introducao{
+display: inline-block;
+align-items: center;
+justify-content: center;
+margin-left: 30px;
+padding: 30px;
+width:50%;
+line-height: 1.5rem;
+margin-top: 10px;
+margin-bottom: 40px;
+}
+
+
+
+.img_personalidade{
+max-width:201px;
+
+height: auto;
+display: block;
+padding-bottom:2%;
+}
+
+.citacao {
+    border: 1px solid #674584;
+    padding: 40px;
+    text-align: center;
+}
+
+
+
+
+.historia{
+    margin: 0 auto;
+    background-color: #ffffff;
+    color:#674584;
+    width:100%;
+
+
+}
+
+.historia p{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+
+.historia h1{
+    width: 100%;
+    text-align: center;
+}
+
+.titulo_historia{
+background-color: #ffffff;
+text-align: center;
+padding: 80px;
+color:#674584
+
+
+}
+
+.img_julia{
+    background-size: cover;
+}
+
+.flex_container{
+    margin:0 auto;
+    max-width: 960px;
+    margin-bottom: 80px;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color:#674584;
+    margin-top: 40px;
+    margin-top: 60px;
+    
+}
+
+.container3{
+    display: flex;
+    justify-content: center;
+    max-width:80%;
+    height: auto;
+    
+}
+
+.autora_img{
+ display:inline-block;
+ align-items: center;
+justify-content: center;
+margin-left: 25%;
+max-width: 30%
+
+    }
+
+
+.sobre_mim{
+    margin-top: 70px;
+    display: flex;
+    max-width: 70%;
+    margin-left: 20px
+} 
+.autora{
+    text-decoration: none;
+    
+    color:#674584;
+    width: 100%;
+    display: flex;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+.botao{
+margin:0auto;
+text-align: center;
+    
+
+}
+
+.botao_ver{
+padding: 20px;
+text-decoration: none;
+text-transform: uppercase;
+border: none;
+border-radius: 5%;
+font-weight: bold;
+font: 30px;
+color: white;
+background-color:#C083B9;
+margin-top: 5%;
+letter-spacing:4px; 
+}
+
+.rodape1{
+ background-color:#323534;
+   margin-top: 5%;   
+}
+
+.home{
+    color: white;
+    
+    margin: 0 auto;
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center;
+
+
+}
+
+.home a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+.reprograma{
+    padding: 20px;
+
+}
+
+.rodape1_img{
+    padding: 20px;
+
+}
+
+.rodape1__logo-face{
+    
+    display:inline-block;
+    align-items: center;
+}
+
+.img_eu{
+    padding: 3px;
+}
+
+.logo2{
+    width:200px;
+    margin-left: 10px;
+}
+
+.face {
+
+    height: 30px;
+    
+}
+
+.rodape2{
+    background-color: #292a2a;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.autora_maravilhosas{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: #674584
+}
+    
+#linha{
+    border: 1px solid #674584;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.maravilhosas__perfil{
+
+}
+
+.p{
+    text-decoration: none;
+}
+
+
+
+.navegacao__menu-hamburguer {
+        display: none;
+    }
+    
+@media(max-width:768px){
+   .navegacao__menu-hamburguer{
+    display: flex;
+    justify-content: space-around;
+   
+     }
+     .nav_menu {
+         display: none;
+     }
+     .navegacao__redes-sociais {
+        display: none;
+    }
+
+}
+
+.img-responsive{
+    max-width: 200px;
+    text-decoration: none;
+}
+
+@media(max-width:768px){
+    .introducao_img{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+@media(max-width:768px){
+    .autora{
+    display: flex;
+    flex-direction: column;
+
+    }
+}
+
+@media(max-width:768px){
+    .autora_maravilhosas{
+    display: flex;
+    flex-direction: column;
+
+    }
+}
