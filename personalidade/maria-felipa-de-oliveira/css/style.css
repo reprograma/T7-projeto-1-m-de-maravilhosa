@@ -1,13 +1,3 @@
-/* --- MOBILE FIRST - iPhone 7 - width < 768px --- */
-/* --- GERAL --- */
-/*
-unidades preferidas para esse CSS
-margin, padding: rem
-font-size: rem
-width: %
-max-width: % ou px
-*/
-
 * {
     margin:0;
 }
