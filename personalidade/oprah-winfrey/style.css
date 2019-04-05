@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.navegacao {
+    background-color: #674582;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+    text-transform: uppercase;
+    color: white;
+    padding: 15px;
+}
+
+.imagem_logo {
+    width: 150px;
+}
+
+.navegacao__menu {
+    display: flex;
+    
+}
+
+.navegacao a {
+    padding-right: 10px;
+}
+
+.navegacao li {
+    display: inline-block;
+    padding-right: 10px;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    background: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/oprah-winfrey-2.jpg);
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 40vh;
+    padding-top: 120px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.cabecalho h1{
+    margin: 0 auto;
+    color: white;
+    text-transform: uppercase;
+    font-size: 36px;
+    padding-bottom: 25px;
+}
+
+.personalidade {
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #674582;
+}
+
+.personalidade__titulo {
+    width: 100%;
+    text-align: center;
+    color: #674582;
+    padding-bottom: 15px;
+}
+
+.personalidade__intro {
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.personalidade__intro p {
+    padding-left: 20px;
+}
+
+.personalidade__citacao {
+    width: 100%;
+    border: #674582 1px solid;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.personalidade__citacao p {
+    padding: 25px;
+}
+
+.historia {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.historia__titulo {
+    color: #674582;
+    padding: 10px 0px;
+}
+
+.historia__imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.autora {
+    width: 100%;
+    background: linear-gradient(
+    rgba(255, 0, 255, 0.2),
+    rgba(255, 0, 255, 0.2));
+    display: flex;
+    align-items: center;
+    color: #63458a;
+    justify-content: center;
+}
+
+.autora h3 {
+    padding-left: 20px;
+}
+.btn {
+    padding: 50px;
+}
+.btn-roxo {
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    background: #C083B9;
+    font-weight: bold;
+    border: none;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.img-autora {
+    width: 200px;
+}
+
+.img-oprah2 {
+    width: 250px;
+}
+
+.img-oprah {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.rodape {
+    background-color: #323534;
+    color: white;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .8rem;
+}
+
+.rodape__principal {
+    display:flex;
+    text-align: center;
+    padding: 1.5rem 0;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.rodape__navegacao {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rodape__navegacao a {
+    text-decoration: none;
+    color: white;
+}
+
+.img-responsive {
+    width: 200px;
+}
+
+.logo--facebook {
+    width: 15px;
+}
+
+.rodape__redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegacao__menu-hamburguer {
+    display: none;
+}
+
+@media (max-width: 768px){
+    .rodape__principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .personalidade__intro {
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        text-align: center;
+    }
+    .navegacao__menu {
+        display: none;
+    }
+
+    .navegacao__menu-hamburguer {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navegacao {
+        justify-content: space-between;
+    }
+
+    .personalidade__intro p {
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+}
+
