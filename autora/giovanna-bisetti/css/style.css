@@ -1,0 +1,329 @@
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navegação */
+
+.navegacao {
+    background-color: #674582;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 0.9375rem;
+}
+
+.navegacao-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacao__logo {
+    max-width: 200px;
+}
+
+.menu__navegacao {
+    display: flex;
+    align-items: center;
+}
+
+.navegacao__links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #ffffff;
+    margin-right: 0.875rem;
+}
+
+.navegacao__redes-sociais a {
+    margin-left: 1.6875rem;
+}
+
+#btnResponsivo {
+    display: none;
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    background: linear-gradient( rgba(103, 69, 130, 0.56), rgba(103, 69, 130, 0.56)), url(../img/20190111_113110_HDR_2.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-position-x: right;
+    min-height: 60vh;
+}
+
+.cabecalho__titulo {
+    color: white;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+
+/* Conteúdo */
+
+main {
+    width: 100%;
+}
+
+.conteudo {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1030px;
+}
+
+/* Apresentação */
+
+.conteudo_apresentacao {
+    text-align: center;
+}
+
+.apresentacao__img-perfil {
+    display: inline-block;
+    max-width: 184px;
+    border-radius: 6%;
+    margin: 0 10px;
+}
+
+.apresentacao__trecho {
+    display: inline-block;
+    width: 35%;
+    text-align: left;
+    margin: 1% 1%;
+    color: #674582;
+}
+
+.apresentacao__titulo {
+    font-size: 1.1rem;
+    margin: 30px 0;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+}
+
+.apresentacao__texto {
+    font-size: 0.9375rem;
+}
+
+.artigo-personalidade {
+    margin: 10px 0;
+}
+
+.destaque-personalidade {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* História */
+
+.conteudo__historia {
+    color: #674582;
+    width: 56%;
+    margin: 40px auto;
+}
+
+.historia__titulo {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    margin: 20px;
+    text-align: center;
+    color: #674582;
+}
+
+.autora__info {
+    margin-top: 15px;
+    font-size: 0.9375rem;
+}
+
+.historia__foto {
+    width: 100%;
+    margin: 3% 0;
+}
+
+/* Autora */
+
+.outras-maravilhosas {
+    display: flex;
+    justify-content: center;
+}
+
+.autora__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3%;
+}
+
+.autora__foto {
+    max-width: 140px;
+    border-radius: 3px;
+}
+
+.autora__sobre {
+    color: #674582;
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 0.9375rem;
+}
+
+.autora__sobre a {
+    text-decoration: none;
+    color: #674582;
+}
+
+.ver-todas {
+    text-align: center;
+    padding: 3% 0 8% 0;
+}
+
+.ver-todas a {
+    background-color: #c083b9;
+    padding: 12px 35px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* Rodapé */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape-main {
+    background-color: #323534;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.5rem 0;
+}
+
+.rodape__links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.rodape__links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 2px 0;
+}
+
+.rodape__logo {
+    max-width: 190px
+}
+
+.rodape-final {
+    background-color: #292a2a;
+    padding: 1%;
+}
+
+.rodape-assinatura {
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.5625rem;
+    opacity: 0.5;
+}
+
+.fb-icon {
+    display: flex;
+    align-items: center;
+}
+
+.fb-icon a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9375rem;
+}
+
+.fb-m {
+    max-width: 10px;
+    margin-right: .5rem;
+}
+
+@media (max-width: 768px) {
+    .cabecalho__titulo {
+        font-size: 2.25rem;
+    }
+    .apresentacao__trecho {
+        width: 39%;
+        margin: 3% 1%;
+    }
+}
+
+@media (max-width: 420px) {
+    .menu__navegacao {
+        display: none;
+    }
+    #btnResponsivo {
+        display: block;
+    }
+    .apresentacao__img-perfil {
+        display: block;
+        margin: 0 auto;
+        margin-top: 23px;
+        max-width: 120px;
+    }
+    .apresentacao__titulo {
+        margin: 5% 0;
+    }
+    .apresentacao__trecho {
+        width: 69%;
+        text-align: center;
+        margin: 2% 1%;
+    }
+    .conteudo__historia {
+        width: 68%;
+        margin: 6% auto;
+    }
+    .historia__foto {
+        width: 100%;
+        margin: 8% 0 3% 0;
+    }
+    .autora__foto {
+        max-width: 100px;
+    }
+    .autora__sobre {
+        font-size: 0.7rem;
+    }
+    .ver-todas {
+        padding: 8%;
+    }
+    .ver-todas a {
+        padding: 08px 26px;
+    }
+    .rodape-main {
+        display: flex;
+        flex-direction: column;
+    }
+    .rodape__logo {
+        max-width: 200px;
+    }
+    .rodape__links {
+        margin: 20px;
+    }
+    .rodape__links a {
+        margin: 5px;
+    }
+    .fb-icon {
+        margin-top: 27px;
+    }
+    .cabecalho {
+        background-position-x: 79%;
+        min-height: 60vh;
+    }
+}
