@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;   
+}
+
 body {
     font-family: "Montserrat", sans-serif;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     color: #674582;
 }
 
@@ -13,6 +18,7 @@ body {
     z-index: 100;
     align-items: center;
     top: 0;
+    position: fixed;
 }
 
 .navegacao__barra {
@@ -45,7 +51,9 @@ body {
 .menu__icone a {
     justify-content: flex-end;
     margin-right: 10px;
-
+}
+.menu__hamburger {
+    display: none;
 }
 
 .cabecalho {
@@ -63,6 +71,7 @@ body {
     background-size: 100%;
     width: 100%;
     position: relative;
+    background-repeat: no-repeat;
 }
 
 
@@ -77,6 +86,7 @@ body {
 .container {
     max-width: 960px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .conteudo__titulo {
@@ -91,13 +101,14 @@ body {
 
 .introducao {
     display: flex;
-    width: 800px;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
 
 .texto__introducao {
     margin-left: 20px;
+   
 }
 
 .foto__introducao {
@@ -115,6 +126,7 @@ body {
 
 .trajetoria {
     margin: 30px 0 50px 0;
+    width: 100%;
 }
 
 .trajetoria h2 {
@@ -172,9 +184,7 @@ body {
     display:  flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px 0;
-    
-   
+    padding: 20px 0;   
 }
 
 
@@ -193,7 +203,7 @@ body {
 }
 
 .logo__facereprograma {
-    width: 10px;
+    width: 17px;
     padding: 3px;
 }
 
@@ -223,4 +233,90 @@ body {
     margin: 0;
     color: white;
     font-size: 10px;
+}
+
+ @media (max-width:1024px) {
+    .cabecalho { 
+        background-size: cover;
+        background-position: center;
+    }
+    .container {
+        width: 850px;
+        margin: 0 auto;    
+    } 
+}
+
+@media (max-width:768px) {
+
+     .navegacao {
+        width: 100%;
+      
+    } 
+
+    .navegacao__menu {
+        display: none;
+    }
+
+    /* .navegacao__barra {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+       
+    } */
+
+    .navegacao__menuprincipal {
+        display: none;
+    }
+    
+    .menu__hamburger {
+        display: block;
+        /* padding-left: 300px; */    
+    }
+
+    .menu__icone {
+        display: none;
+    }
+
+    .introducao {
+        width: 100%;    
+    }
+    
+    .texto__introducao p {
+        width: 330px;
+    }
+
+    .container {
+        width: 650px;
+        margin: 0 auto; 
+    }  
+}
+
+@media (max-width:420px){
+    .navegacao {
+        width: 100%;   
+    }
+
+    .menu__hamburger {
+        display: block;
+        /* padding-left: 100px;     */
+    }
+
+    .container {
+        width: 375px;
+        margin: 0 auto; 
+    }  
+
+    .introducao {
+        display: flex;
+        flex-direction: column;
+    }
+           
+    .rodape__principal {
+        display: flex;
+        flex-direction: column;
+    }
+} 
+
+.conteudo h2 {
+    margin-left: 0;
 }

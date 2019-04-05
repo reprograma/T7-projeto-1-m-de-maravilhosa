@@ -84,7 +84,6 @@ li {
 
 /* --- NAV --- */
 .navegacao {
-<<<<<<< HEAD
     background-color: #674582;
     color: white;
     text-transform: uppercase;
@@ -94,16 +93,6 @@ li {
     position: fixed;
     width: 100%;
     justify-content: space-around;
-=======
-  background-color: #674582;
-  color: white;
-  text-transform: uppercase;
-  box-shadow: 0px 5px 5px rgba(0,0,0,.2);
-  padding: 1.5rem;
-  z-index: 99;
-  position: fixed;
-  width: 100%;
->>>>>>> master
 }
 
 .navegacao__logo {

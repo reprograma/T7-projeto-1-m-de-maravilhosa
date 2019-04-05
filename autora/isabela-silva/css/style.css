@@ -53,11 +53,16 @@ hr {
     margin-right: 10px;
 }
 
+
+.menu__hamburger {
+    display: none;
+}
+
 .cabecalho {
     background: linear-gradient(
         rgba(103, 69, 130, 0.25), 
         rgba(103, 69, 130, 0.40)
-      ),url(../img/tst3.jpg);
+      ),url(../img/índice21.jpg);
     background-size: cover;
     min-height: 500px;
     margin-top: 50px;
@@ -106,7 +111,6 @@ hr {
 
 .texto__introducao span {
     font-weight: bold;
-
 }
 
 .foto__introducao {
@@ -122,17 +126,25 @@ hr {
     text-align: center;
     margin: 0;
 }
+
+.legenda {
+    text-align: center;
+    margin: 0 0 40px;
+    font-size: 15px;
+    color: rgb(145, 147, 136)
+}
+
 .foto__trajetoria {
     width: 100%;
-    margin:40px 0;
+    margin:40px 0 5px 0;
 }
 
 /* .h2 {
     text-align: center;
 } */
-.demais__autoras {
+.demais__autoras h2 {
     text-align: center;
-    margin: 0
+    margin: 50px;
 }
 
 .demais__autoras img {
@@ -150,6 +162,10 @@ hr {
     margin: 0;
     font-size: 12px;
     color: black;
+}
+
+.icone__quadrado a {
+    text-decoration: none;
 }
 
 .demais__autoras p {
@@ -241,3 +257,93 @@ hr {
     color: white;
     font-size: 10px;
 }
+
+@media (max-width:1024px) {
+    .cabecalho { 
+        background-size: cover;
+        background-position: center;
+    }
+    .container {
+        width: 850px;
+        margin: 0 auto;    
+    } 
+}
+
+@media (max-width:768px) {
+
+     .navegacao {
+        width: 100%;
+      
+    } 
+
+    .navegacao__menu {
+        display: none;
+    }
+
+    /* .navegacao__barra {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+       
+    } */
+
+    .navegacao__menuprincipal {
+        display: none;
+    }
+    
+    .menu__hamburger {
+        display: block;
+        /* padding-left: 300px; */    
+    }
+
+    .menu__icone {
+        display: none;
+    }
+
+    .introducao {
+        width: 100%;    
+    }
+    
+    .texto__introducao p {
+        width: 330px;
+    }
+
+    .container {
+        width: 650px;
+        margin: 0 auto; 
+    }  
+}
+
+@media (max-width:420px){
+    .navegacao {
+        width: 100%;   
+    }
+
+    .menu__hamburger {
+        display: block;
+        /* padding-left: 100px;     */
+    }
+
+    .container {
+        width: 375px;
+        margin: 0 auto; 
+    }  
+
+    .introducao {
+        display: flex;
+        flex-direction: column;
+    }
+           
+    .rodape__principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .conteudo h2 {
+        margin-left: 0;
+    }
+
+} 
+
+    
