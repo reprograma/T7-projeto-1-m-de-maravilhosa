@@ -294,25 +294,29 @@ main {
 }
 
 .p__autora>p {
-    margin: 0;
+    margin: 2% 0;
     color: #63458A;
     font-weight: 700;
 }
 
-.p__autora>a {
+.p__autora > a {
     margin: 0;
     color: #63458A;
     font-weight: 700;
+    text-transform: unset;
 }
 /* AUTORA BREAKPONT 430px */
 
 @media (max-width: 430px) {
     .container__autora {
+        display:flex;
+        flex-direction: column;
         padding: 2%;
+        text-align: center;
     }
-    /* .p__autora{
+    .p__autora{
         margin: 2%;
-    } */
+    }
     .p__autora>p {
         font-size: 1rem;
     }
