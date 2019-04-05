@@ -50,7 +50,7 @@ li {
 
 @media (max-width: 420px){
     .container {
-        max-width: 460px;
+        max-width: 70%;
     }
 }
 /* --- BOTAO --- */
@@ -105,6 +105,14 @@ li {
     height: 86px;
 }
 
+@media (max-width: 420px){
+    .navegacao__box {
+        max-width: 420px;
+    }
+}
+
+
+
 .navegacao__logo {
     max-width: 200px;
 }
@@ -115,16 +123,29 @@ li {
     justify-content: space-between;
 }
 
+@media (max-width: 420px){
+    .navegacao__box {
+        justify-items: auto;
+    }
+}
+
 .navegacao__itens {
     right: -700px;
     top: 85px;
     width: 100%;
-    background-color: #674582;
     text-align: center;
     transition: right 1s;
     display: flex;
     justify-content: space-evenly;
 }
+
+
+@media (max-width: 420px){
+    .navegacao__itens {
+       display: none;
+    }
+}
+
 
 .container__top {
     display: flex;
@@ -186,6 +207,12 @@ li {
 }
 
 @media (max-width: 420px){
+    .navegacao__redes-sociais {
+        display: none;
+    }
+}
+
+@media (max-width: 760px){
     .navegacao__redes-sociais img{
         display:none;
         
@@ -201,7 +228,9 @@ li {
     padding-top: 20px;
     display: flex;
     align-items: flex-end;
+    width: 100%;
 }
+
 
 .cabecalho h1 {
     color: #fff; 
@@ -241,7 +270,7 @@ li {
 @media (max-width: 420px){
     .conteudo__iza{
         display:block;
-        padding: 100%;
+        margin: 0 auto;
         
     }
 }
@@ -258,13 +287,13 @@ li {
     margin-bottom: 6%;
 }
 
-@media (max-width: 420px){
-    .foto__iza{
-        height: 500px;
-        
+@media (max-width: 768px)
+{
+    .foto__iza {
+        height: 305px;
     }
-}
 
+}
 
 .texto__iza {
     width: 66%;
@@ -272,6 +301,14 @@ li {
     padding-top: 6%;
 }
 
+@media (max-width: 768px)
+{
+    .texto__iza {
+    width: 100%;
+    text-align: -webkit-center;
+    }
+
+}
 
 .citacao__iza {
     margin: 0 auto;
@@ -280,13 +317,6 @@ li {
     padding-top: 6%;
 }
 
-@media (max-width: 768px)
-{
-    .texto__iza {
-    width: 50%;
-    }
-
-}
 
 /*história iza*/
 
@@ -346,10 +376,35 @@ li {
 }
 
 .img__mulher {
-    height: 30%;
+    width: 81%;
     background-color: #674582;
-    margin: 50px;
+    /* margin: 50px; */
     border-radius: 10px;
+}
+
+
+.fotos__outras__maravilhosas {
+    width: 100%;
+}
+
+.caixinhas {
+    width: 30%;
+}
+
+@media (max-width: 420px){
+
+    .fotos__outras__maravilhosas {
+        flex-direction: column 1px;
+    }
+}
+
+@media (max-width: 420px){
+
+    .outras__maravilhosas{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    }
 }
 
 .p__mulher {
@@ -411,4 +466,17 @@ li {
 
 .rodape__home {
     text-align: center;
+}
+
+@media (max-width: 420px){
+    .navegacao__rodape {
+        flex-direction: column;
+        display: flex;
+    }
+}
+
+@media (max-width: 420px){
+    .icone__alinhar {
+        display: none;
+    }
 }

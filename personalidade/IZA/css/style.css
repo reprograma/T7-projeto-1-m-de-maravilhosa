@@ -153,6 +153,20 @@ li {
     }
 }
 
+@media (max-width: 781px){
+    .navegacao__itens {
+        display: none;
+        
+    }
+}
+
+@media (max-width: 781px){
+    .navegacao__menu-hamburguer {
+        display: block;
+        
+    }
+}
+
 .navegacao__itens li > a:hover {
     color: #C083B9;
 }
@@ -201,6 +215,7 @@ li {
     padding-top: 20px;
     display: flex;
     align-items: flex-end;
+    /* width: 100vh; */
 }
 
 .cabecalho h1 {
@@ -214,7 +229,7 @@ li {
 @media (max-width: 420px){
     .cabecalho {
         display:flex;
-        width: 100%;
+        background-position: center;
         
     }
 }
@@ -223,7 +238,7 @@ li {
 
 .citacao__iza {
     text-align: center;
-    width: 600px;
+    /* width: 600px; */
     border: 1px solid #674582;
 }
 
@@ -238,13 +253,14 @@ li {
     justify-content: center;
 }
  
-@media (max-width: 420px){
-    .conteudo__iza{
-        display:block;
-        padding: 100%;
-        
+@media (max-width: 781px){
+    .conteudo__iza {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
+
 
 .titulo__iza {
     text-align: center;
@@ -260,7 +276,7 @@ li {
 
 @media (max-width: 420px){
     .foto__iza{
-        height: 500px;
+        height: 300px;
         
     }
 }
@@ -271,17 +287,30 @@ li {
     padding-left: 3%;
 }
 
-
+/* @media (max-width: 781px){
+    .texto__iza{
+    width: 100%;
+        
+    }
+} */
 .citacao__iza {
     margin: 0 auto;
     text-align: center;
     border:1px solid #674582;
 }
 
+/* @media (max-width: 420px)
+{
+    .citacao__iza p {
+    width: 50%;
+    }
+
+} */
+
 @media (max-width: 768px)
 {
     .texto__iza {
-    width: 50%;
+    width: 100%;
     }
 
 }
@@ -291,12 +320,13 @@ li {
 
 .historia__iza {
     margin: 0 auto;
-    height: 50%;
+    height: 100%;
 
 }
 
 .foto__iza__texto {
     margin: 5%;
+    width: 100%;
 }
 
 
@@ -328,9 +358,9 @@ li {
     border-radius: 5px;
     font-size: 20px;
     text-transform: uppercase;
-    /*margin-bottom: 9%;
-    display: flex;
-    justify-content: center;*/
+    display: table;
+    margin: auto;
+   
 
 }
 
@@ -389,3 +419,10 @@ li {
 .rodape__home {
     text-align: center;
 }
+
+@media (max-width: 420px)
+{
+    .navegacao__links {
+    flex-direction: column;
+    }
+    }
