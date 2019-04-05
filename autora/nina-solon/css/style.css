@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #63458A;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+p {
+    line-height: 150%;
+    margin-bottom: 3vh;
+}
+
+.navegacao {
+    width: 100%;
+    height: 12vh;
+    background-color: #674582;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+@media (max-widht: 768px) {
+    .navegacao {
+    height: 10vh;
+    }
+}
+
+.navegacao__conteudo {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+}
+
+.navegacao__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.menu-reprograma {
+    margin-right: 3vw;
+}
+
+.menu-reprograma li {
+    display: inline-block;
+    list-style: none;
+    padding-right: 1.5vw;
+}
+
+.link-menu {
+    color: #fff;
+}
+
+.link-menu:hover {
+    color: #C083B9;
+}
+
+.menu-redes-sociais li {
+    display: inline-block;
+    list-style: none;
+    padding-right: 1vw;
+}
+
+.menu-hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .menu-hamburger {
+        display: inline-block;
+    }
+
+    .menu-redes-sociais, .menu-reprograma {
+        display: none;
+    }
+
+    .navegacao__conteudo {
+        padding: 0 5vw;
+    }
+}
+
+.cabecalho {
+    background: linear-gradient(
+        rgba(103, 69, 130, 0.56), 
+        rgba(103, 69, 130, 0.56)
+      ),url(../img/reprograma-bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 12vh;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+    min-height: 50vh;
+    margin-top: 10vh;
+    }
+}
+
+.titulo {
+    color: #fff;
+    font-weight: 800;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2vh;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.intro-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .intro-conteudo {
+        flex-direction: column;
+    }
+}
+
+.intro-texto {
+    margin-left: 50px;
+}
+
+.perfil-nina {
+    width: 250px;
+}
+
+@media (max-width: 768px) {
+    .intro-texto {
+        margin: 0;
+    }
+
+    .perfil-nina {
+        margin-bottom: 3vh;
+    }
+}
+
+.link-marielle {
+    color: #63458A;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.redes-nina a {
+    color: #63458A;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link-marielle:hover, .redes-nina a:hover {
+    color: #C083B9;
+}
+
+.divisoria {
+    margin: 10vh auto;
+    background-color: #63458A;
+    height: 2px;
+    width: 400px;
+    display: block;
+}
+
+@media (max-width: 420px) {
+    .divisoria {
+        width: 200px;
+        margin: 5vh auto;
+    }
+}
+
+.sobre-foto {
+    width: 100%;
+    margin: 2vh 0;
+}
+
+.legenda-foto {
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.outras-conteudo {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.personalidade {
+    max-width: 170px;
+    min-width: 100px;
+    width: 20vw;
+    text-align: center;
+    color: #63458A;
+}
+
+.personalidade a {
+    color: #63458A;
+}
+
+.personalidade a:hover {
+    text-decoration: underline;
+}
+
+.personalidade img {
+    width: 100%;
+    background-color: #63458A;
+    border-radius: 10px;
+}
+
+.personalidade p {
+    margin-top: 2vh;
+}
+
+.introducao, .sobre, .outras-maravilhosas {
+    margin: 8vh 0;
+}
+
+@media (max-width: 420px) {
+    .introducao, .sobre, .outras-maravilhosas {
+        margin: 5vh 0;
+    }
+}
+
+.voltar-home {
+    display: flex;
+    justify-content: center;
+    margin: 15vh 0;
+}
+
+@media (max-width: 420px) {
+    .voltar-home {
+        display: none;
+    }
+}
+
+.link-home {
+    text-align: center;
+    background-color: #C083B9;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    color: #fff;
+}
+
+.link-home:hover {
+    background-color: #63458A;
+}
+
+.rodape-reprograma {
+    background-color: #323534;
+    display: block;
+}
+
+.rodape-reprograma-conteudo {
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.rodape-menu li {
+    text-align: center;
+    list-style: none;
+}
+
+.rodape-menu li:hover {
+    color: #C083B9;
+}
+
+.rodape-logo {
+    width: 200px;
+}
+
+.facebook {
+    display: flex;
+    align-items: center;
+}
+
+.icone-facebook {
+    height: 30px;
+    padding-right: 5px;
+}
+
+@media (max-width: 500px) {
+    .rodape-reprograma-conteudo {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .rodape-logo {
+        margin: 10px 0;
+    }
+}
+
+.rodape-creative-commons {
+    text-align: center;
+    background-color: #292A2A;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.8rem;
+}
