@@ -1,0 +1,232 @@
+
+body{
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0 auto;
+    background-color: #E5E5E5;
+}
+.cabecalho__nav{
+    width: 100%; 
+    background-color: #674582;
+}
+.nav__content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    width: 250px;
+}
+.logo__img{
+    width:100%;
+}
+
+.cabecalho__home a{
+    text-decoration: none;
+    margin:20px;
+    color: #fff;
+}
+
+.header{
+    display: flex;
+    align-items: flex-end;
+    background-image: url(./img/banner-carolina.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.titulo__banner{
+    text-align: center;
+    color:#fff;
+    width: 100%;
+    text-transform: uppercase;
+}
+/* inicio do conteúdo */
+
+.titulo__citacao{
+    align-items: center;
+    display: flex;
+    color:#63458A; 
+    justify-content: center;
+}
+
+.personalidade{
+    display: flex;
+    margin-top: 50px;
+    color:#63458A; 
+}
+.img__carolinadejesus{
+    width: 36%;
+}
+
+.perfil__personalidade{
+    width:70%;
+}
+ 
+.img__autora{
+    width: 201px;
+    justify-content: center;
+}
+/* borda e citacao*/
+
+.citacao{
+    border: 0.5px solid #63458A;
+    display: flex;
+    justify-content: center;
+    color:#63458A;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.historia__personalidade{
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 50px;
+    color:#63458A;
+}
+
+.foto__carolina{
+    width: 90%;
+    align-items: center;
+}
+/* inicio perfil da autora */
+.autora__perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6B0DC;
+    color:#63458A;  
+}
+.foto__autora{
+    width: 201px; 
+    height:201px; 
+}
+
+.autora__perfil h6{
+    width: 400px;
+    margin-left: 20px;
+}
+/* botão */
+.botao{
+    margin: 6% auto; 
+    padding: 20px; 
+    background-color: #674582;
+    border-radius: 5%;
+    width: 138px;
+    
+}
+.botao__elas{
+    justify-content: center;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    height: 5%;
+    margin: 10%;
+}
+
+.alinhar__botao{
+    margin: 0 auto;
+}
+/* rodapé */
+
+.rodape{
+    background-color: #323534;
+    width: 100%; 
+}
+.rodape__content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu__rodape{
+    color:#fff;
+}
+.menu__rodape a{
+    text-decoration: none;
+    color: #fff;
+}
+.container{
+    margin: 0 auto;
+    width: 70.3125%;
+}
+
+.rodape__logo{
+    width: 250px;
+    align-items: center;
+}
+
+.rodape__redesocial{
+    width: 20px;
+}
+.rodape__redesocial a{
+    text-decoration: none;
+    color:white;
+}
+.rodape__facebook{
+    width: 100%;
+}
+
+.rodape__final{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rodape__baixo{
+    color: #fff;
+    background-color: #292A2A;
+    width: 100%; 
+    font-size: 10px;
+}
+
+.menu__hamburguer{
+    display:none;
+}
+
+@media (max-width: 768px){
+    .redes__sociais,
+    .cabecalho__home{
+        display:none;
+    }
+
+    .personalidade{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .citacao{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .historia__personalidade{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 420px){
+    .rodape__content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rodape__redesocial a{
+        text-align: center;
+        justify-content: flex-start;
+    }
+}
