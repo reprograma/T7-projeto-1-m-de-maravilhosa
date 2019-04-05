@@ -99,9 +99,10 @@ li {
 }
 
 .navegacao__box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
 }
 
 .navegacao__itens {
