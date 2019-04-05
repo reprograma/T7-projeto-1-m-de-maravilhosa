@@ -1,0 +1,509 @@
+/* COISAS EM COMUM NA PÁGINA */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family:'Montserrat';
+    color: #63458A;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #63458A;
+}
+
+li {
+    list-style: none;
+}
+
+.italico {
+    font-style: italic;
+}
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*ÁREA DE NAVEGAÇÃO*/
+.navegacao {
+    background-color: rgb(103, 69, 130);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1%;    
+}
+
+.container__nave {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__menu {
+    width: 25%;
+    justify-content: left;
+}
+
+.navegacao__links {
+    width: 43.6%;
+}
+
+.navegacao__redes-sociais {
+    width: 21.6%;
+}
+
+.links__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.links__menu a {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 0.75rem;
+}
+
+.redes-sociais__menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.redes-sociais__menu li {
+    margin: 0 3.8%;
+}
+
+.menu-responsivo {
+    display: none;
+    width: 8%;
+}
+
+/* HEADER */
+.cabecalho {
+    background: linear-gradient(
+        rgba(103, 69, 130, 0.56), 
+        rgba(103, 69, 130, 0.56)
+      ),url("../img/WhatsApp\ Image\ 2019-03-15\ at\ 17.24.07.jpeg");
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.cabecalho__titulo {
+    color: rgb(255, 255, 255);
+}
+
+/* AUTORA */
+.autora {
+    margin-top: 5%;
+}
+
+.autora__titulo {
+    text-align: center;
+    font-family:'Roboto Slab';
+    margin-bottom: 1%;
+}
+
+.autora__bloco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.autora__paragrafo {
+    margin-bottom: 1rem;
+}
+
+.autora__imagem  {
+    min-width: 40%;
+    height: auto;
+    display: block;
+    margin-right: 4.39%;
+}
+
+.texto__sylvia-plath {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.autora__redes-sociais {
+    font-weight: bold;
+}
+
+/* TRAÇO */
+.traco {
+    margin-top: 7%;
+}
+.traco-div {
+    margin-top: 4%;
+    border-top: 2px solid #63458A;
+    width: 30%;
+    margin: 0 auto;
+}
+
+/* SOBRE O M DE MARAVILHOSA */
+.m-de-maravilhosa__bloco {
+    margin-top: 5%;
+}
+
+.m-de-maravilhosa__titulo {
+    color: #63458a;
+    font-family: 'Roboto Slab';
+    text-align: center;
+    margin: 0;
+}
+
+.m-de-maravilhosa__imagem {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.foto__legenda {
+    color: #6D6D6D;
+    font-size: 80%;
+    font-style: italic;
+    text-align: center;
+}
+
+.m-de-maravilhosa__paragrafo {
+    margin: 4.15% 0;
+}
+
+/* OUTRAS MARAVILHOSAS */
+.outras-maravilhosas {
+    margin-top: 2.5%;
+}
+
+.outras-maravilhosas__titulo {
+    color: #63458a;
+    font-family: 'Roboto Slab';
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.outra-maravilhosa__img {
+    width: 100%;
+    margin-top: 7%;
+    height: auto;
+}
+.bloco-de-maravilhosas {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.maravilhosa-bloco {
+    max-width: 150px;
+    margin-right: 5rem;
+}
+
+.maravilhosa-bloco-3 {
+    margin-right: 0;
+}
+
+.fundo-foto {
+    background-color: #63458a;
+    border-radius: 10%;
+}
+
+.maravilhosa-bloco p {
+    text-align: center;
+    color: #000000;
+}
+
+/* BOTÃO */
+.botao__bottom {
+    border-radius: 5px;
+    padding: 1% 0.5%;
+    background-color:#C083B9;
+    border: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.botao__bottom:hover {
+    background-color: #63458A;
+}
+
+.botao__texto {
+    color: rgb(255, 255, 255);
+    font-size: 0.875rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    margin-top: 3.19%;
+    width: 100%;
+    bottom: 0;
+}
+
+.rodape__parte1 {
+    background-color: #323534;
+    padding: 1%;
+}
+.container__rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+.links__rodape {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+}
+
+.links__rodape a {
+    color: rgb(255, 255, 255);
+    font-size: 0.750rem;
+}
+
+.rodape__logo {
+    width: 21.6%;
+}
+
+.rodape__facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape__facebook p {
+    color: #FFFFFF;
+    font-size: 0.750rem;
+}
+
+.rodape__facebook a {
+    color: #FFFFFF;
+}
+
+.img__facebook__rodape {
+    width: 6%;
+}
+
+.rodape__parte2 {
+    background-color: #292A2A;
+    bottom: 0;
+    padding: 1%;
+}
+
+.rodape2__paragrafo {
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* RESPONSIVO 1*/
+@media (max-width: 1250px) {
+    html {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+/* RODAPÉ */
+    .botao__texto {
+        font-size: 10px;
+    }
+}
+
+/*RESPONSIVO 2: TABLET DEITADO*/
+@media (max-width: 1024px) {
+
+    /* ÁREA DE NAVEGAÇÃO */
+    .menu-responsivo {
+        display: inline;
+    }
+
+    .navegacao__redes-sociais {
+        display: none;
+    }
+
+    .logo__menu {
+        width: 35%;
+    }
+
+/* RESPONSIVO 3: TABLET DE PÉ */
+@media (max-width: 835px) {
+    html {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    /* ÁREA DE NAVEGAÇÃO */
+    .menu-responsivo {
+        display: inline;
+    }
+
+    .navegacao__redes-sociais, .navegacao__links {
+        display: none;
+    }
+
+    .logo__menu, .menu-responsivo-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo__menu {
+        width: 40%;
+    }
+
+    .menu-responsivo-img {
+        width: 70%;
+    }
+
+    .autora__titulo {
+        margin-bottom: 5%;
+
+    }
+
+    .autora__imagem {
+        width: 150px;
+        border-radius: 80px;
+    }
+
+    /* OUTRAS MARAVILHOSAS */
+    .fundo-foto, .outra-maravilhosa__img {
+        width: 80%;
+    }
+
+    .outra-maravilhosa__img {
+        margin: 0 9%;
+        margin-top: 5.5%;
+    }
+
+    /* BOTÃO */
+    .botao__texto {
+        font-size: 13px;
+        padding: 1% 2.5%;
+    }
+
+    /* RODAPÉ */
+    .container__rodape {
+        width: 80%;
+    }
+}
+
+/* RESPONSIVO 5*/
+@media (max-width: 650px) {
+    html {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    /* ÁREA DE NAVEGAÇÃO */
+    .container__nave {
+        padding: 1%;
+    }
+
+    /* HEADER */
+    .cabecalho {
+        min-height: 300px;
+        background-position-y: 9px;
+    }
+
+    /* AUTORA */
+    .autora__bloco {
+        flex-direction: column;
+    }
+
+    .autora__imagem {
+        margin: 5% 0;
+    }
+
+    .autora__titulo {
+        margin-top: 9%;
+    }
+
+    .autora__paragrafo, .autora__redes-sociais {
+        text-align: center;
+    }  
+
+    /* OUTRAS MARAVILHOSAS */
+    .outras-maravilhosas__titulo {
+        margin-top: 9%;
+    }
+
+    /* RODAPÉ */
+    .container__rodape {
+        flex-direction: column;
+    }
+
+    .rodape__logo {
+        width: 38%;
+    }
+
+    .rodape__facebook {
+        margin-top: 2%;
+    }
+}
+
+/* RESPONSIVO 6: CELULAR */
+@media (max-width: 420 px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    /* ÁREA DE NAVEGAÇÃO */
+    .container__nave {
+        padding: 2%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .logo__menu {
+        width: 60%;
+    }
+
+    .menu-responsivo-img {
+        width: 90%;
+    }
+
+    /* OUTRAS MARAVILHOSAS */
+    .outras-maravilhosas__titulo {
+        margin-top: 9%;
+        margin-bottom: 9%;
+    }
+
+     /* BOTÃO */
+     .botao__bottom {
+        padding: 3% 3.5%;
+    }
+    
+    /* RODAPÉ */
+    .rodape__parte1 {
+        padding: none;
+    }
+}
