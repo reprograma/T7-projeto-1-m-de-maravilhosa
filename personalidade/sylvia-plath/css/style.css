@@ -17,6 +17,7 @@ p {
 
 a {
     text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 li {
@@ -124,11 +125,10 @@ li {
 }
 
 .resumo__foto {
-    max-width: 100%;
+    max: 100%;
     height: auto;
     display: block;
     margin-right: 4.39%;
-    width: 200px;
 }
 
 /* QUOTE */
@@ -167,6 +167,7 @@ li {
     background-color: #E4B7E5;
     margin-top: 1.74%;
     margin-bottom: 1.74%;
+    height: auto;
 }
 
 .autora__conteudo {
@@ -185,7 +186,7 @@ li {
     display: block;
 }
 
-.autora__infos h5, a {
+.autora__infos > h5, a {
     margin-bottom: 5.93%;
     margin-top: 5.93%;
     color: #63458A;
@@ -199,6 +200,10 @@ li {
     border: none;
     margin: 0 auto;
     display: block;
+}
+
+.botao__bottom:hover {
+    background-color: #63458A;
 }
 
 .botao__texto {
@@ -255,6 +260,10 @@ li {
     font-size: 0.750rem;
 }
 
+.rodape__facebook a {
+    color: #FFFFFF;
+}
+
 .img__facebook__rodape {
     width: 6%;
 }
@@ -297,6 +306,13 @@ li {
 
 /*RESPONSIVO 2: TABLET DEITADO*/
 @media (max-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+    
+    .container {
+        width: 80%;
+    }
 
     /* ÁREA DE NAVEGAÇÃO */
     .menu-responsivo {
@@ -311,6 +327,21 @@ li {
         width: 35%;
     }
 
+    /* RESUMO */
+    .resumo__foto {
+        width: 100%;
+        border-radius: 150px;
+    }
+
+    /* HISTÓRIA */
+    .historia__paragrafo {
+        margin-bottom: 5%;
+    }
+
+    .historia__imagem {
+        margin-bottom: 6%;
+    }
+
     /* PARTE DA AUTORA */
     .autora__conteudo {
         width: 90%;
@@ -320,7 +351,7 @@ li {
 /* RESPONSIVO 3: TABLET DE PÉ */
 @media (max-width: 835px) {
     html {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .container {
@@ -330,6 +361,10 @@ li {
     /* ÁREA DE NAVEGAÇÃO */
     .menu-responsivo {
         display: inline;
+    }
+
+    .container__nave {
+        padding: 1%;
     }
 
     .navegacao__redes-sociais, .navegacao__links {
@@ -356,11 +391,13 @@ li {
 
     /* RESUMO */
     .resumo__foto {
-        width: 150px;
+        width: 100%;
+        border-radius: 150px;
     }
 
-    .resumo__foto {
-        border-radius: 150px;
+    /* HISTÓRIA */
+    .historia__paragrafo {
+        margin: 5% 0;
     }
 
     /* PARTE DA AUTORA */
@@ -370,7 +407,7 @@ li {
 
     .autora__conteudo {
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     .autora__imagem {
@@ -380,11 +417,16 @@ li {
 
     .autora__infos {
         width: 30%;
+        margin-left: 5%;
     }
 
     /* BOTÃO */
     .botao__texto {
         font-size: 10px;
+    }
+
+    .botao__bottom {
+        padding: 2% 2.5%;
     }
 
     /* RODAPÉ */
@@ -397,30 +439,44 @@ li {
 @media (max-width: 576px) {
 
     html {
-        font-size: 13px;
+        font-size: 15px;
         line-height: 22px;
     }
 
     /* ÁREA DE NAVEGAÇÃO */
     .container__nave {
-        padding: 1%;
+        padding: 2%;
     }
 
     /* RESUMO */
     .resumo__titulo {
-        margin-bottom: 1%;
+        margin-bottom: 10%;
     }
 
-    /* HISTÓRIA */
-    .historia__titulo {
-        margin-bottom: 1%;
-    }
-    .historia__imagem {
-        margin: 5% 0;
-    }
-    
     .resumo__foto {
         border-radius: 150px;
+        width: 200px;
+    }
+
+    .resumo__bloco-div {
+        flex-direction: column-reverse;
+    }
+
+     /* QUOTE */
+
+     .quote {
+        margin: 10% auto;
+        line-height: 27px;
+        font-size: 14px;
+    }
+
+     /* HISTÓRIA */
+     .historia__titulo {
+        margin: 5% 0;
+    }
+
+    .historia__paragrafo {
+        margin: 5% 0;
     }
 
     /* PARTE DA AUTORA */
@@ -431,6 +487,10 @@ li {
 
     .autora__imagem {
         width: 23%;
+    }
+
+    .autora-github {
+        display: none;
     }
 
     /* BOTÃO */
@@ -458,6 +518,7 @@ li {
     
     html {
         font-size: 16px;
+        line-height: 20px;
     }
 
     /* ÁREA DE NAVEGAÇÃO */
@@ -479,14 +540,72 @@ li {
 
     .cabecalho {
         background-position-y: 50px;
+        background-position-x: 30%;
     }
 
     /* RESUMO */
     .resumo__titulo {
-        margin-top: 0;
+        margin-top: 15%;
+        margin-bottom: 10%;
     }
 
     .resumo__bloco-div {
         margin-top: 7%;
+        flex-direction: column-reverse;
+    }
+
+    .resumo__foto {
+        width: 200px;
+        border-radius: 200px;
+    }
+
+    /* QUOTE */
+
+    .quote {
+        margin: 15% auto;
+        line-height: 27px;
+        font-size: 14px;
+    }
+
+    /* HISTÓRIA */
+    .historia__titulo {
+        margin-bottom: 10%;
+    }
+
+    .historia__paragrafo {
+        margin-bottom: 5%;
+    }
+
+    /* AUTORA */
+    .autora {
+        margin-top: 7%;
+    }
+
+    .autora__conteudo {
+        height: 90px;
+    }
+
+    .autora__imagem {
+        width: 21%;
+    }
+
+    .autora__infos h5 {
+        font-size: 12px;
+        line-height: 100%;
+        width: 150px;
+    }
+
+    .autora-github {
+        display: none;
+    }
+    
+    /* BOTÃO */
+    .botao__bottom {
+        padding: 3% 3.5%;
+    }
+    
+    /* RODAPÉ */
+    .rodape__parte1 {
+        padding: none;
     }
 }
