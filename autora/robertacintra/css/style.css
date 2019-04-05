@@ -1,0 +1,410 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 5px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+hr {
+    width: 30rem;
+    height: 0px;
+    text-align: center;
+    margin-top: 3em;
+}
+
+/* UNIVERSAL STYLES */
+
+.img-responsive {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* NAV PERSONALIDADE - ELLEN PAGE */
+
+.navegacao {
+    background-color: #674582;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    padding: 1.5rem;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+}
+
+.navegacao__logo {
+    max-width: 200px;
+}
+
+.navegacao__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacao__redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.navegacao__itens {
+    display: none;
+}
+
+.navegacao__itens li > a {
+    transition: all .2s;
+}
+
+.navegacao__itens li > a:hover {
+    color: #C083B9;
+}
+
+/* --- HEADER PERSONALIDADE - ELLEN PAGE --- */
+
+.header {
+    background: linear-gradient(rgba(255, 0, 255, 0.2),
+                                rgba(255, 0, 255, 0.2)),
+                url(../img/poa.JPG);
+    min-height: 80vh;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+}
+
+/* MAIN */
+
+.about {
+    margin: 0 5rem;
+    font-size: 1.5rem;
+    color: #674582;
+}
+
+.about__title {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    color: #63458a;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.about__subtitle {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    color: #63458a;
+    font-size: 2rem;
+}
+
+.about__intro {
+    display: inline-block;
+    text-align: center;
+}
+
+.about__ellen-img {
+    border-radius: 5px;
+    height: 150px;
+}
+
+.about__resume {
+    text-align: left;
+    margin: 2.5rem 0;
+    line-height: 2.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__story {
+    margin: 2.5rem 0;
+    line-height: 2.3rem;
+}
+
+.autora__text {
+    font-size: 1.5rem;
+    color: #674582;
+    margin: 0;
+    font-weight: bold;
+}
+
+.autora__ro {
+    height: 130px;
+    border-radius: 5px;
+}
+
+.autora__about {
+    padding: 0 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.autora__container {
+    display: block;
+    min-height: 150px;
+    
+}
+
+.autora__button {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+/* --- BOTAO --- */
+
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+}
+
+.btn_roxo {
+    color: white;
+    background-color: #C083B9;
+    display: block;
+    max-width: 250px;
+    text-align: center;
+    transition: all .5s;
+    margin: 0 auto;
+}
+
+.btn_roxo:hover,
+.btn_roxo:focus {
+    transform: translateY(-1rem);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    background-color: rgb(192, 156, 188);
+}
+
+.btn_roxo:active {
+    transform: translateY(-.5rem);
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+
+.btn_center {
+    margin: 0 auto;
+}
+
+/* --- FOOTER --- */
+.rodape {
+    background-color: #323534;
+    color: white;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.8rem;
+}
+
+.rodape__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.rodape__principal > * {
+    margin: 1rem 0;
+}
+
+.rodape__navegacao > li {
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+
+.rodape__navegacao a {
+    transition: all .5s;
+}
+
+.rodape__navegacao a:hover {
+    color: #C083B9;
+}
+
+.rodape__logo {
+    max-width: 200px;
+}
+
+.rodape__redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.rodape__redes-sociais a:hover {
+    color: #C083B9;
+}
+
+.rodape__redes-sociais img {
+    max-width: 10px;
+    margin-right: 0.5rem;
+}
+
+.rodape__redes-sociais span {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.rodape__cc {
+    width: 100%;
+    background-color: #292A2A;
+    font-size: 1rem;
+    opacity: 0.5;
+    text-align: center;
+}
+
+
+/* RESPONSIVE TABLET */
+@media (min-width: 768px) {
+/* --- NAV --- */
+    .navegacao__itens {
+        position: static;
+        display: flex;
+        padding: 0;
+        width: auto;
+    }
+
+    .navegacao__nav {
+        margin-bottom: 0;
+    }
+    
+    .navegacao__itens ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .navegacao__itens li {
+        font-size: 1.2rem;
+        margin: 0 0.6rem;
+    }
+    
+    .navegacao__menu-hamburguer {
+        display: none;
+    }
+
+/* --- HEADER --- */
+    .header {
+        min-height: 75vh;
+        text-align: center;
+    }
+
+    .principal__titulo {
+        font-size: 2.9rem;
+    }
+    
+    .principal__sub {
+        font-size: 1.8rem;
+    }
+
+    .principal__btn {
+        margin: 0;
+    }
+
+/* --- MAIN --- */
+
+    .about {
+        margin: 0 15rem;
+        padding: 0 2.5rem;
+    }
+
+    .about__intro {
+        display: inline-block;
+    }
+
+    .autora__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+/* --- FOOTER --- */
+    .rodape {
+        padding-top: 0;
+    }
+
+    .rodape__principal {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .rodape__logo img {
+        max-width: 250px;
+    }
+
+    .rodape__navegacao > li {
+        font-size: 1.5rem;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1440px) {
+    .navegacao__box {
+        max-width: 80%;
+    }
+    .header {
+        min-height: 90vh;
+    }
+    .navegacao__itens li {
+        font-size: 1.5rem;
+        margin: 0 1rem;
+    }
+    .principal {
+        max-width: 650px;
+    }
+
+    .about__resume {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__intro {
+        display: flex;
+        flex-direction: column;
+    }
+}

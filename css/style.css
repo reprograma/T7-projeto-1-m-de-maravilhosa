@@ -156,19 +156,18 @@ li {
 
 /* --- HEADER --- */
 .header {
-  min-height: 80vh;
-  height: 500px;
-  background: linear-gradient(rgba(255, 0, 255, 0.2),
-                              rgba(255, 0, 255, 0.2)),
-              url(../img/turma6.jpeg);
-  background-size: cover;
-  background-position: center 14%;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: flex-end;
-  text-align: center;
-  padding: 11rem 2rem 5rem 2rem;
-  color: white;
+    min-height: 80vh;
+    height: 500px;
+    background: linear-gradient(rgba(255, 0, 255, 0.2),
+                                rgba(255, 0, 255, 0.2)),
+                url(../img/turma6.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: white;
+/*    padding: 11rem 2rem 5rem 2rem;*/
 }
 
 .principal__titulo {
@@ -296,88 +295,102 @@ li {
 /*** MEDIA QUERIES ***/
 /* TABLET */
 @media (min-width: 768px) {
-  /* --- NAV --- */
-  .navegacao__itens {
-      position: static;
-      display: flex;
-      padding: 0;
-      width: auto;
-  }
+    /* --- NAV --- */
+    .navegacao__itens {
+        position: static;
+        display: flex;
+        padding: 0;
+        width: auto;
+    }
 
-  .navegacao__nav {
-      margin-bottom: 0;
-  }
-  
-  .navegacao__itens ul {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      align-items: center;
-      text-align: center;
-  }
-  
-  .navegacao__itens li {
-      font-size: 1.2rem;
-      margin: 0 .6rem;
-  }
-  
-  .navegacao__menu-hamburguer {
-      display: none;
-  }
+    .navegacao__nav {
+        margin-bottom: 0;
+    }
+    
+    .navegacao__itens ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .navegacao__itens li {
+        font-size: 1.2rem;
+        margin: 0 .6rem;
+    }
+    
+    .navegacao__menu-hamburguer {
+        display: none;
+    }
 
-  /* --- HEADER --- */
-  .header {
-      min-height: 75vh;
-      text-align: left;
-      padding: 5rem 10rem;
-  }
+    /* --- HEADER --- */
+    .header {
+        min-height: 75vh;
+        text-align: left;
+        padding: 5rem 10rem;
+    }
 
-  .principal__titulo {
-      font-size: 2.9rem;
-  }
-  
-  .principal__sub {
-      font-size: 1.8rem;
-  }
+    .principal__titulo {
+        font-size: 2.9rem;
+    }
+    
+    .principal__sub {
+        font-size: 1.8rem;
+    }
 
-  .principal__btn {
-      margin: 0;
-  }
+    .principal__btn {
+        margin: 0;
+    }
 
-  /* --- SECTION MARAVILHOSAS --- */
-  .maravilhosas {
-      padding: 4rem 0;
-  }
+    /* --- SECTION MARAVILHOSAS --- */
+    .maravilhosas {
+        padding: 4rem 0;
+    }
 
-  .maravilhosas__box > div {
-      max-width: 200px;
-      margin: 5rem;
-  }
+    .maravilhosas__box > div {
+        max-width: 200px;
+        margin: 5rem;
+    }
 
-  .maravilhosas__perfil p {
-      font-size: 1.5rem;
-      margin-top: 1rem;
-  }
+    .maravilhosas__perfil p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
 
-  /* --- FOOTER --- */
-  .rodape {
-      padding-top: 0;
-  }
+    /* --- FOOTER --- */
+    .rodape {
+        padding-top: 0;
+    }
 
-  .rodape__principal {
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-  }
+    .rodape__principal {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
 
-  .rodape__logo img {
-      max-width: 250px;
-  }
+    .rodape__logo img {
+        max-width: 250px;
+    }
 
-  .rodape__navegacao > li {
-      font-size: 1.5rem;;
-  }
+    .rodape__navegacao > li {
+        font-size: 1.5rem;;
+    }
+
+    /** PERSONALIDADE **/
+    /* --- OUTRA HEADER --- */
+    .header-personalidade {
+        padding: 0 20rem;
+        display: flex;
+        
+        align-items: flex-end;
+    }
+
+    .header-personalidade__titulo {
+        font-size: 3.5rem;
+        text-align: center;
+    }
 }
 
 @media (min-width: 1024px) {
