@@ -1,0 +1,408 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #63458A;
+    font-size: 36px;
+}
+
+.img-responsive {
+    width: 100%;
+    min-width: 200px;
+}
+
+/* INICIO DO MENU */
+
+.navegacao {
+    background-color: #674582;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    font-size: 13px;
+    width: 100%;
+    padding: 1%;
+}
+
+.container__navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+}
+
+.logo__navegacao {
+    width: 20%;
+}
+
+.navegacao__itens {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    width: 60%;
+}
+
+.ul__navegacao li {
+    margin-left: 5%;
+}
+
+.ul__navegacao--links {
+    width: 50%;
+}
+
+.navegacao__menu-hamburguer {
+    display: none;
+}
+
+/* NAVEGAÇÃO BREAKPONT 768px */
+
+@media (max-width: 768px) {
+    .navegacao {
+        padding: 2% 5%;
+    }
+    .container__navegacao {
+        display: flex;
+        justify-content: space-between;
+    }
+    .ul__navegacao {
+        display: none;
+    }
+    .navegacao__menu-hamburguer {
+        display: unset;
+        margin-right: 5%;
+    }
+    .logo__navegacao {
+        max-width: 20%;
+    }
+}
+
+/* NAVEGAÇÃO BREAKPONT 430px */
+
+
+@media (max-width: 430px) {
+    .navegacao {
+        padding: 5%;
+    }
+    .container__navegacao {
+        display: flex;
+        justify-content: space-between;
+    }
+    .ul__navegacao {
+        display: none;
+    }
+    .navegacao__menu-hamburguer {
+        display: unset;
+    }
+    .logo__navegacao {
+        max-width: 100%;
+    }
+}
+
+/* INICIO DO HEADER */
+
+header {
+    background-image: url("../img/header-mietta.jpg");
+    background-size: contain, cover;
+    height: 500px;
+    background-repeat: unset;
+    text-align: end;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 73px;
+}
+
+/* HEADER BREAKPONT 768px */
+
+
+@media (max-width: 768px) {
+    header {
+        margin-top: 0;
+    }
+}
+
+/* HEADER BREAKPONT 430px */
+
+
+@media (max-width: 430px) {
+    header {
+        margin-top: 0;
+    }
+}
+
+header>h1 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+
+/* INICIO MAIN */
+
+.personalidade {
+    margin: 0 auto; 
+    width: 100%;
+    max-width: 960px;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 5%;
+    flex-direction: column;
+}
+
+.container-article {
+    width: 100%;
+}
+
+.introducao>h2 {
+    text-align: center;
+}
+
+.container__introducao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img__introducao {
+    width: 100%;
+}
+
+.img-responsive--radius {
+    border-radius: 10px;
+}
+
+.p__intruducao {
+    margin-left: 10%;
+    font-size: 1.2rem;
+}
+
+/* INTRODUÇÃO BREAKPONT 430px */
+
+@media (max-width: 430px) {
+    .container-article {
+        text-align: left;
+    }
+    .container__introducao {
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        justify-content: space-between;
+    }
+    .p__intruducao {
+        margin-left: 0;
+    }
+    .img__introducao {
+        width: 70%;
+    }
+}
+
+/* CIATAÇÃO */
+
+.container__citacao {
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    padding: 2%;
+    border: 1px solid #63458A;
+    margin: 5% 0px;
+}
+
+/* HISTORIA */
+
+.container__historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p__hitoria {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.img__historia {
+    width: 100%
+}
+
+/* SOBRE AUTORA */
+
+.autora {
+    display: flex;
+    margin: 0 auto;
+    background-color: #E4B7E5;
+}
+
+.container__autora {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 960px;
+    margin: auto;
+}
+
+.img__autora {
+    width: 30%;
+    margin-right: 10%;
+}
+
+.p__autora>p {
+    margin: 2% 0;
+    color: #63458A;
+    font-weight: 700;
+}
+
+.p__autora > a {
+    margin: 0;
+    color: #63458A;
+    font-weight: 700;
+    text-transform: unset;
+}
+/* AUTORA BREAKPONT 430px */
+
+@media (max-width: 430px) {
+    .container__autora {
+        display:flex;
+        flex-direction: column;
+        padding: 2%;
+        text-align: center;
+    }
+    .p__autora{
+        margin: 2%;
+    }
+    .p__autora>p {
+        font-size: 1rem;
+    }
+    .p__autora>a {
+        font-size: 1rem;
+        margin: 2%;
+    }
+    .img__autora {
+        margin-right: 5%;
+    }
+}
+
+/* TODAS ELAS */
+
+.todas-elas {
+    display: flex;
+    justify-content: center;
+}
+
+.btn__todas-elas {
+    background-color: #C083B9;
+    margin: 5%;
+    padding: 1% 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* INICIO DO FOOTER */
+
+.rodape {
+    width: 100%;
+    background-color: #323534;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.rodape__principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 2% 0;
+}
+
+.rodape__navegacao {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 200px;
+}
+
+.rodape__navegacao li {
+    margin: 2%;
+}
+
+.rodape__navegacao a {
+    text-transform: none;
+}
+
+.rodape__logo {
+    max-width: 200px;
+}
+
+.rodape__redes-sociais img {
+    max-width: 10px;
+}
+
+.rodape__cc {
+    width: 100%;
+    background-color: #292A2A;
+    font-size: 1rem;
+    opacity: 0.5;
+    text-align: center;
+    padding: 3px;
+}
+
+.rodape__cc p {
+    margin: 0;
+}
+
+/* FOOTER BREAKPONT 430px */
+
+@media (max-width: 430px) {
+    
+    .rodape__principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .rodape__cc p {
+        font-size: 0.6rem;
+    }
+}

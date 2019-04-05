@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #63458A;
+    font-size: 36px;
+}
+
+hr{
+    width: 100%;
+    max-width: 420px;
+    border: solid 1px #63458A
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
+}
+
+.img-responsive {
+    width: 100%;
+    min-width: 200px;
+}
+
+/* INICIO DO MENU */
+
+.navegacao {
+    background-color: #674582;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    font-size: 13px;
+    width: 100%;
+    padding: 1%;
+}
+
+.container__navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+}
+
+.logo__navegacao {
+    width: 20%;
+}
+
+.navegacao__itens {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    width: 60%;
+}
+
+.ul__navegacao li {
+    margin-left: 5%;
+}
+
+.ul__navegacao--links {
+    width: 50%;
+}
+
+.navegacao__menu-hamburguer {
+    display: none;
+}
+
+/* NAVEGAÇÃO BREAKPONT 768px */
+
+@media (max-width: 768px) {
+    .navegacao {
+        padding: 2% 5%;
+    }
+    .container__navegacao {
+        display: flex;
+        justify-content: space-between;
+    }
+    .ul__navegacao {
+        display: none;
+    }
+    .navegacao__menu-hamburguer {
+        display: unset;
+        margin-right: 5%;
+    }
+    .logo__navegacao {
+        max-width: 20%;
+    }
+}
+
+/* NAVEGAÇÃO BREAKPONT 430px */
+
+
+@media (max-width: 430px) {
+    .navegacao {
+        padding: 5%;
+    }
+    .container__navegacao {
+        display: flex;
+        justify-content: space-between;
+    }
+    .ul__navegacao {
+        display: none;
+    }
+    .navegacao__menu-hamburguer {
+        display: unset;
+    }
+    .logo__navegacao {
+        max-width: 100%;
+    }
+}
+
+/* INICIO DO HEADER */
+
+header {
+    background: linear-gradient(
+        rgba(103, 69, 130, 0.56), 
+        rgba(103, 69, 130, 0.56)
+      ),url("../img/banner.jpeg");
+    background-size: cover;
+    height: 500px;
+    text-align: end;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 73px;
+}
+
+/* HEADER BREAKPONT 768px */
+
+
+@media (max-width: 768px) {
+    header {
+        margin-top: 0;
+    }
+}
+
+/* HEADER BREAKPONT 430px */
+
+
+@media (max-width: 430px) {
+    header {
+        margin-top: 0;
+        
+    }
+}
+
+header>h1 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* INICIO MAIN */
+
+.m-de-maravilhosas {
+    margin: 0 auto; 
+    width: 100%;
+    max-width: 960px;
+    /* align-items: center; */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 5%;
+    flex-direction: column;
+}
+
+.container-article {
+    width: 100%;
+}
+
+.container-article > h2 {
+    text-align: center;
+    margin: 5%;
+}
+
+/* INTRODUÇAÕ */
+
+.container__introducao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img__introducao {
+    width: 100%;
+}
+
+.p__intruducao {
+    margin: 0;
+    margin-left: 5%;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.p__intruducao a{
+    color: #63458A;
+    text-transform: unset;
+    font-weight: 700;
+}
+
+.hr--margin{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/* HISTORIA */
+
+.img__historia{
+    margin: 5%;
+    text-align: center;
+    font-style: italic;
+    color: #6D6D6D;
+}
+
+.p__historia {
+    margin-bottom: 5%;
+    color: #63458A;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+/* OUTRAS MARAVILHOSAS */
+
+.m-de-maravilhosas > h2{
+    text-align: center;
+    margin: 10%;
+}
+
+.container--perfil {
+    display: flex;
+    width: 100%;
+    padding: 5%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.personalidades {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.img-responsive--radius{
+    border-radius: 5px;
+}
+
+.personalidades p{
+    font-size: 1rem;
+}
+
+
+
+/* INTRODUÇÃO BREAKPONT 430px */
+
+@media (max-width: 430px) {
+    .container-article {
+        text-align: left;
+    }
+
+    .container-article > h2 {
+        margin: 5% 5% 10% 0;
+        text-align: left;
+    }
+
+    .container__introducao {
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        justify-content: space-between;
+    }
+    .p__intruducao {
+        margin-left: 0;
+    }
+
+    .p__intruducao, .p__historia{
+        font-size:1rem;
+    }
+
+    .img__introducao {
+        width: 70%;
+    }
+    .container--perfil {
+        display: flex;
+        width: 100%;
+        padding: 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .personalidades{
+        margin-bottom: 15%;
+        margin-top: 15%;
+    }
+
+}
+
+/* TODAS ELAS */
+
+.todas-elas {
+    display: flex;
+    justify-content: center;
+}
+
+.btn__todas-elas {
+    background-color: #C083B9;
+    margin: 5%;
+    padding: 1% 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* TODAS ELAS BREAKPONT 430px */
+
+@media (max-width: 430px) {
+    .btn__todas-elas{
+        margin: 10%;
+    }
+}
+
+/* INICIO DO FOOTER */
+
+.rodape {
+    width: 100%;
+    background-color: #323534;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.rodape__principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 2% 0;
+}
+
+.rodape__navegacao {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 200px;
+}
+
+.rodape__navegacao li {
+    margin: 2%;
+}
+
+.rodape__navegacao a {
+    text-transform: none;
+}
+
+.rodape__logo {
+    max-width: 200px;
+}
+
+.rodape__redes-sociais img {
+    max-width: 10px;
+}
+
+.rodape__cc {
+    width: 100%;
+    background-color: #292A2A;
+    font-size: 1rem;
+    opacity: 0.5;
+    text-align: center;
+    padding: 3px;
+}
+
+.rodape__cc p {
+    margin: 0;
+}
+
+/* FOOTER BREAKPONT 430px */
+
+@media (max-width: 430px) {
+    
+    .rodape__principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .rodape__cc p {
+        font-size: 0.6rem;
+    }
+}
