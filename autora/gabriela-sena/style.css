@@ -1,0 +1,45 @@
+body{
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0;
+    background-color: #E5E5E5;
+}
+
+.cabecalho__nav{
+    width: 100%; 
+    background-color: #674582
+}
+.nav__content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    width: 250px;
+}
+.logo__img{
+    width:100%;
+}
+
+.cabecalho__home a{
+    text-decoration: none;
+    margin:20px;
+    color: #fff;
+}
+.redes__sociais{
+    width: 150px;
+}
+
+.header{
+    display: flex;
+    align-items: flex-end;
+    background-image: url(../img/bg-banner-claro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.titulo__banner{
+    text-align: center;
+    color:#fff;
+    width: 100%;
+    text-transform: uppercase;
+}
