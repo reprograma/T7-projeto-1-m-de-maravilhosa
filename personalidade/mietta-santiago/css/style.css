@@ -174,13 +174,6 @@ header>h1 {
 
 /* INICIO MAIN */
 
-main {
-    /* width: 100vw; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .personalidade {
     margin: 0 auto; 
     width: 100%;
@@ -205,7 +198,6 @@ main {
 
 .container__introducao {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }

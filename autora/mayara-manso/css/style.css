@@ -184,18 +184,11 @@ header>h1 {
 
 /* INICIO MAIN */
 
-main {
-    /* width: 100vw; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .m-de-maravilhosas {
     margin: 0 auto; 
     width: 100%;
     max-width: 960px;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .container {
@@ -218,7 +211,6 @@ main {
 
 .container__introducao {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
@@ -231,6 +223,7 @@ main {
     margin: 0;
     margin-left: 5%;
     font-size: 1.3rem;
+    line-height: 1.5;
 }
 
 .p__intruducao a{
@@ -256,6 +249,7 @@ main {
     margin-bottom: 5%;
     color: #63458A;
     font-size: 1.3rem;
+    line-height: 1.5;
 }
 
 /* OUTRAS MARAVILHOSAS */
