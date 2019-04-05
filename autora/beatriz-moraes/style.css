@@ -106,18 +106,18 @@ body {
     margin: 0 auto;
 } 
 
-.historia {
+.sobre {
     width: 100%;
     margin: 0 auto;
 }
 
-.historia__titulo {
+.sobre__titulo {
     color: #674582;
     padding: 30px 0px;
     text-align: center;
 }
 
-.historia__imagem {
+.sobre__imagem {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,8 +143,24 @@ body {
 .img-autora {
     width: 250px;
 }
+.maravilhosas-titulo {
+    color: #674582;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
 
-.img-oprah {
+.maravilhosas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-mulher {
+    width: 200px;
+}
+.img-turma {
     width: 100%;
     padding-bottom: 20px;
     padding-top: 20px;
