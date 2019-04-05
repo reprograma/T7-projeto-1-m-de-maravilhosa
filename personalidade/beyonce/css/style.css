@@ -1,0 +1,463 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px; /* definir uma font-size padrão */
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive{
+   width: 100%;
+}
+
+/* define o tamanho da caixa */
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+/* --- NAV --- */
+.navegacao {
+    background-color: #674582;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    padding: 1.5rem;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+}
+
+.navegacao__logo {
+    max-width: 200px;
+}
+
+.navegacao__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacao__itens {
+    position: absolute;
+    right: -700px;
+    top: 85px;
+    width: 100%;
+    background-color: #674582;
+    text-align: center;
+    padding: 3rem 0;
+    transition: right 1s;
+    display: flex;
+    align-items: center;
+}
+
+.navegacao__itens.ativo {
+    display: block;
+    right: 0;
+    top: 85px;
+    width: 100%;
+    background-color: #674582;
+    text-align: center;
+    padding: 3rem 0;
+    transition: right 1s;
+}
+
+.navegacao__itens li > a {
+    transition: all .2s;
+}
+
+.navegacao__itens li > a:hover {
+    color: #C083B9;
+}
+
+.navegacao__menu-hamburguer img {
+    background-color: #C083B9;
+    border-radius: 5px;
+}
+
+.navegacao__nav {
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+.navegacao__nav li {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.navegacao__redes-sociais a {
+    margin: 0 1rem;
+}
+
+.header {
+    min-height: 80vh;
+    height: 500px;
+    background: linear-gradient(rgba(103, 69, 130, 0.56),rgba(103, 69, 130, 0.56)), url(../img/IAm_Tour_3.jpg);            
+    background-size: cover;
+    background-position: center 14%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    padding: 11rem 2rem 5rem 2rem;
+    color: white;
+}
+h1 {
+    font-size: 3.5rem;
+    max-width: 250px;
+}
+.principal__titulo {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 900;
+    
+}
+
+.apresentacao {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-left: 15%;
+    
+  
+}
+.artigo {
+    margin-left: -10%;
+}
+h2 {
+    font-size: 25px;
+    text-align: left;
+    margin: 0 0 8% 18%;
+    
+}
+.paragrafo {
+    width: 55%;
+    margin-left: 18%;
+    font-size: 15px;
+    text-align: left;
+}
+.img__apresentacao {
+    max-width: 15%;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+.citacao {
+    text-align: center;
+    padding: 46px;
+    width: 50%;
+    margin: 0 auto;
+}
+.citacao__texto {
+    font-weight: bold;
+    color: #674582;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.7rem;
+
+}
+.container__citacao {
+    border-style: solid;
+    border-color: #C083B9;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 959px;
+}
+.historia {
+    margin-top: 50px;
+    text-align: center;
+
+}
+h3 {
+    text-align: left;
+    font-size: 20px;
+}
+.subtitulo__historia {
+    font-weight: bold;
+    color: #674582;
+    padding: 1rem;
+}
+.img__historia {
+    max-width: 55%;
+    margin: 0 auto;
+}
+.paragrafo__historia {
+    color: #674582;
+    margin-top: 15px;
+    font-size: 17px;
+    text-align: left;
+    padding: 1rem;
+}
+.autora__texto {
+    color: #63458a;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    padding-left: 4%;
+
+}
+.autora {
+    text-align: center;
+    background-color: #e4b7e5;
+    display: flex;
+    justify-content: center;
+}
+.autora > div {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.img__autora {
+    max-width: 150px;
+    padding: 25px 0;
+}
+.btn__autora {
+    padding: 5% 5%;
+}
+@media (min-width: 768px) {
+    /* --- NAV --- */
+    .navegacao__itens {
+        position: static;
+        display: flex;
+        padding: 0;
+        width: auto;
+    }
+
+    .navegacao__nav {
+        margin-bottom: 0;
+    }
+    
+    .navegacao__itens ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .navegacao__itens li {
+        font-size: 1.2rem;
+        margin: 0 .6rem;
+    }
+    
+    .navegacao__menu-hamburguer {
+        display: none;
+    }
+} 
+
+/* --- BOTAO --- */
+
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+}
+
+.btn_roxo {
+    color: white;
+    background-color: #C083B9;
+    display: block;
+    max-width: 250px;
+    text-align: center;
+    transition: all .5s;
+    margin: 0 auto;
+}
+
+/*.btn_roxo:hover,
+.btn_roxo:focus {
+    transform: translateY(-1rem);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    background-color: rgb(192, 156, 188);
+}
+
+.btn_roxo:active {
+    transform: translateY(-.5rem);
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+
+.btn_center {
+    margin: 0 auto;
+}
+
+/* --- FOOTER --- */
+.rodape {
+    background-color: #323534;
+    color: white;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .8rem;
+}
+
+.rodape__principal {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.rodape__principal > * {
+    margin: 1rem 0;
+}
+
+.rodape__navegacao > li {
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+
+.rodape__navegacao a {
+    transition: all .5s;
+}
+
+.rodape__navegacao a:hover {
+    color: #C083B9;
+}
+
+.rodape__logo {
+    max-width: 200px;
+}
+
+.rodape__redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.rodape__redes-sociais a:hover {
+    color: #C083B9;
+}
+
+.rodape__redes-sociais img {
+    max-width: 10px;
+    margin-right: .5rem;
+}
+
+.rodape__redes-sociais span {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.rodape__cc {
+    width: 100%;
+    background-color: #292A2A;
+    font-size: 1rem;
+    opacity: 0.5;
+    text-align: center;
+    padding: 1rem;
+}
+@media (max-width:768px) {
+    .apresentacao{
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .img__apresentacao {
+        max-width: 84%;
+        margin: 0 auto;
+        padding: 29px 0;
+
+    }
+    .citacao {
+        text-align: center;
+        padding: 8px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .rodape__principal {
+        flex-direction: column;
+    }
+    .apresentacao {
+        padding-bottom: 5%;
+    }
+}
+
+    
+
+
+
+
+/*li {
+    list-style: none;
+}
+.img {
+    width: 150px;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+.navegacao {
+    background-color: #674582;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    padding: 1.5rem;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+}
+.navegacao__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navegacao__links {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+   
+    
+
+}
+.navegacao__redes-sociais{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegacao__links ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;  
+    
+}
+
+}
+header {
+    background-image: url(../img/800px-Beyoncé_Knowles_GMA_Run_the_World.jpg);
+    background-repeat: no-repeat;
+
+}
+
