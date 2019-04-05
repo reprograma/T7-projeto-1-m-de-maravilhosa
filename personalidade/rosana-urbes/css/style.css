@@ -1,0 +1,379 @@
+/* --- MOBILE FIRST - iPhone 7 - width < 768px --- */
+/* --- GERAL --- */
+/*
+unidades preferidas para esse CSS
+margin, padding: rem
+font-size: rem
+width: %
+max-width: % ou px
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px; /* definir uma font-size padrão */
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #C083B9;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* navegacao */
+
+.navegacao {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background: #674582;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navegacao__itens {
+    display: flex;
+    align-items: center;
+}
+
+.navegacao__nav > li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.navegacao__nav {
+    margin: 20px;
+    color: white;
+}
+
+.navegacao__nav a {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.navegacao__logo img {
+    max-width: 200px;
+}
+
+.navegacao__redes-sociais a{
+    margin: 10px;
+}
+
+.navegacao__redes-sociais img {
+    opacity: 0.6;
+}
+
+.navegacao__redes-sociais img:hover {
+    opacity: 1;
+}
+
+/* menu responsivo */
+.navegacao__menu-hamburguer {
+    display: none;
+}
+
+/* header */
+
+.cabecalho {   
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( 
+        rgba(100, 60, 100, 0.40),
+        rgba(103, 69, 130, 0.56)), url(../../rosana-urbes/img/ro-urbes.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.container > * {
+    padding: 40px 0 0 0;
+}
+
+.principal__titulo {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    margin-top: 370px;
+}
+
+/* conteudo - apresentação */
+
+.titulo__com-serifa {
+    font-family: Roboto Slab;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #63458A;
+    padding-top: 40px;
+}
+
+.titulo__com-serifa2 {
+    font-family: Roboto Slab;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #63458A;
+}
+
+.section__apresentacao-personalidade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.foto__apresentacao-personalidade {
+    width: 210px;
+}
+
+.apresentacao__texto {
+    font-family: Montserrat;
+    font-size: 2.0rem;
+    line-height: 27px;
+    color: #63458A;
+    padding-left: 60px;
+}
+
+/* section citação */
+
+.citacao__personalidade {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid #63458A;
+    padding: 50px 50px;
+}
+
+.texto__sem-serifa {
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    line-height: 35px;
+    text-align: center;
+    color: #63458A;
+}
+
+/* section resumo */
+
+.section__sua-historia p {
+    text-align: justify;
+    padding: 30px;
+}
+
+.section__sua-historia img {
+    padding: 30px;
+}
+
+.resumo__sua-historia {
+    font-family: Montserrat;
+    font-size: 2.0rem;
+    line-height: 27px;
+    color: #63458A;
+}
+
+.resumo__sua-historia img {
+    display: flex;
+    margin: 0 auto;
+}
+
+/* section autora */
+.section__autora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background: #E4B7E5;
+}
+
+.foto__autora {
+    width: 200px;
+}
+
+.info__autora {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    font-family: Montserrat;
+    font-size: 1.6rem;
+    line-height: 20px;
+    color: #63458A;
+    font-weight: bold;
+}
+
+/* botão ver todas */
+.section__botao {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    border: #63458A;
+}
+
+.botao {
+    background-color: #C083B9;
+    padding: 12px 40px;
+    border-radius: 5px;
+}
+
+.botao a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* footer */
+
+.rodape__maior {
+    background: #323534;
+    /* padding: 20px 300px; */
+}
+
+.conteudo__rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 40px;
+    color: white;
+}
+.rodape a {
+    font-size: 1.3rem;
+}
+
+.rodape__menor {
+    text-align: center;
+    padding: 15px;
+    background: #292A2A;
+    color: #F3F3F3;
+    font-size: 1.2rem;
+}
+
+.rodape__navegacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 20px;
+}
+
+.rodape__redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-responsive {
+    width: 70%;
+}
+
+.img-responsive2 {
+    width: 250px;
+}
+
+.img-logo-face {
+    width: 15px;
+    margin-right: 5px;
+}
+
+/* RESPONSIVOOOOOO */
+@media (max-width: 768px) {
+
+    .navegacao {
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .navegacao img {
+        margin-right: 5px;
+    }
+
+    .navegacao__nav,
+    .navegacao__redes-sociais {
+        display: none;
+    }
+
+    .navegacao__menu-hamburguer {
+        display: flex;
+    }
+
+    .cabecalho {
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .section__autora {
+        width: 100%;
+    }
+
+    .container{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .principal__titulo {
+        font-size: 30px;
+    }
+
+    .im-de-maravilhosa {
+        width: 50px;
+    }
+
+    .section__apresentacao-personalidade {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .apresentacao__texto {
+        text-align: justify;
+        padding: 30px;
+    }
+
+    .citacao__personalidade {
+        width: 80%;
+        margin: 10px;
+        margin-left: 35px;
+    }
+
+    .info__autora {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        font-family: Montserrat;
+        font-size: 1.6rem;
+        line-height: 20px;
+        color: #63458A;
+        font-weight: bold;
+    }
+
+}
