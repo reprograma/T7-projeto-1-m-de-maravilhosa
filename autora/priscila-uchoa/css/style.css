@@ -45,9 +45,6 @@ header {
     width: 100%;
 }
 
-.hamburguer{
-    display: none;
-}
 .menu__home {
     display: flex;
     flex-direction: row;
@@ -71,12 +68,9 @@ header {
 .menu__lista li,
 .menu__lista li a {
     text-decoration: none;
-    display: flex;
-    padding: 0%;
     list-style: none;
-    font-size: 13px;
+    font-size: 14px;
     color: white;
-    text-align: center;
 }
 
 .menu__alinhar {
@@ -190,9 +184,6 @@ header {
     margin-left: 40px;
 }
 
-.github{
-    text-decoration: none;
-}
 
 .btn__ver {
     background-color: #c083b9;
@@ -224,7 +215,6 @@ header {
     width: 10px;
 }
 
-
 .rodape p {
     text-align: center;
     font-size: 12px;
@@ -249,13 +239,6 @@ header {
     width: 150px;
 }
 
-.rodape__alinhamento a{
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-    padding: 60px;
-    margin-top: 10px;
-}
 .rodape__alinhamento {
     display: flex;
     justify-content: space-around;
@@ -279,41 +262,13 @@ header {
     .autora{
         width: 100%;
     } 
-    .rodape__home{
-        margin: 0 auto;
-        }
-    }
-
-    .rodape__home p,a{
-      text-align: center;
-
-    }
-
-    
-    .rodape__home a{
-        margin-left: 40px;
-        padding: 0%;
-        padding-left: 10%;
-
-    }
-    
-    
+}
 
 @media(max-width:720px) {
     .menu__alinhar{
         display:none;
     }
    
-    
-    .container {
-        width:380px;
-    }
-    @media(min-width: 420px) {
-        .hamburguer{
-        display:flex;
-        margin: 20px;
-         }
-
     .perfil__malala__separar{
         display: flex;
         justify-content: center;
@@ -333,27 +288,13 @@ header {
     .perfil__malala__resumo h3 {
         padding-left: 110px;
     }
-    .rodape__alinhamento a, p{
-        padding-right: 10px;}
-
-    .rodape__home a{
-            margin-left: 10px;
-            text-align: center;
-         
-        }
-    .autora h4{
-    font-size: 12px;
-        }
-        body p{
-    text-align: center;
-    }
-    main h5{
-        text-align: center;
-          }
 }
 
-
-        
+@media(min-width: 420px) {
+    .hamburguer{
+        display:none;
+    }
+}
 
 
 /* ---------------------------SOBRE-------------------------------- */
@@ -373,17 +314,14 @@ header {
 } */
 
 .perfil__priscila__foto {
-
+	height: 200px;
     width: 200px;
-    height: 200px;
-
 
 }
 
 @media(max-width: 768px){
-.perfil__priscila__foto {
+    .perfil__priscila__foto {
         margin: 0 auto;
-        
     }
 
 }
@@ -445,5 +383,4 @@ span{
 
 .img__reprograma{
     width: 100%;
-}
 }
