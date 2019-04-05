@@ -1,0 +1,349 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
+    color: #674582;
+}
+
+hr {
+    margin: 50px auto;
+    width: 300px;
+    
+}
+
+.navegacao {
+    width: 100%;
+    background-color: #674582;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    align-items: center;
+    top: 0;
+}
+
+.navegacao__barra {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+}
+
+.navegacao__logo{
+    justify-content: left
+}
+
+.logo {
+    width: 200px;
+}
+
+.navegacao__menu {
+    list-style: none; 
+    display: flex;
+}
+
+.navegacao__menu a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+
+.menu__icone a {
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+
+.menu__hamburger {
+    display: none;
+}
+
+.cabecalho {
+    background: linear-gradient(
+        rgba(103, 69, 130, 0.25), 
+        rgba(103, 69, 130, 0.40)
+      ),url(../img/índice21.jpg);
+    background-size: cover;
+    min-height: 500px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-size: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.cabecalho__titulo {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.conteudo__titulo {
+     margin: 30px;
+
+}
+
+.conteudo h2 {
+    text-align: center;
+    margin-left: 100px;
+}
+
+.introducao {
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto__introducao {
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.texto__introducao span {
+    font-weight: bold;
+}
+
+.foto__introducao {
+    width: 200px;
+    height: 200px;
+}
+
+.trajetoria {
+    margin: 30px 0 50px 0;
+}
+
+.trajetoria h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.legenda {
+    text-align: center;
+    margin: 0 0 40px;
+    font-size: 15px;
+    color: rgb(145, 147, 136)
+}
+
+.foto__trajetoria {
+    width: 100%;
+    margin:40px 0 5px 0;
+}
+
+/* .h2 {
+    text-align: center;
+} */
+.demais__autoras h2 {
+    text-align: center;
+    margin: 50px;
+}
+
+.demais__autoras img {
+    width: 110px;
+    border-radius: 5px;
+}
+
+.icone__quadrado {
+    border-radius: 5px;
+    background-color: #674582;
+    height: 110px;
+}
+
+.icone__quadrado p {
+    margin: 0;
+    font-size: 12px;
+    color: black;
+}
+
+.icone__quadrado a {
+    text-decoration: none;
+}
+
+.demais__autoras p {
+    text-align: center;
+}
+
+.icone__img {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+}
+
+
+.botao a {
+    text-decoration: none;
+    background-color: #C083B9;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.rodape {
+    width: 100%;
+    background-color: #323534;
+}
+
+.rodape__principal {
+    width: 100%;
+    display:  flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    
+   
+}
+
+
+.rodape__home {
+    list-style: none;  
+    text-align: center;
+}
+
+.rodape__home a {
+    text-decoration: none;
+    color: white;
+}
+
+.foto__rodape img {
+    width: 200px;
+}
+
+.logo__facereprograma {
+    width: 10px;
+    padding: 3px;
+}
+
+.logo__facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__urlface {
+    color: white;  
+}
+
+.logo__facebook a {
+    text-decoration: none;
+} 
+
+.rodape__secundario {
+    width: 100%;
+    text-align: center;
+    background-color: #2e302f;
+    padding: 10px;
+    
+}
+
+.rodape__secundario p {
+    margin: 0;
+    color: white;
+    font-size: 10px;
+}
+
+@media (max-width:1024px) {
+    .cabecalho { 
+        background-size: cover;
+        background-position: center;
+    }
+    .container {
+        width: 850px;
+        margin: 0 auto;    
+    } 
+}
+
+@media (max-width:768px) {
+
+     .navegacao {
+        width: 100%;
+      
+    } 
+
+    .navegacao__menu {
+        display: none;
+    }
+
+    /* .navegacao__barra {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+       
+    } */
+
+    .navegacao__menuprincipal {
+        display: none;
+    }
+    
+    .menu__hamburger {
+        display: block;
+        /* padding-left: 300px; */    
+    }
+
+    .menu__icone {
+        display: none;
+    }
+
+    .introducao {
+        width: 100%;    
+    }
+    
+    .texto__introducao p {
+        width: 330px;
+    }
+
+    .container {
+        width: 650px;
+        margin: 0 auto; 
+    }  
+}
+
+@media (max-width:420px){
+    .navegacao {
+        width: 100%;   
+    }
+
+    .menu__hamburger {
+        display: block;
+        /* padding-left: 100px;     */
+    }
+
+    .container {
+        width: 375px;
+        margin: 0 auto; 
+    }  
+
+    .introducao {
+        display: flex;
+        flex-direction: column;
+    }
+           
+    .rodape__principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .conteudo h2 {
+        margin-left: 0;
+    }
+
+} 
+
+    
