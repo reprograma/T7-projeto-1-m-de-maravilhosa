@@ -1,12 +1,12 @@
 
 body{
     font-family: 'Montserrat', sans-serif; 
-    margin: 0;
+    margin: 0 auto;
     background-color: #E5E5E5;
 }
 .cabecalho__nav{
     width: 100%; 
-    background-color: #674582
+    background-color: #674582;
 }
 .nav__content{
     display: flex;
@@ -24,9 +24,6 @@ body{
     text-decoration: none;
     margin:20px;
     color: #fff;
-}
-.redes__sociais{
-    /* width: 150px; */
 }
 
 .header{
@@ -52,35 +49,18 @@ body{
     justify-content: center;
 }
 
-/* .container{
-    display: flex;
-    font-family: Montserrat;
-    flex-direction: row;
-    justify-content: center;
-    color:#63458A;
-} */
 .personalidade{
     display: flex;
     margin-top: 50px;
     color:#63458A; 
 }
 .img__carolinadejesus{
-    width: 100%;
+    width: 36%;
 }
 
 .perfil__personalidade{
     width:70%;
 }
-
-/* .perfil__personalidade h4{
-    display: flex;
-    flex-direction: row;
-}
-
-.perfil__personalidade p{
-    width: 50%;
-    justify-content: center; */
-/* } */
  
 .img__autora{
     width: 201px;
@@ -93,7 +73,6 @@ body{
     display: flex;
     justify-content: center;
     color:#63458A;
-    margin: 0 auto;
     width: 100%;
     margin-top: 50px;
 }
@@ -145,7 +124,7 @@ body{
 }
 
 .alinhar__botao{
-    margin: 0;
+    margin: 0 auto;
 }
 /* rodapé */
 
@@ -171,12 +150,6 @@ body{
     width: 70.3125%;
 }
 
-/* .rodape__lista{
-    text-decoration: none;
-    list-style: none;
-    color:white;
-} */
-
 .rodape__logo{
     width: 250px;
     align-items: center;
@@ -197,12 +170,6 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: #292A2A;
-    color:white;
-    width: 100%;
-    font-size: 14px;
-    display: flex;
-    text-align: center; */
 }
 
 .rodape__baixo{
