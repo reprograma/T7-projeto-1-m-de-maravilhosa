@@ -188,6 +188,8 @@ header {
 .autora__descricao {
     width: 200px;
     margin-left: 40px;
+    text-decoration: none;
+    color: rgb(131, 29, 134);
 }
 
 .github{
