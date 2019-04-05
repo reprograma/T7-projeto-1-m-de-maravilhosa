@@ -46,16 +46,9 @@ li {
     width: 100%;
     height: 90px;
     background: #674582;
-}
-
-.navegacao__box {
     display: flex;
-    width: 100%;
-    /* max-width: 960px; */
     justify-content: space-evenly;
     align-items: center;
-    /* margin: 0 auto; */
-    margin-top: 10px;
 }
 
 .navegacao__itens {
@@ -116,6 +109,16 @@ li {
 
 }
 
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.container > * {
+    padding: 40px 0 0 0;
+}
+
 .principal__titulo {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -124,15 +127,6 @@ li {
 }
 
 /* conteudo - apresentação */
-
-.container {
-    width: 800px;
-    margin: 0 auto;
-}
-
-.container > * {
-    padding: 40px 0 0 0;
-}
 
 .titulo__com-serifa {
     font-family: Roboto Slab;
@@ -155,6 +149,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: justify;
 }
 
 .foto__apresentacao-personalidade {
@@ -166,13 +161,14 @@ li {
     font-size: 2.0rem;
     line-height: 27px;
     color: #63458A;
-    margin-left: 60px;
+    padding-left: 60px;
 }
 
 /* section citação */
 
 .citacao__personalidade {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
     width: 100%;
     border: 1px solid #63458A;
     padding: 50px 50px;
@@ -189,11 +185,12 @@ li {
 /* section resumo */
 
 .section__sua-historia p {
-    padding-top: 40px;
+    text-align: justify;
+    padding: 30px;
 }
 
 .section__sua-historia img {
-    padding-top: 40px;
+    padding: 30px;
 }
 
 .resumo__sua-historia {
@@ -307,21 +304,24 @@ li {
 }
 
 /* RESPONSIVOOOOOO */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+
+    .navegacao {
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .navegacao img {
+        margin-right: 5px;
+    }
+
     .navegacao__nav,
     .navegacao__redes-sociais {
         display: none;
     }
 
-    .navegacao__box {
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 20px;
-    }
-
     .navegacao__menu-hamburguer {
         display: flex;
-        height: 25px;
     }
 
     .cabecalho {
@@ -349,12 +349,31 @@ li {
         width: 50px;
     }
 
-    .titulo__com-serifa2 {
-        font-size: 20px;
-    }aaaaaaaaaaaaaaaaaaaaaaaaa
+    .section__apresentacao-personalidade {
+    display: flex;
+    flex-direction: column;
+    }
 
-    /* .navegacao {
-        height: 60px;
-} */
+    .apresentacao__texto {
+        text-align: justify;
+        padding: 30px;
+    }
+
+    .citacao__personalidade {
+        width: 80%;
+        margin: 10px;
+        margin-left: 35px;
+    }
+
+    .info__autora {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        font-family: Montserrat;
+        font-size: 1.6rem;
+        line-height: 20px;
+        color: #63458A;
+        font-weight: bold;
+    }
+
 }
-
