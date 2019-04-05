@@ -1,0 +1,385 @@
+*{
+    color: #65478b;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box
+}
+
+img, {
+   max-width: 100%;
+}
+
+body{
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*HEADER*/
+
+
+nav{
+    background-color: #674582;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul>li{
+    display: inline-block;
+    text-transform: uppercase;
+    padding-right: 3%;
+}
+
+
+.navigation_logo{
+    height: 10vh;
+}
+
+.links{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    font-size: 0.75rem;
+    letter-spacing: 6%;
+}
+
+.cabeçalho{
+    background:
+    linear-gradient(
+    rgba(103,69,130,0.30),
+    rgba(103,69,130,0.30)
+    ),    
+    url(../img/bg-banner-claro.png);
+    height: 80vh;
+    max-height: 500px;;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: relative;
+}   
+
+.nome{
+    color: white;
+    position: relative;
+    top: 49vh;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.menu_hamburger{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .navigation_logo{
+        display: flex;
+        justify-content: center;
+        height: 5vh;
+    }
+
+    .cabeçalho{
+        background:
+        linear-gradient(
+        rgba(103,69,130,0.30),
+        rgba(103,69,130,0.30)
+        ),    
+        url(../img/bg-banner-claro.png);
+        height: 50vh;
+        max-height: 21.25rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        position: relative;
+    }
+    .nome{
+        color: white;
+        position: relative;
+        top: 15vh;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 420px){
+    /*menu*/
+    .navigation_lista, .navigation_media{
+     display: none;
+    }
+    .cabeçalho{
+        background:
+        linear-gradient(
+        rgba(103,69,130,0.30),
+        rgba(103,69,130,0.30)
+        ),    
+        url(../img/bg-banner-claro.png);
+        height: 50vh;
+        max-height: 21.25rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        position: relative;
+    }
+
+    .navigation_maravilhosas{
+       height: 5vh;
+    }
+
+    .menu_hamburger{
+        display: flex;
+    }
+    .nome{
+        color: white;
+        top: 28vh;
+        text-align: center;
+    }
+  
+    /*main*/
+    
+  .resumo2{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .sobre_autora{
+     text-align: center;
+  }
+     
+  /*Footer*/
+   .menu{
+       display:none;
+   }
+
+   .logo{
+       height: 10px;
+   }
+   .andressa{
+    height: 100px
+    }
+}
+   
+
+main{
+    width: 100%;
+}
+
+/* Primeira Section */
+
+.conteudo{
+    width: 70%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+}
+
+/* .resumo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} */
+
+.resumo h1{
+    text-align: center;
+}
+
+.resumo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ /* .autora{
+     margin-top: 2.5rem; 
+    width: 40%;
+}   */
+
+.autora_img{
+    width:80%;
+    height: auto;
+}
+
+.sobre_autora{
+    font-family: 'Montserrat' ;
+    text-transform: initial;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 40px;
+     
+}
+
+.sobre_autora p{
+    padding-bottom: 10px;
+    margin-top: 20px;
+    /* word-spacing: 3px; */
+}
+
+.sobre_autora em{
+    font-weight: bold;
+}
+
+ul{
+    margin-top: 40px;
+}
+
+ul>li {
+    display: inline-block;
+    font-weight: bold;
+}
+
+ul>li a{
+    text-decoration: none;
+}
+
+/* Fim da Primeira Section */
+
+
+.conteudo2{
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.conteudo2_maravilhosas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3%;
+}
+.maravilhosas{
+    margin-top: 4%;
+    border-top: 2px solid #63458A;
+    width: 40vw;
+    padding: 4%;
+}
+
+.maravilhosas p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+
+.turma7{
+    width: 72vw;
+
+}
+.turma7_img{
+    max-width: 100%;
+    height: auto;
+}
+
+.teste{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.teste2{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+ #alunas{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+} 
+
+.alunas-img{
+    width: 60%;
+    max-height: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 0;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btn--rosa{
+    margin-top: 3%;
+    border: none;
+    background-color: #C083B9;
+   text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.9375rem 3.125rem;
+    border-radius: 0.625rem;
+    -webkit-border-radius: 0.625rem;
+    -moz-border-radius: 0.625rem;
+    -ms-border-radius: 0.625rem;
+    -o-border-radius: 0.625rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.125rem;
+    margin-bottom: 2.5rem;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+/**Footer**/
+
+.info_footer{
+    background-color:  #323534;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: #fff;
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+.logo{
+    height: 8vh;
+}
+
+.fb-icone{
+    height: 5vh;
+}
+
+
+.reprograma{
+    background-color: #292A2A;
+    font-size: 0.5rem;
+    border: 0.0625rem solid transparent;
+    text-align: center;
+}
+
+.reprograma p{
+    color: #FFF;
+    font-size: 0.625rem;
+}
