@@ -62,6 +62,10 @@ h3 {
     font-size: 14px;
 }
 
+.navegacao__menu-lista li > a:hover {
+    color: #C083B9;
+}
+
 .navegacao__redes-sociais a {
     padding: 0 5px;
 }
@@ -133,14 +137,17 @@ h3 {
     margin-bottom: 28px;
 }
 
-.paragrafo__perfil span {
-    font-weight: bold;
+.paragrafo__rachel-link {
     font-style: italic;
 }
 
 .paragrafo__perfil a {
     color: #674582;
     font-weight: bold;
+}
+
+.paragrafo__perfil-links span {
+    font-style: normal;
 }
 
 /* **** conteudo__linha **** */
@@ -154,13 +161,13 @@ h3 {
 /* **** conteudo__historia **** */
 
 .conteudo__historia-imagem {
-    background: url(../img/bg-banner-claro.png);
+    background: url(../img/m-de-maaravilhosas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position: 0 -100px; */
     background-position: center;
     /* height: 350px; */
-    height: 350px;
+    height: 550px;
     margin: 40px 0 20px 0;
 }
 
@@ -192,22 +199,26 @@ h3 {
 
 .maravilhosas__imagens img {
     width: 120px;
-    background-color: #674582;
     border-radius: 5%;
 }
 
 .maravilhosas__imagens p {
     margin-top: 8px;
+    text-align: center;
+}
+
+.maravilhosas__imagens a {
+    color: #674582;
 }
 
 /* **** btn **** */
 
 .btn {
-    width: 267px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
-.btn > button {
+.btn a {
     margin-bottom: 45px;
     border-radius: 8px;
     border: none;
@@ -218,6 +229,8 @@ h3 {
     font-family: Montserrat;
     font-weight: bold;
     font-size: 18px;
+    margin-bottom: 45px;
+    display: inline-block;
 }
 
 /* **** rodape **** */
@@ -237,6 +250,10 @@ h3 {
 
 .rodape__menu li {
     margin-bottom: 8px; 
+}
+
+.rodape__menu li > a:hover {
+    color: #C083B9;
 }
 
 .rodape__icone {
@@ -367,4 +384,22 @@ h3 {
         display: flex;
         flex-direction: column;
     }
+
+    .paragrafo__perfil-links span {
+        display: none;
+    }
+
+    .maravilhosas__imagens {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .maravilhosas__imagens div {
+        margin-top: 20px;
+    }
+
+    .conteudo__maravilhosas h3 {
+        margin-bottom: 20px;
+    }
+
 }
