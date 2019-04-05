@@ -72,7 +72,7 @@ li {
 
 .navegacao__itens {
     position: absolute;
-    right: -700px;
+    left: 700px;
     top: 85px;
     width: 100%;
     background-color: #674582;
@@ -135,7 +135,7 @@ h1{
 }
 
 .apresentacao__texto{
-    margin-left: -10%;
+    margin-right: 10%;
     color: #674582;
 }
 
@@ -152,7 +152,7 @@ h1{
     padding: 80px 0;
 }
 
-h4 p{
+h4, p{
     text-align: Left;
     font-size: 20px; 
 }
@@ -168,14 +168,16 @@ h3{
 .redes__autora{
     display: flex; 
     margin: 0 auto; 
-    text-align: center; 
+    text-align: center;
+    width: 413px;
+    padding-right: 172px; 
 }
 
 .container__autora{
     width: 60%; 
     max-width: 953px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 hr {
     width:  10%;
@@ -187,10 +189,6 @@ hr {
 .img__historia{
     max-width: 100%;
     width:100%; 
-}
-
-.icones__redes{
-    margin-left:-39%;
 }
 
 .historia__maravilhosa{
@@ -374,7 +372,7 @@ button{
 
 @media(max-width: 768px){
     .icones__redes{
-        margin-left:-25%; 
+        margin-right: 25%; 
     }
     .apresentacao{
         flex-direction: column; 
@@ -392,6 +390,9 @@ button{
         width: 80%;
         color: #674582;
         margin:0;  
+    }
+    .redes__autora{
+        padding-left: 105px;
     }
 }
 
