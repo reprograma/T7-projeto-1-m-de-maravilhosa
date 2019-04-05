@@ -318,6 +318,12 @@
 
      .nome_autora {
           margin-left: 3%;
+          color: #63458A;
+     }
+
+     .nome_autora  a {
+          text-decoration: none;
+          color: #63458A;
      }
 
      .foto_autora {
