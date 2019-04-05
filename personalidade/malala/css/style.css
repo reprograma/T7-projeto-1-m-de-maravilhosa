@@ -1,0 +1,451 @@
+ html {
+    margin: 0;
+ }
+/* BODY */
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color:#674582;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(rgba(103, 69, 130, 0.56), rgba(103, 69, 130, 0.56)), url("../img/obama.jpg");
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;  
+}
+/* CONTAINER PARA NAV */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 860px;
+
+}
+
+/* MENU */
+.menu {
+    align-items: center;
+    background-color: #674582;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.hamburguer{
+    display: none;
+}
+.menu__home {
+    display: flex;
+    flex-direction: row;
+    width: 160px;
+    justify-content: space-between;
+}
+
+.menu__centralizador {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.menu__lista {
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+
+.menu__lista li,
+.menu__lista li a {
+    text-decoration: none;
+    display: flex;
+    padding: 0%;
+    list-style: none;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+}
+
+.menu__alinhar {
+    display: flex;
+    align-items: center;
+}
+/* CABECALHO */
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding-top: 14%;
+}
+.cabecalho h1 {
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+}
+.logo {
+    width: 200px;
+}
+
+.perfil__malala {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.perfil__malala__foto {
+    width: 100px;
+    margin: 20px;
+    border-radius:5px;
+}
+
+.perfil__malala__separar {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.perfil__malala__texto p {
+    width: 100%;
+}
+
+.perfil__malala__resumo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.perfil__malala__resumo h3 {
+    padding-left: 165px;
+}
+.perfil__malala__h4{
+    padding: 30px;
+    box-sizing: border-box;
+    
+}
+.perfil__malala__resumo p {
+    padding-left: 25px;
+}
+
+.perfil__malala__h4 {
+    text-align: center;
+    border: 0.5px solid rgb(194, 42, 186);
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+/* 
+.perfil__historia {
+    flex-direction: column;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} */
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.malala__img {
+    max-width: 100%;
+}
+
+
+.autora {
+    background-color: #e4b7e5;
+    height: 140px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.perfil__pri {
+    width: 130px;
+    border-radius: 50%;
+}
+
+.autora__descricao {
+    width: 200px;
+    margin-left: 40px;
+    text-decoration: none;
+    color: rgb(131, 29, 134);
+}
+
+.github{
+    text-decoration: none;
+}
+
+.btn__ver {
+    background-color: #c083b9;
+    padding: .4rem 1rem;
+    border-radius: 5px;
+    font-size: 1.8rem; 
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.botao {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape {
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.644);
+    color: white;
+}
+
+.rodape .logo__fb {
+    width: 10px;
+}
+
+
+.rodape p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.rodape__fim {
+    height: 23px;
+    /* width: 100%; */
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape__fim p {
+    font-size: 8px;
+    text-align: center;
+}
+
+.logo__rodape {
+    width: 150px;
+}
+
+.rodape__alinhamento a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding: 60px;
+    margin-top: 10px;
+}
+.rodape__alinhamento {
+    display: flex;
+    justify-content: space-around;
+}
+.logo__fb__alinhamento{
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+}
+
+@media(max-width:420px) {
+    .menu__alinhar{
+        display:none;
+    }
+    
+    .perfil__malala__foto {
+       width: 50%;
+       margin: 0 auto;
+    }
+   
+    .autora{
+        width: 100%;
+    } 
+    .rodape__home{
+        margin: 0 auto;
+        }
+    }
+
+    .rodape__home p,a{
+      text-align: center;
+
+    }
+
+    
+    .rodape__home a{
+        margin-left: 40px;
+        padding: 0%;
+        padding-left: 10%;
+
+    }
+    
+    
+
+@media(max-width:720px) {
+    .menu__alinhar{
+        display:none;
+    }
+   
+    
+    .container {
+        width:380px;
+    }
+    @media(min-width: 420px) {
+        .hamburguer{
+        display:flex;
+        margin: 20px;
+         }
+
+    .perfil__malala__separar{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    
+    .img__malala__perfil{
+        display: flex;
+        justify-content: center;
+        height: 170px;
+        width: 100%;
+    }
+    .logo{
+       margin: 0 auto;
+    }
+    .perfil__malala__resumo h3 {
+        padding-left: 110px;
+    }
+    .rodape__alinhamento a, p{
+        padding-right: 10px;}
+
+    .rodape__home a{
+            margin-left: 10px;
+            text-align: center;
+         
+        }
+    .autora h4{
+    font-size: 12px;
+        }
+        body p{
+    text-align: center;
+    }
+    main h5{
+        text-align: center;
+          }
+}
+
+
+        
+
+
+/* ---------------------------SOBRE-------------------------------- */
+
+/* FOTO PERFIL */
+/* .perfil__pri__introducao {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+} */
+
+/* .perfil__pri__introducao p {
+    width: 400px;
+    padding-left: 30px;
+    margin-top: 0;
+    
+} */
+
+.perfil__priscila__foto {
+
+    width: 200px;
+    height: 200px;
+
+
+}
+
+@media(max-width: 768px){
+.perfil__priscila__foto {
+        margin: 0 auto;
+        
+    }
+
+}
+span{
+    font-weight: bold;
+}
+
+.linha__alinhar{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linha{
+    background-color: #674582;
+    height: 1px;
+    width: 300px;
+
+}
+/* 
+.perfil__pri__alinhar{
+    height: 250px;
+}
+
+.resumo__pri{
+    margin: 0%;
+    padding-left: 20px;
+    width: 400px;
+    
+} */
+
+.maravilhosas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+}
+
+
+.outras__maravilhosas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.outras{
+    height: 100px;
+    border-radius: 5px;
+}
+
+.maravilhosas .italico{
+    font-style:italic;
+    font-size: 14px;
+    color:rgba(128, 128, 128, 0.5);
+}
+
+.img__reprograma{
+    width: 100%;
+}
+}
