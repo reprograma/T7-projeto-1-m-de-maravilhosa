@@ -288,6 +288,7 @@ main{
   text-align: center;
   margin-top: 3%;
 }
+
 .btn-rosa{
   background-color: #C083B9;
   border: none;
@@ -303,6 +304,11 @@ main{
   font-size: 1.125rem;
   letter-spacing: 0.125rem;
   margin-bottom: 2.5rem;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
 }
 
 /**Footer**/

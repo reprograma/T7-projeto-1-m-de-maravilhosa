@@ -320,14 +320,14 @@ h3{
 .btn{
     display: flex;
     justify-content: center;
+    
 }
 
 .btn--rosa{
     margin-top: 3%;
     border: none;
     background-color: #C083B9;
-    color: white;
-    text-transform: uppercase;
+   text-transform: uppercase;
     font-weight: bold;
     padding: 0.9375rem 3.125rem;
     border-radius: 0.625rem;
@@ -338,6 +338,11 @@ h3{
     font-size: 1.125rem;
     letter-spacing: 0.125rem;
     margin-bottom: 2.5rem;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
 }
 
 /**Footer**/
