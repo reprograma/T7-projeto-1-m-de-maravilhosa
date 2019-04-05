@@ -173,6 +173,7 @@ a {
 
 .author__text a {
     color: #674582;
+    text-decoration: none;
 }
 
 .btn {
