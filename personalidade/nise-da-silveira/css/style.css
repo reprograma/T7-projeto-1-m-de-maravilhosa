@@ -1,0 +1,410 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px; /* definir uma font-size padrão */
+}
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ul {
+  padding: 0;
+  display: flex;
+} */
+
+li {
+  list-style: none;
+}
+
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+  width: 100%;
+}
+
+/* define o tamanho da caixa */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+/* --- BOTAO --- */
+
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  padding: 10px;
+}
+
+.btn_roxo {
+  color: white;
+  background-color: #c083b9;
+  display: block;
+  max-width: 250px;
+  text-align: center;
+  transition: all 0.5s;
+  margin: 0 auto;
+}
+
+.btn_roxo:hover,
+.btn_roxo:focus {
+  transform: translateY(-1rem);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(192, 156, 188);
+}
+
+.btn_roxo:active {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn_center {
+  margin: 0 auto;
+}
+
+/* --- NAV --- */
+.navegacao {
+  background-color: #674582;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navegacao__logo {
+  max-width: 200px;
+}
+
+.navegacao__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegacao__itens {
+  position: relative;
+  width: 100%;
+  background-color: #674582;
+  text-align: center;
+}
+
+
+.navegacao__itens ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.navegacao__itens.ativo {
+  display: block;
+  right: 0;
+  top: 85px;
+  width: 100%;
+  background-color: #674582;
+  text-align: center;
+  padding: 3rem 0;
+  transition: right 1s;
+}
+
+.navegacao__itens li > a {
+  transition: all 0.2s;
+}
+
+.navegacao__itens li > a:hover {
+  color: #c083b9;
+}
+
+.navegacao__nav{
+margin-left: 260px;
+}
+
+.navegacao__nav ul {
+  font-size: 1.2rem;
+  margin: 3px;
+  padding: 0;
+  display: flex;
+
+}
+
+.navegacao__nav li{
+  padding:  5px;
+}
+
+.navegacao__redes-sociais a {
+  margin: 0 1rem;
+}
+
+.hamburger{
+  display: none;
+}
+
+/* --- HEADER --- */
+.header {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-image: url(../img/nise_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.principal__titulo {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: rgb(253, 253, 253);
+  display: flex;
+  justify-content: center;
+  bottom: 50px;
+  margin-top: 400px;
+
+}
+
+.principal__sub {
+  font-weight: 300;
+  margin: 2rem 0 3rem 0;
+  font-size: 1.5rem;
+  bottom: 120px;
+}
+
+
+
+.principal__titulo {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: rgb(253, 253, 253);
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.conteudo__container {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+}
+
+.conteudo__foto {
+    height: 250px;
+}
+
+.conteudo__titulo{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    color:#674582;
+    font-size: 18px;
+}
+.conteudo__artigo{
+    color: #674582;
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+    padding: 5%;
+}
+
+ .container__citacao{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.citacao {
+    font-size: 18px;
+    color: #674582;
+    border: 1px solid purple;
+    padding: 30px;
+    margin: 0;
+    width: 100%;
+  
+}
+
+.container__historia {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.titulo__historia {
+  
+    display: flex;
+    justify-content: flex-start;
+    color:#674582;
+    font-size: 18px;
+
+}
+
+.img__historia {
+  width: 350px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.conteudo__historia {
+  color: #674582;
+  font-size: 18px;
+  line-height: normal;
+  text-align: justify;
+  padding: 20px; 
+}
+
+.container__autora{
+  background: linear-gradient(rgba(255, 0, 255, 0.2),
+                       rgba(255, 0, 255, 0.2));
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+
+}
+
+.foto__autora{
+  height: 200px;
+}
+
+.img__autora{
+  width: 180px;
+  height: 200px;
+}
+
+.info__autora{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #674582;
+  font-size: 18px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.btn__container {
+  height: 100px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.rodape {
+  background-color: #323534;
+  color: white;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rodape__principal {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.rodape__navegacao li{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.rodape__redes-sociais a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s;
+}
+
+.rodape__logo img {
+  max-width: 250px;
+}
+.rodape__cc {
+  width: 100%;
+  background-color: #292A2A;
+  font-size: 1rem;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.img__fb{
+  width: 10px;
+}
+
+/*--RESPOSIVO--*/
+
+@media (max-width: 1024px){
+
+  .header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+.container__citacao{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navegacao__nav{
+  display: none;
+}
+
+.navegacao__redes-sociais{
+  display: none;
+}
+
+.hamburger{
+  display: flex;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.conteudo__container {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container__foto{
+  display: flex;
+  justify-content: center;
+}
+.container__historia{
+  padding: 10px;
+}
+
+
+}

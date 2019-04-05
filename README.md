@@ -1,6 +1,6 @@
 # Projeto 1 - M de Maravilhosa
 
-## Cronograma
+# Cronograma
 - **01/04**: 
   - Manhã - Revisão.
   - Tarde: Introdução do projeto. Passo-a-passo de versionamento e *Git* flow.
