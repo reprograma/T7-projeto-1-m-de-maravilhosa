@@ -15,7 +15,7 @@ body {
 }
 
 nav, main, footer {
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 
@@ -52,7 +52,6 @@ nav, main, footer {
 }
 /* duvida ------------------div */
 .navegacao__itens {
-    border: 2px black solid;
     width: 600px;
     display: flex;
     justify-content: center;
