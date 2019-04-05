@@ -144,7 +144,7 @@ a {
 }
 
 .personalidade__texto {
-    width: 55%;
+    width: 65%;
     color: #674582;
 }
 
@@ -166,6 +166,10 @@ a {
     color: #674582;
     font-weight: 600;
     padding: 2.1875rem;
+}
+
+.citacao conteiner {
+    display: none;
 }
 
 /*SECTION HISTORIA*/
@@ -195,15 +199,16 @@ a {
 }
 
 .autora__container {
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 0 auto;
 }
 
 .autora__img {
     width: 40%;
-    margin-left: 8.25rem;
+    margin-left: 12.25rem;
 }
 .autora__img--foto {
     width: 100%;
@@ -228,7 +233,7 @@ a {
     align-items: center;
 }
 
-.botao__fundo a{
+.botao__fundo a {
     font-weight: 700;
     background: #C083B9;
     padding: 1rem 2.5rem;
@@ -286,13 +291,52 @@ a {
     padding-top: 1.25rem;
 }
 
+@media(max-width: 1024px) {
+    .navegacao__menu--logo {
+        width: 300px;
+    }
+    .navegacao__menu--logo-img {
+        width: 300px;
+    }
+    .navegacao__menu--direita-texto {
+        display: flex;
+        width: 465px;
+    }
+
+    .navegacao__menu--direita-icones img {
+        width: 80px;
+    }
+
+    .autora__container {
+        width: 100%;
+    }
+
+    .autora__texto {
+        width: 100%;
+    }
+
+    .rodape__logo--img {
+        width: 350px;
+        padding: 1.7rem;
+    }
+
+    .rodape__fb img {
+        width: 30px;
+    }
+    
+}
+
 @media(max-width: 768px) {
+    body {
+        font-size: 25px;
+    }
+
     .navegacao {
         font-size: 0.8125rem
     }
 
     .navegacao__menu--logo-img {
-        width: 200px;
+        width: 300px;
         margin-left: 1.25rem;
     }
 
@@ -302,6 +346,10 @@ a {
 
     .navegacao__hamburguer {
         display: block;
+    }
+
+    .navegacao__hamburguer img {
+        width: 50px;
     }
 
     .banner {
@@ -318,7 +366,7 @@ a {
     }
 
     .personalidade__img--foto {
-        max-width: 200px;
+        max-width: 270px;
     }
 
     .personalidade__texto {
@@ -335,31 +383,164 @@ a {
         margin-right: 1.875rem;
     }
 
+    .historia__img {
+        width: 100%;
+    }
+
+    .autora__container {
+        width: 100%;
+    }
+
     .autora__texto {
         margin-left: 2.5rem;
     }
 
     .autora__texto p {
-        font-size: 0.875rem;
+        font-size: 1.2rem;
+    }
+
+    .rodape__menu p {
+        font-size: 1.2rem;
+    }
+
+    .rodape__logo img {
+        width: 300px;
+    }
+
+    .rodape__fb p {
+        font-size: 1.2rem;
+    }
+
+    .rodape__fb img {
+        width: 25px;
+    }
+
+    .embaixo p {
+        font-size: 1rem;
     }
 
 }
 
 @media(max-width: 420px) {
+    body {
+        font-size: 30px;
+    }
     .navegacao {
-        width: 46.88rem;
+        width: 805px;
     }
 
     .navegacao__menu--direita {
         display: none;
     }
 
+    .navegacao__menu--logo-img {
+        width: 340px;
+    }
+
+    .navegacao__hamburguer img {
+        width: 40px;
+    }
+
+    .banner {
+        width: 805px;
+    }
+
+    .banner__titulo {
+        margin-bottom: 1.2rem;
+    }
+
     .personalidade {
         display: flex;
         flex-wrap: wrap;
+        width: 800px;
     }
 
     .personalidade__img {
         margin-bottom: 5%;
+        width: 400px;
+    }
+
+    .personalidade__img--foto {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .personalidade__texto {
+        width: 90%;
+    }
+
+    .personalidade__texto h3 {
+        width: 85%;
+        margin: 5rem auto;
+    }
+
+    .citacao {
+        width: 550px;
+        margin-left: 6.25rem;
+    }
+    .historia {
+        width: 745px;
+    }
+
+    .historia h3 {
+        width: 82%;
+        margin: 1.25rem auto;
+    }
+
+    .historia p {
+        width: 82%;
+        margin: 0 auto;
+    }
+
+    .historia img {
+        width: 82%;
+        padding: 1.875rem 0;
+        margin: auto 4rem;
+    }
+
+    .autora {
+        width: 805px;
+    }
+    
+    .autora__container {
+        width: 95%;
+    }
+
+    .autora__texto {
+        margin-left: 0rem;
+        width: 60%;
+    }
+
+    .autora__texto p {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        width: 805px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .rodape__menu p {
+        font-size: 1.6rem;
+    }
+
+    .rodape__logo img {
+        width: 300px;
+    }
+
+    .rodape__fb p{
+        font-size: 1.6rem;
+    }
+
+    .rodape__fb img {
+        width: 30px;
+    }
+
+    .embaixo p {
+        font-size: 1.3rem;
     }
 }
