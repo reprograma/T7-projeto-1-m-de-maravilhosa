@@ -1,0 +1,337 @@
+/* CONTEÚDO GERAL */
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+body{
+
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+    padding: 15px;
+    color: white;
+}
+
+
+.conteudo{
+    margin:0 auto;
+    padding:0;
+    width:70%;
+}
+
+
+/* CABEÇALHO */
+.cabecalho{
+    
+}
+
+.navegacao{
+    background-color: #674582;
+}
+
+
+.navegacao__container{
+    background-color: #674582;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    padding: 1.5rem;
+    z-index: 99;
+    position: fixed;
+    top:0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 20px;
+    text-align: center;
+}
+.img-responsive {
+    max-width: 200px;
+}
+
+.navegacao__nav {
+    padding-top:50px;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+.navegacao__li{
+    display: inline;
+}
+
+.navegacao__redes-sociais{
+    margin-right: 30px;
+}
+
+/* BANNER */
+.banner{
+    background-image: url(../img/hl-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    text-align: center;
+    padding:80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.banner h1{
+    margin-top:350px;
+    font-size: 45px;
+}
+
+/* INTRODUÇÃO */
+.introducao{
+    color: #63458a;
+
+}
+.introducao h2{
+    text-align: center;
+    margin: 30px;
+    font-weight: bold;
+    color: #63458a;
+}
+
+.introducao__conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introducao__fotoeparagrafo{
+    display: flex;
+}
+.introducao__divfoto{
+    width: 30%;
+}
+.introducao__divparagrafo{
+    width: 70%;
+
+}
+.introducao__foto{
+    border-radius: 15px;
+    width: 100%;
+
+}
+
+.introducao__paragrafo{
+    padding:30px;
+}
+
+
+/* CITAÇÃO */
+.citacao{
+    border:solid #63458a 1px;
+    font-style: italic;
+    padding: 30px;
+    margin-top:40px;
+    margin-bottom: 40px;
+    color: #63458a;
+}
+
+#btnResponsivo{
+    display: none;
+}
+
+/* HISTÓRIA */
+.historia{
+    color: #63458a;
+}
+
+.historia__imagem{
+    width: 100%;
+}
+
+.historia__container{
+
+}
+
+/* AUTORA */
+.autora{
+    background-color: #C083B9;
+}
+
+.autora__container{
+    margin: 0 auto;
+    display:flex;
+    max-width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.autora__foto{
+    max-width: 30%;
+}
+
+.autora__nome{
+    font-weight: bold;
+    max-width: 80%;
+}
+
+.autora__texto{
+    padding:30px;
+    color: #63458a;
+}
+
+/* OUTRAS PERSONALIDADES */
+.outraspersonalidades{
+    background-color:white;
+    text-align: center;
+    max-height: 40vh;
+    align-items: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.outraspersonalidades__botao{
+    background-color: #C083B9;
+    border: none;
+    border-radius: 10px;
+    padding: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+
+/* FINAL */
+.final{
+    background-color:#323534;
+}
+
+.final__rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 20vh;
+}
+
+.final__navegacao li{
+    text-decoration: none;
+    text-align: center;
+    padding:0;
+    margin:0;
+}
+
+.fbicon{
+    max-height: 30px;
+}
+
+/* RODAPÉ */
+.rodape{
+    background-color: #292A2A;
+    color:white;
+    padding: 1px;
+    text-align: center;
+}
+
+.rodape__maravilhosas{
+    color:white;
+}
+
+@media (max-width: 768px) {
+    /* --- NAV --- */
+
+    .navegacao__redes-sociais {
+        display: none
+    }
+    
+    .navegacao__nav{
+        display: none;
+    }
+    #btnResponsivo{
+        display: flex;
+        padding: 30px;
+    }
+
+    .autora__container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    .autora__foto{
+        max-width: 80%;
+    }
+    
+    .autora__nome{
+        width: 100%;
+    }
+
+    .final__rodape{
+        padding-top: 15px;
+        padding-bottom: 55px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        text-align: center;
+    }
+    .final__navegacao{
+        padding-left: 0;
+    }
+    .introducao{
+        color: #63458a;
+    }
+    .introducao h2{
+        text-align: center;
+        margin: 30px;
+        font-weight: bold;
+        color: #63458a;
+    }
+    
+    .introducao__conteudo{
+
+
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    .introducao__divfoto{
+        width: 100%;
+    }
+    .introducao__divparagrafo{
+        width: 100%;
+    
+    }
+    .introducao__foto{
+        border-radius: 15px;
+        width: 100%;
+    
+    }
+    
+    .introducao__paragrafo{
+        padding:30px;
+    }
+    .introducao__fotoeparagrafo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+    
