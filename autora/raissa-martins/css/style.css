@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+li {
+    list-style-type: none; 
+    padding: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h3 {
+    margin-bottom: 45px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 79.16%;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+}
+
+/* **** navegacao **** */
+
+.navegacao {
+    background-color: #674582;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    position: fixed;
+    z-index: 99;
+    top: 0;
+}
+
+.logo {
+    width: 200px;
+}
+
+.navegacao__elementos {
+    justify-content: space-between;
+}
+
+.navegacao__menu {
+    justify-content: space-around;
+    width: 55%;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.navegacao__menu-lista li > a:hover {
+    color: #C083B9;
+}
+
+.navegacao__redes-sociais a {
+    padding: 0 5px;
+}
+
+.navegacao__menu-hamburguer {
+    display: none;
+}
+
+/* @media (max-width: 768px) {
+    .navegacao__menu-hamburguer {
+        display: inline-block;
+    }
+
+    .navegacao__redes-sociais {
+        display: none;
+    }
+  
+} */
+
+/* **** banner **** */
+
+.banner {
+    background: url(../img/bg-banner-claro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-top: 79px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.banner__titulo {
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+/* **** conteudo **** */
+
+.conteudo {
+    color: #674582;
+}
+
+.foto {
+    width: 200px;
+}
+
+/* **** conteudo__perfil **** */
+
+.conteudo__perfil {
+    margin: 40px 0;
+}
+
+.conteudo h3 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.paragrafo {
+    width: 70%;
+    margin-left: 45px;
+}
+
+.paragrafo__perfil p {
+    margin-bottom: 28px;
+}
+
+.paragrafo__rachel-link {
+    font-style: italic;
+}
+
+.paragrafo__perfil a {
+    color: #674582;
+    font-weight: bold;
+}
+
+.paragrafo__perfil-links span {
+    font-style: normal;
+}
+
+/* **** conteudo__linha **** */
+
+.conteudo__linha {
+    border-bottom: 1px solid #674582;
+    width: 30%;
+    margin: 80px auto;
+}
+
+/* **** conteudo__historia **** */
+
+.conteudo__historia-imagem {
+    background: url(../img/m-de-maaravilhosas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 0 -100px; */
+    background-position: center;
+    /* height: 350px; */
+    height: 550px;
+    margin: 40px 0 20px 0;
+}
+
+.conteudo__historia legend {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    color: #323534;
+    margin-bottom: 40px;
+
+}
+
+/* **** conteudo__maravilhosas **** */
+
+.conteudo__maravilhosas {
+    margin-bottom: 45px;
+}
+
+.maravilhosas__imagens {
+    justify-content: space-between;
+}
+
+.maravilhosas__imagens div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.maravilhosas__imagens img {
+    width: 120px;
+    border-radius: 5%;
+}
+
+.maravilhosas__imagens p {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.maravilhosas__imagens a {
+    color: #674582;
+}
+
+/* **** btn **** */
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn a {
+    margin-bottom: 45px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color:  #C083B9;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+
+/* **** rodape **** */
+
+.rodape {
+    background-color: #323534;
+    padding: 30px;
+}
+
+.rodape__navegacao {
+    justify-content: space-between;
+}
+
+.rodape__menu {
+    text-align: center;
+}
+
+.rodape__menu li {
+    margin-bottom: 8px; 
+}
+
+.rodape__menu li > a:hover {
+    color: #C083B9;
+}
+
+.rodape__icone {
+    width: 20px;  
+    position: relative;
+    bottom: -7.5px;
+}
+
+.rodape__cc {
+    background-color: #292A2A;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+
+    .navegacao__menu {
+        justify-content: flex-end;
+    }
+
+    .navegacao__menu-lista {
+        display: none;
+    }
+    
+    .navegacao__menu-hamburguer {
+        display: inherit; 
+        width: 32px;
+        height: 32px;
+    }
+
+    .navegacao__redes-sociais {
+        display: none;
+    }
+
+    /* .conteudo__historia-imagem {
+        background-position: center;
+    } */
+
+    .rodape__cc {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    .banner {
+        height: 40vh;
+    }
+
+    .banner__titulo {
+        padding-top: 210px;
+        font-size: 2.5rem;
+    }
+
+    .conteudo__historia-imagem {
+        background-position: top;
+        height: 320px;
+    }
+
+    .rodape__navegacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .rodape__menu, .rodape__logo, 
+    .rodape__facebook {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .conteudo__perfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paragrafo__perfil {
+        width: 80%;
+        margin: 0;
+    }
+
+    .foto {
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 45px;
+        font-size: 25px;
+    }
+
+    .paragrafo__perfil > p {
+        font-size: 20px;
+    }
+
+    .paragrafo__perfil a {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .paragrafo__perfil-links {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .conteudo__historia > p {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .dflex-colunm {
+        margin-left: 25px;
+    }
+
+    .dflex-colunm p {
+        margin-bottom: 8px;
+    }
+
+    .paragrafo__perfil-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paragrafo__perfil-links span {
+        display: none;
+    }
+
+    .maravilhosas__imagens {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .maravilhosas__imagens div {
+        margin-top: 20px;
+    }
+
+    .conteudo__maravilhosas h3 {
+        margin-bottom: 20px;
+    }
+
+}
