@@ -1,0 +1,344 @@
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Slab', serif;
+ */
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+
+
+ body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #63458A;
+ }
+
+ .container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
+ }
+
+ .navegacao {
+    background-color: #674582;
+    width: 100%;
+ }
+
+ .navegacao__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+
+ .logo {
+    width: 250px;
+
+ }
+
+ .logo-img {
+     width: 100%;
+ }
+
+ .menu a {
+     color: #fff;
+     text-transform: uppercase;
+     font-weight: 300;
+     font-size: 14px;
+     text-decoration: none;
+     margin-left: 20px;
+
+ }
+
+ .menu a:hover {
+    color: #C083B9;
+ }
+ 
+ .icone {
+     margin-right: 10px;
+ }
+
+ .banner {
+    background: url("../img/bg-banner-claro.png");
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+ }
+
+
+ .banner h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 800;
+    width: 100%;
+   
+ }
+
+ .personalidade {
+     display: flex;
+     margin-top: 50px;
+ }
+
+ .personalidade__foto {
+    width: 30%;
+    
+ }
+
+ .personalidade__content {
+    width: 70%;
+    padding-left: 40px;
+ }
+
+ .personalidade__titulo {
+     font-size: 22px;
+     font-family: 'Roboto Slab', serif;
+     margin-bottom: 30px;
+     text-align: center;
+
+ }
+
+ .foto {
+     width: 100%;
+     max-width: 210px;
+     height: 210px;
+     margin-top: 60px;
+
+ }
+
+.hr {
+    border-bottom: 1px solid #63458A; 
+    width: 300px;
+    margin: 0 auto;    
+    margin-top: 80px;
+    max-width: 100%;
+}
+.historia {
+    margin-top: 80px;
+}
+.historia__texto {
+    margin-top: 10px;
+}
+
+.historia__foto {
+    width: 100%;
+    margin: 20px 0 10px 0;
+}
+
+.historia__legenda {
+    color: #4e4e4e;
+    text-align: center;
+}
+
+.maravilhosa {
+    width: 100%;
+    margin: 60px 0;
+}
+
+.maravilhosa__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.maravilhosa__foto {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+.maravilhosa__perfil p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.maravilhosa__perfil a {
+    color: #63458A;
+    text-decoration: none;
+}
+
+.maravilhosa__perfil a:hover {
+    text-decoration: underline;
+}
+
+
+.btn__content {
+    width: 100%;
+    max-width: 215px;
+
+}
+.btn {
+    background-color: #C083B9;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 5px;
+    display: block;
+
+}
+
+.btn a:link {
+    color: #fff;
+}
+
+.rodape__menu {
+    width: 100%;
+    background-color: #323534;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.rodape__copyright {
+    width: 100%;
+    background-color: #292A2A;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.rodape__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-facebook-f {
+    color: #63458A;
+}
+
+.rodape__nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.rodape__nav a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.rodape__facebook a {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+
+.rodape__nav a:hover, .rodape__facebook  a:hover {
+    color: #C083B9;
+ }
+
+.menu__mobile {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .menu__mobile {
+        color: #fff;
+        font-size: 28px;
+        display: block;
+        margin-right: 20px;
+    }
+
+    .menu, .rede-social {
+        display: none;
+    }
+
+    
+    .rodape__content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 10px 0;
+    
+    }
+
+    .rodape__nav a {
+        margin-left: 0;
+    
+    }
+
+}
+
+@media (max-width: 600px) {
+    .personalidade {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       
+    }
+
+    .personalidade__foto, .personalidade__content, .maravilhosa__perfil {
+        width: 100%;
+        
+    }
+
+    .personalidade__content {
+        padding-left: 0; 
+        margin-top: 20px;
+    }
+
+    .foto {
+        max-width: 100%;
+        height: auto;
+
+    }
+
+    .personalidade {
+        margin-top: 0;
+    }
+
+    .maravilhosa__content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .maravilhosa__perfil  {
+        margin-top: 20px;
+    }
+
+    .maravilhosa__foto {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .rodape {
+        width: 100%;
+    }
+
+    .rodape__content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+
+
+
+}
