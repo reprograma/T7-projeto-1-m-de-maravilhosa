@@ -1,0 +1,481 @@
+/*sobre*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px; 
+}
+
+body {
+font-family: 'Montserrat', sans-serif;
+/*font-family: 'Roboto', sans-serif;*/
+color:  #674582;;
+margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+@media (max-width: 420px){
+    .img-responsive{
+        display: flex;
+        
+    }
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+}
+
+@media (max-width: 420px){
+    .container {
+        max-width: 70%;
+    }
+}
+/* --- BOTAO --- */
+
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+}
+
+.btn_roxo {
+    color: white;
+    background-color: #C083B9;
+    display: block;
+    max-width: 250px;
+    text-align: center;
+    transition: all .5s;
+    margin: 0 auto;
+}
+
+.btn_roxo:hover,
+.btn_roxo:focus {
+    transform: translateY(-1rem);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    background-color: rgb(192, 156, 188);
+}
+
+.btn_roxo:active {
+    transform: translateY(-.5rem);
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+
+.btn_center {
+    margin: 0 auto;
+}
+
+/* --- NAV --- */
+.navegacao {
+    background-color: #674582;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    padding: 1.5rem;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    height: 86px;
+}
+
+@media (max-width: 420px){
+    .navegacao__box {
+        max-width: 420px;
+    }
+}
+
+
+.navegacao__logo {
+    max-width: 200px;
+}
+
+.navegacao__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 420px){
+    .navegacao__box {
+        justify-items: auto;
+    }
+}
+
+.navegacao__itens {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+@media (max-width: 420px){
+    .navegacao__itens {
+       display: none;
+    }
+}
+
+
+.container__top {
+    display: flex;
+}
+
+.navegacao__itens.ativo {
+    display: block;
+    right: 0;
+    top: 85px;
+    width: 100%;
+    background-color: #674582;
+    text-align: center;
+    padding: 3rem 0;
+    transition: right 1s;
+}
+
+.navegacao__itens li > a {
+    transition: all .2s;
+    padding: 7%;
+}
+
+@media (max-width: 420px){
+    .navegacao__itens li > a{
+        align-content: center;
+        
+    }
+}
+
+.navegacao__itens li > a:hover {
+    color: #C083B9;
+}
+
+.navegacao__menu-hamburguer img {
+    background-color: #C083B9;
+    border-radius: 5px;
+    display: none;
+}
+
+@media (max-width: 420px){
+    .navegacao__menu-hamburguer img{
+        display:flex;
+        
+    }
+}
+
+.navegacao__nav li {
+    font-size: 15px; 
+}
+
+@media (max-width: 420px){
+    .navegacao__nav li{
+        display:none;
+        
+    }
+}
+
+.navegacao__redes-sociais a {
+    margin: 0 1rem;
+}
+
+@media (max-width: 420px){
+    .navegacao__redes-sociais {
+        display: none;
+    }
+}
+
+@media (max-width: 760px){
+    .navegacao__redes-sociais img{
+        display:none;
+        
+    }
+}
+
+/*Foto banner*/
+
+.cabecalho {
+    background: url("../img/bg-banner-claro.png");
+    min-height: 80vh;
+    background-size: cover;
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+
+.cabecalho h1 {
+    color: #fff; 
+    margin: 0 auto;
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+
+@media (max-width: 420px){
+    .cabecalho {
+        display:flex;
+        width: 100%;
+        
+    }
+}
+/*titulo bafao*/
+
+
+.citacao__iza {
+    text-align: center;
+    width: 600px;
+    border: 1px solid #674582;
+}
+
+.conteudo {
+    width: 80%;
+    align-content: center;
+    margin: 0 auto;  
+}
+
+.conteudo__iza {
+    display: flex;
+    justify-content: center;
+}
+ 
+@media (max-width: 420px){
+    .conteudo__iza{
+        display:block;
+        margin: 0 auto;
+        
+    }
+}
+
+.titulo__iza {
+    text-align: center;
+    padding: 5% 0;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.foto__iza {
+    height: 250px;
+    margin-bottom: 6%;
+}
+
+@media (max-width: 768px)
+{
+    .foto__iza {
+        height: 305px;
+    }
+
+}
+
+.texto__iza {
+    width: 66%;
+    padding-left: 3%;
+    padding-top: 6%;
+}
+
+@media (max-width: 768px)
+{
+    .texto__iza {
+    width: 100%;
+    text-align: -webkit-center;
+    }
+
+}
+
+.citacao__iza {
+    margin: 0 auto;
+    text-align: center;
+    border:1px solid #674582;
+    padding-top: 6%;
+}
+
+
+/*história iza*/
+
+.historia__iza {
+    margin: 0 auto;
+    height: 50%;
+
+}
+
+.foto__iza__texto {
+    width: 100%;
+    padding: 7%;
+
+}
+
+/*autora*/
+
+.autora {
+    background-color: #e4b7e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0;
+}
+
+.foto__autora {
+    height: 250px;
+}
+
+.texto__autora {
+    width: 25%;
+    padding-left: 2%;
+}
+
+.botao {
+    padding: 20px 50px;
+    border: none;
+    background-color:  #674582;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: table;
+    margin: auto;
+}
+
+/*outras maravilhosas*/
+
+.p__titulo {
+    text-align: center;
+}
+
+.outras__maravilhosas {
+    display: flex;
+    justify-content: center;
+}
+
+.img__mulher {
+    width: 81%;
+    background-color: #674582;
+    /* margin: 50px; */
+    border-radius: 10px;
+}
+
+
+.fotos__outras__maravilhosas {
+    width: 100%;
+}
+
+.caixinhas {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 420px){
+
+    .fotos__outras__maravilhosas {
+        flex-direction: column 1px;
+    }
+}
+
+@media (max-width: 420px){
+
+    .outras__maravilhosas{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    }
+}
+
+.p__mulher {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*footer*/
+.rodape__total {
+    display: block;
+    justify-content: center;
+    background-color: #323534;
+}
+
+.rodape__principal {
+    padding: 6%;
+}
+
+
+.rodape {
+    background-color: #161616;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    
+}
+
+.logo__rodape {
+    height: 50px;
+}
+
+.icone__fb {
+    height: 30px;
+}
+
+.navegacao__rodape {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.navegacao__links {
+    display: flex;
+}
+
+.icone__alinhar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icone__alinhar p {
+    margin: 0 auto;
+    margin-top: 7%;
+}
+
+.rodape__home {
+    text-align: center;
+}
+
+@media (max-width: 420px){
+    .navegacao__rodape {
+        flex-direction: column;
+        display: flex;
+    }
+}
+
+@media (max-width: 420px){
+    .icone__alinhar {
+        display: none;
+    }
+}
