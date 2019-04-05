@@ -1,0 +1,513 @@
+/*PARA USAR REM: Deve-se declarar o padrão no body; por exemplo: 
+
+body {
+    font-size: 20px;
+}
+
+.classe {
+    font-size: 0.7rem; (quero usar fonte 14px, então faço 14/20 = 0,7rem)
+}
+
+PARA USAR EM: Deve-se declarar na div mãe; por exemplo:
+
+.classe_mae {
+
+    margin: 20px;
+}
+
+.classe_filha {
+    margin: 1.5em; (quero usar margin 30px, então faço 30/20 = 1,5em)
+}
+
+- Para deixar responsivo, as divs devem estar em porcentagem, as fontes e margens em EM ou REM;
+*/
+
+* {
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.box {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+/*NAV*/
+
+.navegacao {
+    width: 100%;
+    background-color: #674582;
+}
+
+.navegacao__menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1rem; /*equivale a 16px, que é o valor da font-size declarado no body*/
+
+}
+
+.navegacao__menu--logo {
+    width: 250px;
+}
+
+.navegacao__menu--logo-img {
+    width: 100%;
+}
+
+.navegacao__menu--direita {
+    display: flex;
+    align-items: center;
+    margin-right: 3.125rem;
+}
+
+.navegacao__hamburguer {
+    display: none;
+}
+
+.navegacao__menu--direita-texto {
+    width: 400px;
+}
+
+.navegacao__menu--direita-texto a{
+    margin-left: 1.25rem;
+}
+
+.navegacao__menu--direita-icones {
+    width: 150px;
+    display: flex;
+}
+
+.navegacao__menu--direita-icones img {
+    padding: 0.5rem;
+}
+
+/*HEADER*/
+
+.banner {
+    background-image: url(../img/banner_hamilton.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -120px;
+    min-height: 400px;
+    width: auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+.banner__titulo {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 2.1875rem; /*Divide-se 35/16 = 2.1875rem para se obter essa unidade; sendo que font-size: 16px foi declarado no body para servir de parametro para usar o rem*/
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+}
+
+/*SECTION PERSONALIDADE*/
+
+.personalidade {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3.125rem;
+}
+
+.personalidade__img {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.personalidade__img--foto {
+    width: 100%;
+    border-radius: 4%;
+    margin-top: 80px;
+}
+
+.personalidade__texto {
+    width: 65%;
+    color: #674582;
+}
+
+.personalidade__texto h3 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.personalidade__texto p {
+    margin-left: 5rem;
+}
+
+/*SECTION CITACAO*/
+
+.citacao {
+    text-align: center;
+    margin: 3.125rem auto;
+    border: 1px solid #674582;
+    color: #674582;
+    font-weight: 600;
+    padding: 2.1875rem;
+}
+
+.citacao conteiner {
+    display: none;
+}
+
+/*SECTION HISTORIA*/
+
+.historia {
+    margin: 0 auto;
+    color: #674582;
+}
+
+.historia__img {
+    width: 80%;
+    padding: 1.875rem 0;
+}
+
+.historia h3 {
+    margin-bottom: 1.25rem;
+}
+
+/*SECTION AUTORA*/
+
+.autora {
+    background-color: #E4B7E5;
+    color: #674582;
+    font-weight: 700;
+    margin-top: 1.875rem;
+    width: 100%;
+}
+
+.autora__container {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.autora__img {
+    width: 40%;
+}
+.autora__img--foto {
+    width: 100%;
+    max-width: 200px;
+}
+.autora__texto {
+    width: 60%;
+}
+
+.autora__texto a {
+    text-decoration: none;
+    text-transform: none;
+    color: #674582;
+}
+
+/*SECTION BOTAO*/
+
+.botao {
+    margin-top: 3.125rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.botao__fundo a {
+    font-weight: 700;
+    background: #C083B9;
+    padding: 1rem 2.5rem;
+    border-radius: 0.625rem;
+}
+
+/*FOOTER*/
+
+.footer {
+    width: 100%;
+    background-color: #323534;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    height: 120px;
+    margin-top: 3.75rem;
+}
+
+.rodape__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.rodape a {
+    text-transform: none;
+    font-size: 0.75rem;
+}
+
+.rodape__logo--img {
+    width: 200px;
+}
+
+.rodape__fb {
+    display: flex;
+    align-items: flex-end;
+}
+
+.rodape__fb--img {
+    width: 15px;
+}
+
+.embaixo {
+    width: 100%;
+    height: 40px;
+    background-color: #292A2A;
+    font-size: 0.625rem;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 1.25rem;
+}
+
+@media(max-width: 1024px) {
+    .navegacao__menu--logo {
+        width: 300px;
+    }
+    .navegacao__menu--logo-img {
+        width: 300px;
+    }
+    .navegacao__menu--direita-texto {
+        display: flex;
+        width: 465px;
+    }
+
+    .navegacao__menu--direita-icones img {
+        width: 80px;
+    }
+
+    .autora__container {
+        width: 100%;
+    }
+
+    .autora__texto {
+        width: 100%;
+    }
+
+    .rodape__logo--img {
+        width: 350px;
+        padding: 1.7rem;
+    }
+
+    .rodape__fb img {
+        width: 30px;
+    }
+    
+}
+
+@media(max-width: 768px) {
+
+    .navegacao__menu--logo-img {
+        width: 300px;
+        margin-left: 1.25rem;
+    }
+
+    .navegacao__menu--direita {
+        display: none;
+    }
+
+    .navegacao__hamburguer {
+        display: block;
+    }
+
+    .navegacao__hamburguer img {
+        width: 50px;
+    }
+
+    .banner {
+        background-position-y: 20%;
+    }
+
+    .banner__titulo {
+        flex: display;
+        flex-wrap: wrap;
+    }
+
+    .personalidade__img {
+        margin-left: 1.875rem;
+    }
+
+    .personalidade__img--foto {
+        max-width: 270px;
+    }
+
+    .personalidade__texto {
+        margin-right: 1.875rem;
+    }
+
+    .citacao {
+        margin-left: 1.75rem;
+        margin-right: 1.75rem;
+    }
+
+    .historia {
+        padding: 1.875rem;
+        margin-right: 1.875rem;
+    }
+
+    .historia__img {
+        width: 100%;
+    }
+
+    .autora__container {
+        width: 100%;
+    }
+
+    .autora__texto {
+        margin-left: 2.5rem;
+    }
+
+    .rodape {
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .rodape__logo img {
+        width: 300px;
+    }
+
+    .rodape__fb img {
+        width: 30px;
+    }
+
+}
+
+@media(max-width: 420px) {
+    body {
+        font-size: 25px;
+    }
+
+    .navegacao {
+        width: 805px;
+    }
+
+    .navegacao__menu--direita {
+        display: none;
+    }
+
+    .navegacao__menu--logo-img {
+        width: 340px;
+    }
+
+    .navegacao__hamburguer img {
+        width: 40px;
+    }
+
+    .banner {
+        width: 805px;
+    }
+
+    .banner__titulo {
+        margin-bottom: 1.2rem;
+    }
+
+    .personalidade {
+        display: flex;
+        flex-wrap: wrap;
+        width: 800px;
+    }
+
+    .personalidade__img {
+        margin-bottom: 5%;
+        width: 400px;
+    }
+
+    .personalidade__img--foto {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .personalidade__texto {
+        width: 90%;
+    }
+
+    .personalidade__texto h3 {
+        width: 85%;
+        margin: 5rem auto;
+    }
+
+    .citacao {
+        width: 550px;
+        margin-left: 6.25rem;
+    }
+    .historia {
+        width: 745px;
+    }
+
+    .historia h3 {
+        width: 82%;
+        margin: 1.25rem auto;
+    }
+
+    .historia p {
+        width: 82%;
+        margin: 0 auto;
+    }
+
+    .historia img {
+        width: 82%;
+        padding: 1.875rem 0;
+        margin: auto 4rem;
+    }
+
+    .autora {
+        width: 805px;
+    }
+    
+    .autora__container {
+        width: 95%;
+    }
+
+    .autora__texto {
+        margin-left: 0rem;
+        width: 60%;
+    }
+
+    .footer {
+        width: 805px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .rodape__logo img {
+        width: 300px;
+    }
+
+    .rodape__fb img {
+        width: 30px;
+    }
+
+}

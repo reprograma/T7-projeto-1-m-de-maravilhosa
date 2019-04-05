@@ -1,0 +1,173 @@
+<!--1) Construindo o site desktop first:
+
+Faz-se no tamanho de 1920px, que vale para de 1920px até tamanhos maiores
+Devemos fazer tamanhos menores então, por exemplo,:
+
+max-1200px
+max-1024px
+max-768px
+max-420px
+
+Deve-se colocar na ordem no CSS, ou seja, da menor tela para a maior
+
+2) Construindo sites mobile first, parte-se da menor tela possível e vai aumentando o tamanho das telas;
+o oposto do desktop first-->
+
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Margaret Hamilton</title>
+</head>
+
+<body>
+
+
+    <!--NAV-->
+
+    <nav class="navegacao">
+        <section class="box">
+            <section class="navegacao__menu">
+                <div class="navegacao__menu--logo">
+                    <img class="navegacao__menu--logo-img" src="img/logo-white.png" alt="Logo">
+                </div>
+
+                <div class="navegacao__hamburguer">
+                    <img src="img/menu-nav.png">
+                </div>
+
+                <div class="navegacao__menu--direita">
+                    <div class="navegacao__menu--direita-texto">
+                        <a href="../../index.html">Home</a>
+                        <a href="https://reprograma.com.br/">Conheça a {reprograma}</a>
+                </div>
+
+                    <div class="navegacao__menu--direita-icones">
+                        <a href="https://www.facebook.com/ReprogramaBr/"><img src="img/icon-facebook.png" alt="Icone facebook"></a>
+                        <a href="https://www.instagram.com/reprogramabr/?hl=pt-br"><img src="img/icon-instagram.png" alt="Icone instagram"></a>
+                        <a href="https://www.linkedin.com/company/reprogramabr/?originalSubdomain=pt"><img src="img/icon-linkedin.png" alt="Icone linkedin"></a>
+                        <a href="https://twitter.com/reprogramabr"><img src="img/icon-twitter.png" alt="Icone twitter"></a>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </nav>
+
+    <!--HEADER-->
+
+    <header class="banner">
+        <h1 class="banner__titulo"> Margaret Hamilton</h1>
+    </header>
+
+    <!--SECTION PERSONALIDADE-->
+
+    <section class="box">
+
+        <section class="personalidade">
+            <div class="personalidade__img">
+                <img class="personalidade__img--foto" src="img/foto_hamilton.jpg" alt="Foto da Margaret Hamilton">
+            </div>
+
+            <div class="personalidade__texto">
+                <h3>A mulher que tornou possível o primeiro pouso na Lua</h3>
+                <p>Margaret Heafild Hamilton é uma cientista da computação, engenheira de software e empresária
+                    estadunidense. Foi diretora da Divisão de Software no Laboratório de Instrumentação do MIT e é
+                    creditada por ter criado o termo “engenharia de software”.
+                </p>
+            </div>
+
+        </section>
+
+        <!--SECTION CITACAO-->
+
+        <section class="citacao">
+            <p>“Não se deve ter medo de dizer ‘eu não sei’ ou ‘eu não entendo’ ou de fazer perguntas ‘bobas’, já que
+                nenhuma pergunta é boba. Continuar mesmo quando as coisas parecem impossíveis; se manter sozinho ou ser
+                diferente; e não ter medo de estar errado ou de cometer e admitir erros, pois apenas aqueles que se
+                atrevem a falhar grandemente podem alcançar a grandeza.”</p>
+        </section>
+
+        <!--SECTION HISTORIA-->
+
+        <section class="historia">
+            <h3>Sua História</h3>
+            <p>Margaret trabalhou no MIT numa época em que ciência da computação e engenharia de software não eram
+                estudadas; a programação era aprendida trabalhando. Iniciou a carreira no departamento de meteorologia e
+                em poucos anos assumiu a liderança da equipe responsável pelo desenvolvimento do software de orientação
+                de bordo da Apollo 11, a primeira missão tripulada à Lua. </p>
+
+            <img class="historia__img" src="img/foto_hamilton_obama.jpg" alt="Foto da Margaret com o Obama">
+
+            <p>O trabalho de Hamilton evitou que o pouso na lua fosse abortado, devido a arquitetura robusta do software
+                desenvolvido por ela e sua equipe. Ao longo da vida ela recebeu diversos prêmios e reconhecimento e, em
+                2016, foi premiada com a Medalha Presidencial da Liberdade.</p>
+        </section>
+
+    </section>
+
+    <!--SECTION AUTORA-->
+
+    <section class="autora">
+        <div class="autora__container">
+        <div class="autora__img">
+            <img class="autora__img--foto" src="img/foto_autora.png" alt="Foto da autora">
+        </div>
+
+        <div class="autora__texto">
+            <p><a href="../../autora/marilia-cavalcanti/index.html">Autora: Marília Cavalcanti</a></p>
+            <p>Estudante front-end da {reprograma}</p>
+            <p>Estudante - Ciência da Computação da UFABC</p>
+            <p><a href="https://github.com/balini">GitHub</a></p>
+            </p>
+
+        </div>
+        </div>
+    </section>
+
+    <!--SECTION BOTAO-->
+
+    <section class="botao">
+        <div class="botao__fundo">
+            <a href="../../index.html">Ver todas elas</a>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+
+    <footer class="footer">
+        <section class="rodape">
+            <div class="rodape__menu">
+                <a href="../../index.html">
+                    <p>Home</p>
+                </a>
+                <a class="rodape__menu--link" href="reprograma.com.br">
+                    <p>Conheça a {reprograma}</p>
+                </a>
+            </div>
+
+            <div class="rodape__logo">
+                <img class="rodape__logo--img" src="img/logo-white.png" alt="Logo">
+            </div>
+
+            <div class="rodape__fb">
+                <img class="rodape__fb--img" src="img/fb-icone.png" alt="Icone facebook">
+                <a href="https://www.facebook.com/ReprogramaBr/">
+                    <p>/br.mdemaravilhosa</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="embaixo">
+            <p>Creative commons 2019 | Feito com amor por Reprograma</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>
