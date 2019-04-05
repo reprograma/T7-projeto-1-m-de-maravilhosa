@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navegacao {
+    background: #674582;
+    color: white;
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+}
+
+.navegacao a, li {
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+    color: white;
+}
+
+.navegacao-home {  
+    padding-right: 54px;
+}
+
+.navegacao__box {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navegacao__itens {
+    display: flex;
+    align-items: center;
+}
+
+#btnResponsivo {
+    display: none;
+}
+
+
+.img-logo {
+    width: 217px;
+}
+
+.banner {
+    background: linear-gradient(rgba(103, 69, 130, 0.56), rgba(103, 69, 130, 0.56)), url(../img/pittyfot.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+h1 {
+    font-weight: 30px;
+    letter-spacing: 3px;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.tudo{
+    width: 100%;
+}
+
+.conteiner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+h3 { 
+    color: #674582;
+    text-align: center;
+    padding: 20px;
+
+}
+
+h4 {
+    color: #674582;
+    padding: 20px;
+    font-size: 21px;
+}
+.into {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.into-img {
+    
+    max-width: 180px;
+   padding-bottom: 5%;
+    
+}
+.into-imag {
+    border-radius: 5%;
+    
+}
+.into-text {
+    width: 50%;
+    padding: 8%;
+    
+}
+
+.frase-efeito {
+    margin:0 auto;
+    width: 41vw;
+    border: 1px solid #674582;
+    padding: 2%;
+    text-align: center;
+}
+
+.historia {
+    margin-top: 5%;
+    width: 80vw;
+}
+
+.ilustracao {
+    margin: 0 auto;
+    width: 900px;
+    margin-top: 5%;
+}
+
+.descricao-img{
+    text-align: center;
+    margin-top: 1%;
+}
+
+.autora {
+    background: #E4B7E5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.img-dev {
+    width: 11%;
+}
+
+.autora__sobre {
+    padding: 29px;
+    font-weight: bold;
+    color: #674582;  
+}
+
+
+
+.ilustracao-img {
+    margin-top: 5%;
+    width: 100%;
+}
+
+.btn__roxo {
+    text-transform: uppercase;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 70px;
+    color: white;
+    background-color: #C083B9;
+    display: block;
+    transition: all .5s;
+    margin: 0 auto;
+    font-size: 2vh;
+    font-weight: bold;
+
+}
+
+.rodape__principal {
+    background: #323534;
+    color: white;
+
+}
+
+.rodape__navegacao {
+    text-align: center;
+}
+
+.rodape__principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    margin-top: 3%;
+}
+
+.img__face {
+    width: 15px;
+}
+
+.rodape__secundario {
+    background: #292A2A;
+    text-align: center;
+    height: 3vh;
+    
+}
+
+/* MEDIAS */ 
+
+@media (max-width: 768px) {
+    
+    .navegacao__itens{
+        display: none;
+    }
+
+    
+    .navegacao__redes-sociais {
+        display: none;
+    }
+
+    #btnResponsivo {
+        display: flex;
+        padding: 30px;
+    }
+
+    .into {
+        flex-direction: column;
+    }
+}
