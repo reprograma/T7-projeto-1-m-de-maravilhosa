@@ -141,7 +141,7 @@ p {
     margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .container {
         width: 90%;
     }
@@ -163,17 +163,15 @@ p {
     margin-left: 50px;
 }
 
-@media (max-width: 768px) {
-    .intro-texto {
-        margin: 0;
-    }
-}
-
 .perfil-nina {
     width: 250px;
 }
 
 @media (max-width: 768px) {
+    .intro-texto {
+        margin: 0;
+    }
+
     .perfil-nina {
         margin-bottom: 3vh;
     }
@@ -240,13 +238,17 @@ p {
 }
 
 .personalidade a:hover {
-    color: #C083B9;
+    text-decoration: underline;
 }
 
 .personalidade img {
     width: 100%;
     background-color: #63458A;
     border-radius: 10px;
+}
+
+.personalidade p {
+    margin-top: 2vh;
 }
 
 .introducao, .sobre, .outras-maravilhosas {
@@ -323,7 +325,7 @@ p {
     padding-right: 5px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
     .rodape-reprograma-conteudo {
         width: 100%;
         flex-direction: column;

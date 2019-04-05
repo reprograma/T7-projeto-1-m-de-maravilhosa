@@ -136,9 +136,9 @@ p {
     margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .container {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -153,12 +153,6 @@ p {
     justify-content: space-between;
 }
 
-@media (max-width: 768px) {
-    .intro-conteudo {
-        flex-direction: column;
-    }
-}
-
 .intro-texto {
     margin-left: 50px;
 }
@@ -166,6 +160,20 @@ p {
 .perfil-marielle {
     width: 200px;
     border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .intro-conteudo {
+        flex-direction: column;
+    }
+
+    .intro-texto {
+        margin: 0;
+    }
+
+    .perfil-marielle {
+        margin-bottom: 3vh;
+    }
 }
 
 .citacao {
@@ -186,12 +194,6 @@ p {
     margin-bottom: 30px;
 }
 
-@media (max-width: 768px) {
-    .intro-texto, .citacao, .resumo {
-        margin: 20px;
-    }
-}
-
 .autora {
     background-color: #E4B7E5;
     margin: 50px 0;
@@ -200,9 +202,10 @@ p {
 .autora-conteudo {
     margin: 0 auto;
     width: 50%;
+    max-width: 450px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .autora-foto {
@@ -223,9 +226,9 @@ p {
 
 @media (max-width: 768px) {
     .autora-conteudo {
-        width: 70%;
+        width: 90%;
     }
-    
+
     .autora-foto {
         width: 40%;
         min-width: 150px;
@@ -235,7 +238,7 @@ p {
 @media (max-width: 420px) {
     .autora-conteudo {
         font-size: 0.8rem; 
-        width: 90%;
+        max-width: 320px;
     }
 
     .autora-texto {
@@ -270,7 +273,8 @@ p {
 .rodape-reprograma-conteudo {
     margin: 0 auto;
     padding: 20px 0;
-    width: 65%;
+    width: 90%;
+    max-width: 960px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -300,7 +304,7 @@ p {
     padding-right: 5px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
     .rodape-reprograma-conteudo {
         width: 100%;
         flex-direction: column;
