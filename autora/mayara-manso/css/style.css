@@ -37,6 +37,8 @@ hr{
     width: 100%;
     max-width: 420px;
     border: solid 1px #63458A
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
 }
 
 .img-responsive {
@@ -140,7 +142,10 @@ hr{
 /* INICIO DO HEADER */
 
 header {
-    background-image: url("../img/bg-banner-claro.png");
+    background: linear-gradient(
+        rgba(103, 69, 130, 0.56), 
+        rgba(103, 69, 130, 0.56)
+      ),url("../img/banner.jpeg");
     background-size: cover;
     height: 500px;
     text-align: end;
@@ -165,6 +170,7 @@ header {
 @media (max-width: 430px) {
     header {
         margin-top: 0;
+        
     }
 }
 
@@ -173,6 +179,7 @@ header>h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
+    font-size: 1.8rem;
 }
 
 /* INICIO MAIN */
@@ -204,7 +211,10 @@ main {
 
 .container-article > h2 {
     text-align: center;
+    margin: 5%;
 }
+
+/* INTRODUÇAÕ */
 
 .container__introducao {
     display: flex;
@@ -223,12 +233,74 @@ main {
     font-size: 1.3rem;
 }
 
+.p__intruducao a{
+    color: #63458A;
+    text-transform: unset;
+    font-weight: 700;
+}
+
+.hr--margin{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/* HISTORIA */
+
+.img__historia{
+    margin: 5%;
+    text-align: center;
+    font-style: italic;
+    color: #6D6D6D;
+}
+
+.p__historia {
+    margin-bottom: 5%;
+    color: #63458A;
+    font-size: 1.3rem;
+}
+
+/* OUTRAS MARAVILHOSAS */
+
+.m-de-maravilhosas > h2{
+    text-align: center;
+    margin: 10%;
+}
+
+.container--perfil {
+    display: flex;
+    width: 100%;
+    padding: 5%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.personalidades {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.img-responsive--radius{
+    border-radius: 5px;
+}
+
+.personalidades p{
+    font-size: 1rem;
+}
+
+
+
 /* INTRODUÇÃO BREAKPONT 430px */
 
 @media (max-width: 430px) {
     .container-article {
         text-align: left;
     }
+
+    .container-article > h2 {
+        margin: 5% 5% 10% 0;
+        text-align: left;
+    }
+
     .container__introducao {
         display: flex;
         flex-direction: column;
@@ -238,9 +310,28 @@ main {
     .p__intruducao {
         margin-left: 0;
     }
+
+    .p__intruducao, .p__historia{
+        font-size:1rem;
+    }
+
     .img__introducao {
         width: 70%;
     }
+    .container--perfil {
+        display: flex;
+        width: 100%;
+        padding: 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .personalidades{
+        margin-bottom: 15%;
+        margin-top: 15%;
+    }
+
 }
 
 /* TODAS ELAS */
@@ -258,6 +349,13 @@ main {
     border-radius: 5px;
 }
 
+/* TODAS ELAS BREAKPONT 430px */
+
+@media (max-width: 430px) {
+    .btn__todas-elas{
+        margin: 10%;
+    }
+}
 
 /* INICIO DO FOOTER */
 
