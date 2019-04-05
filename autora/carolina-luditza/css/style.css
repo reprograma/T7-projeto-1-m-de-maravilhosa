@@ -11,7 +11,6 @@
  
     h1 {
          margin-top: 2%;
-         margin-bottom: 4%;
          font-family: 'Roboto Slab', serif;
     }
  
@@ -196,7 +195,7 @@
           margin-top: 4%;
           border-top: 2px solid #63458A;
           width: 40%;
-          padding: 4%;
+          padding: 2%;
      }
 
      .container__sobre {
@@ -217,25 +216,28 @@
           text-align: center;
      }
 
- /* Maravilhosas */
+/* Maravilhosas */
 
      .maravilhosas {
           display: flex;
           width: 65%;
           margin: 0 auto;
-          justify-items: space-between;    
+          justify-items: space-between;   
      }
 
      .container__maravilhosas {
-          padding: 8%;
-     
+          padding: 5%;
      }
 
      .outras__maravilhosas {
           width: 100%;
           background-color: #63458A;
           border: none;
-          border-radius: 5%;
+          border-radius: 5%;  
+     }
+
+     .container__maravilhosas > a {
+          color: #63458A;
      }
 
 /* Botâo */
@@ -374,7 +376,7 @@
           }
      }
  
- /* Maravilhosas */
+/* Maravilhosas */
 
      @media (max-width: 768px) {
           .maravilhosas {
@@ -400,7 +402,7 @@
           }
      }
     
-    /* Rodapé */
+/* Rodapé */
     
      .rodape {
           display: flex;
@@ -453,7 +455,7 @@
          text-align: center;    
      }
  
-    /* Rodapé responsívo */
+/* Rodapé responsívo */
  
     @media (max-width: 768px) {
           .rodape {
