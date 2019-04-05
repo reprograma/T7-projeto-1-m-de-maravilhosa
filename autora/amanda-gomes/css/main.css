@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    overflow-x:hidden;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #674582;
+    padding: 1vw;
+    text-transform: uppercase;
+    z-index: 99;
+    position: fixed;
+    font-size: 0.8462rem;
+    box-shadow: 0px 5px 5px rgba(65, 63, 63, 0.2);
+}
+
+a {
+    text-decoration: none;
+}
+
+.navigation__mobile {
+    display: none;
+}
+
+.link-autora {
+    text-decoration: none;
+    font-weight: bold;
+    color: #674582;
+}
+
+.navigation__logo, .end__logo {
+    width: 15vw;
+}
+
+.navigation__link a  {
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.navigation__network a {
+    padding: 0 0.3rem;
+}
+
+.navigation__menu, .end__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner {
+    color: rgba(255, 255, 255, 0.781);
+    width: 100vw;
+    background-image: url("../img/bg-banner-escuro.png");
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner__title {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    align-self: flex-end;
+    font-weight: bold;
+    padding: 2%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 
+}
+
+.container {
+    width: 100%;
+}
+
+.persona h3 {
+    text-align: center;
+    padding: 3%;
+    font-size: 1.70rem;
+}
+
+.persona {
+    width: 90vw;
+    margin: 0 auto;
+    color:  #674582;
+}
+.persona__infos, .quote, .author__btn, .authora__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authora__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__text {
+    width: 40vw;
+}
+
+.author__span {
+    line-height: 5;
+}
+
+.author_bold {
+    font-weight: bold;
+}
+
+.border {
+    border-top: 1px solid #674582;
+    width: 20vw;
+}
+
+
+.persona__infos {
+    padding-bottom: 5%;
+}
+
+.quote {
+    margin: 0 auto;
+    border: 1px solid #674582;
+    width: 65vw;
+    padding: 3%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.20rem;
+}
+
+
+.illustration  {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 5%;
+}
+
+.persona__text {
+    width: 50vw;
+}
+
+.persona__illustration, .persona__text {
+    padding: 2%;
+}
+
+.story {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story__text {
+    padding: 2%;
+    width: 70vw;
+}
+
+.persona__title {
+    display: flex;
+    padding-left: 8.20em;
+    padding-top: 4%;
+}
+
+.story__illustration {
+    width: 100%;
+    max-width: 908px;
+}
+
+.story__cite {
+    padding-top: 1%;
+    padding-bottom: 3%;
+    font-size: 0.80rem;
+}
+
+.author__illustration {
+    width: 100%;
+    max-width: 150px;
+}
+
+.author__bio {
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   width: 100vw;
+   justify-content: space-evenly;
+}
+
+.author h1 {
+    text-align: center;
+    color: #674582;
+    padding-bottom: 2%;
+}
+
+.author__text {
+    color: #674582;
+    font-weight: bold;
+    text-align: center;
+}
+
+.author__text a {
+    color: #674582;
+}
+
+.btn {
+    text-transform: uppercase;
+    background-color: #c184ba;
+    color: #fff;
+    font-weight: bold;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 5%;
+}
+
+.author__btn {
+    padding: 5%;
+}
+
+.end {
+    background-color: #323534;
+    width: 100vw;
+}
+
+.end__menu {
+    margin: 0 auto;
+    justify-content: center;
+    padding: 3%;
+    width: 80vw;
+}
+
+.end__link a {
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.end__image {
+    padding: 0 3rem;
+}
+
+.end__network {
+    padding: 0 2rem;
+}
+
+.end__1 {
+    width: 100vw;
+    height: 5vh;
+    color: #fff;
+    background-color: #2e302f;
+    font-size: 0.70rem;
+    text-align: center;
+    padding-top: 1%;
+}
+
+
+/* responsivo */
+
+@media (max-width:1280px) {
+    .persona__title {
+        padding-left: 7rem;
+    }
+
+    .story__text {
+        width: 72vw;
+    }
+
+    .story__illustration {
+        max-width: 886px;
+    }
+
+    .banner__title {
+        padding: 0;
+    }
+}
+
+@media (max-width:1024px) {
+
+    
+
+  .profile__text {
+        width: 28vw;
+    }
+
+    .persona__title {
+        padding-left: 5rem;
+    }
+
+    .story__text {
+        width: 75vw;
+    }
+
+    .story__illustration {
+        max-width: 735px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .profile__text {
+        width: 36vw;
+    }
+
+    .story__text {
+        width: 83vw;
+    }
+
+    .persona__title {
+        padding-left: 1.60rem;
+    }
+
+    .story__illustration {
+        max-width: 610px;
+    }
+
+    .story__cite {
+        width: 21vw;
+    }
+
+    .end__image {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width:500px) {
+
+    .navigation {
+        justify-content: space-around;
+       
+    }
+
+    .navigation__mobile {
+        display: flex;
+        align-items: center;
+    }
+   
+    .mobile-img {
+        width: 30px;
+    }
+
+    .navigation__menu {
+        display: none;
+    }
+
+    .navigation__logo {
+        width: 180px;
+    }
+
+    .banner {
+        width: 100vw;
+        min-height: 64vh;
+    }
+
+
+    .persona__infos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile__text {
+        width: 56vw;
+        text-align: justify;
+    }
+
+    .illustration {
+        max-width: 290px;
+        border-radius: 0;
+    }
+
+    .persona__text {
+        width: 75vw;
+    }
+
+    .quote {
+        font-size: 1.10rem;
+        line-height: 24px;
+    }
+
+    .btn {
+        padding: 3% 2%;
+    }
+    .persona__title {
+        padding-left: 1rem;
+    }
+
+    .story__cite {
+        width: 39vw;
+        padding: 3%;
+    }
+
+    .story__text {
+        width: 92vw;
+    }
+
+    .end__link {
+        display: none;
+    }
+
+    .end__logo {
+        width: 150px;
+    }
+
+    .end__menu {
+        padding-top: 3%;
+        padding-bottom: 2%;
+    }
+
+    .end__1 {
+        font-size: 0.50rem;
+        padding-top: 2%;
+    }
+
+    .author__illustration {
+        max-width: 110px;
+    }
+}
+
+@media (max-width:375px) { 
+
+    .profile__text {
+        width: 79vw;
+    }
+
+    .story__text {
+        width: 87vw;
+    }
+    
+    .persona h3 {
+        font-size: 1.52rem;
+    }
+
+    .author__illustration {
+        max-width: 86px;
+    }
+
+    .author__text {
+        font-size: 0.80rem;
+    }
+
+    .story__cite {
+        width: 48vw;
+    }
+
+    .author {
+        padding-top: 5%;
+    }
+
+    .author__btn {
+        padding: 8%;
+    }
+}
