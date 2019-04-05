@@ -112,7 +112,6 @@ li {
 }
 
 
-
 .navegacao__logo {
     max-width: 200px;
 }
@@ -130,11 +129,8 @@ li {
 }
 
 .navegacao__itens {
-    right: -700px;
-    top: 85px;
     width: 100%;
     text-align: center;
-    transition: right 1s;
     display: flex;
     justify-content: space-evenly;
 }
@@ -389,6 +385,9 @@ li {
 
 .caixinhas {
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (max-width: 420px){
