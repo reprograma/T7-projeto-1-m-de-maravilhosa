@@ -277,7 +277,7 @@ margin-left: 260px;
   font-size: 18px;
   line-height: normal;
   text-align: justify;
-  /* padding: 20px; */
+  padding: 20px; 
 }
 
 .container__autora{
@@ -388,7 +388,8 @@ margin-left: 260px;
 
 .hamburger{
   display: flex;
-  height: 50px;
+  height: 30px;
+  margin-top: 10px;
 }
 
 .conteudo__container {

@@ -159,6 +159,9 @@
     margin: 0 1rem;
   }
 
+  .hamburger {
+    display: none;
+}
   /* --- HEADER --- */
 .header {
   width: 100%;
@@ -185,7 +188,7 @@
 
 .conteudo__container {
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
   display: flex;
   justify-content: space-around;
 }
@@ -204,10 +207,18 @@ font-size: 18px;
 }
 .conteudo__artigo{
 color: #674582;
-font-size: 14px;
+font-size: 16px;
 line-height: normal;
-text-align: center;
+text-align: justify;
 padding: 5%;
+}
+
+.nise{
+  font-weight: bold;
+}
+
+.redes{
+  font-weight: bold;
 }
 
 .destination__border {
@@ -215,12 +226,12 @@ padding: 5%;
   width: 30%;
   display: flex;
   margin-left: 35%;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 .container__historia {
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-direction: column;
 }
@@ -236,13 +247,13 @@ padding: 5%;
 }
 
 .img__historia {
-  width: 670px;
+  width: 100%;
  
 }
 
 .conteudo__historia {
   color: #674582;
-  font-size: 14px;
+  font-size: 16px;
   line-height: normal;
   text-align: start;
   padding: 25px;
@@ -250,6 +261,7 @@ padding: 5%;
 
 .container__img{
   width: 10%;
+  height: 75%;
   background-color: #63458A;
   border-radius: 10%;
 
@@ -266,15 +278,17 @@ padding: 5%;
 
 .legenda{
   color: #674582;
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   padding: 15px;
+  margin-top: 75%;
 }
+
 .btn__container {
-  height: 100px;
   width: 100%;
-  margin-top: 50px;
+  padding: 7%;
+
 }
 
 /* --- RODAPE --- */
@@ -326,8 +340,65 @@ padding: 5%;
     width: 10px;
   }
   
-  @media (max-width:950px){
-    .navegacao__nav {
-      margin-left: 20px;
+  /*RESPONSIVO */
+  @media (max-width: 1024px){
+
+    .header{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  
+  .navegacao__nav{
+    display: none;
   }
+  
+  .navegacao__redes-sociais{
+    display: none;
+  }
+  
+  .hamburger{
+    display: flex;
+    height: 30px;
+  }
+  
+  .conteudo__container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .conteudo__foto{
+    display: flex;
+    justify-content: center;
+  }
+
+  .container__historia {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+  .container__maravilhosa {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 120px;
+}
+
+.container__img {
+  width: 10%;
+  height: 45%;
+  background-color: #63458A;
+  border-radius: 10%;
+}
+
+.btn__container{
+  padding: 20%;
+}
+  
   }
