@@ -34,7 +34,6 @@ h3 {
     background-color: #674582;
     position: fixed;
     top: 0;
-    padding: 1.25%;
     z-index: 100; 
     box-shadow: 0px 5px 5px rgba(0,0,0,.2);
     transition-duration: 1s;
@@ -63,7 +62,7 @@ h3 {
 }
 
 .menu__redes img{
-    width: 50%;
+    width: 100%;
     margin: 0 5%;
 }
 
@@ -337,7 +336,7 @@ h3 {
 
     .menu__redes {
         display: flex;
-        width: 15vw;
+        width: 20vw;
         justify-content: space-around;
         align-items: center;
     }

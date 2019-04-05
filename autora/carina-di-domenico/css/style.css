@@ -80,7 +80,7 @@ a {
 /* HEADER */
 
 .banner {
-    background: linear-gradient(rgba(128, 128, 128, 0.164),rgba(0, 0, 0, 0.795)), url(../../../img/header.jpg);
+    background: linear-gradient(rgba(128, 128, 128, 0.164),rgba(0, 0, 0, 0.795)), url(../../../img/bg-banner-escuro.png);
     background-size: cover;
     height: 35vh;
     display: flex;
@@ -102,7 +102,7 @@ a {
 }
 
 .conteudo__autora {
-    margin-top: 20%;
+    margin-top: 5%;
 }
 
 .autora__links, h3 {
