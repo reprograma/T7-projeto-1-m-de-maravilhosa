@@ -190,6 +190,12 @@ h3{
     margin-left:-39%;
 }
 
+
+hr {
+    width: 73px;
+    border: 2px solid #674582; 
+}
+
 .historia__maravilhosa{
     margin-top: 50px; 
     text-align: center;   
