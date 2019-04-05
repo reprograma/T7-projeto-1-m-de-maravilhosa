@@ -98,7 +98,7 @@ hr {
 .header {
     background: linear-gradient(rgba(255, 0, 255, 0.2),
                                 rgba(255, 0, 255, 0.2)),
-                url(../img/autora_banner.JPG);
+                url(../img/poa.JPG);
     min-height: 80vh;
     height: 500px;
     background-size: cover;
@@ -135,6 +135,7 @@ hr {
 
 .about__intro {
     display: inline-block;
+    text-align: center;
 }
 
 .about__ellen-img {
@@ -347,17 +348,11 @@ hr {
 
     .about {
         margin: 0 15rem;
+        padding: 0 2.5rem;
     }
 
     .about__intro {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .about__resume {
-        padding: 0 2.5rem;
-        display: flex;
-        flex-direction: column;
+        display: inline-block;
     }
 
     .autora__container {
