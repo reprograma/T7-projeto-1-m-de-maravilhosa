@@ -60,7 +60,7 @@ a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 1rem; /*equivale a 16px, que é o valor da font-size declarado no body*/
 
 }
 
@@ -75,7 +75,11 @@ a {
 .navegacao__menu--direita {
     display: flex;
     align-items: center;
-    margin-right: 50px;
+    margin-right: 3.125rem;
+}
+
+.navegacao__hamburguer {
+    display: none;
 }
 
 .navegacao__menu--direita-texto {
@@ -83,7 +87,7 @@ a {
 }
 
 .navegacao__menu--direita-texto a{
-    margin-left: 0.022em;
+    margin-left: 1.25rem;
 }
 
 .navegacao__menu--direita-icones {
@@ -92,7 +96,7 @@ a {
 }
 
 .navegacao__menu--direita-icones img {
-    padding: 8px;
+    padding: 0.5rem;
 }
 
 /*HEADER*/
@@ -122,11 +126,11 @@ a {
 .personalidade {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 .personalidade__img {
-    width: 25%;
+    width: 35%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,28 +144,32 @@ a {
 }
 
 .personalidade__texto {
-    width: 85%;
+    width: 65%;
     color: #674582;
 }
 
 .personalidade__texto h3 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 }
 
 .personalidade__texto p {
-    margin-left: 80px;
+    margin-left: 5rem;
 }
 
 /*SECTION CITACAO*/
 
 .citacao {
     text-align: center;
-    margin: 50px auto;
+    margin: 3.125rem auto;
     border: 1px solid #674582;
     color: #674582;
     font-weight: 600;
-    padding: 35px;
+    padding: 2.1875rem;
+}
+
+.citacao conteiner {
+    display: none;
 }
 
 /*SECTION HISTORIA*/
@@ -172,38 +180,41 @@ a {
 }
 
 .historia__img {
-    width: 550px;
-    padding: 30px 0;
+    width: 80%;
+    padding: 1.875rem 0;
 }
 
 .historia h3 {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 /*SECTION AUTORA*/
 
 .autora {
-    display: flex;
     background-color: #E4B7E5;
-    justify-content: space-evenly;
-    align-items: center;
     color: #674582;
     font-weight: 700;
-    margin-top: 30px;
+    margin-top: 1.875rem;
+    width: 100%;
+}
+
+.autora__container {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .autora__img {
-    width: 15%;
+    width: 40%;
 }
-
 .autora__img--foto {
     width: 100%;
-    margin-left: 100px;
+    max-width: 200px;
 }
-
 .autora__texto {
-    width: 40%;
-    margin-right: 80px;
+    width: 60%;
 }
 
 .autora__texto a {
@@ -215,17 +226,17 @@ a {
 /*SECTION BOTAO*/
 
 .botao {
-    margin-top: 50px;
+    margin-top: 3.125rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.botao__fundo a{
+.botao__fundo a {
     font-weight: 700;
     background: #C083B9;
-    padding: 15px 40px;
-    border-radius: 10px;
+    padding: 1rem 2.5rem;
+    border-radius: 0.625rem;
 }
 
 /*FOOTER*/
@@ -242,7 +253,7 @@ a {
     margin: 0 auto;
     width: 70%;
     height: 120px;
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 
 .rodape__menu {
@@ -253,7 +264,7 @@ a {
 
 .rodape a {
     text-transform: none;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .rodape__logo--img {
@@ -273,8 +284,230 @@ a {
     width: 100%;
     height: 40px;
     background-color: #292A2A;
-    font-size: 10pt;
+    font-size: 0.625rem;
     color: whitesmoke;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 1.25rem;
+}
+
+@media(max-width: 1024px) {
+    .navegacao__menu--logo {
+        width: 300px;
+    }
+    .navegacao__menu--logo-img {
+        width: 300px;
+    }
+    .navegacao__menu--direita-texto {
+        display: flex;
+        width: 465px;
+    }
+
+    .navegacao__menu--direita-icones img {
+        width: 80px;
+    }
+
+    .autora__container {
+        width: 100%;
+    }
+
+    .autora__texto {
+        width: 100%;
+    }
+
+    .rodape__logo--img {
+        width: 350px;
+        padding: 1.7rem;
+    }
+
+    .rodape__fb img {
+        width: 30px;
+    }
+    
+}
+
+@media(max-width: 768px) {
+
+    .navegacao__menu--logo-img {
+        width: 300px;
+        margin-left: 1.25rem;
+    }
+
+    .navegacao__menu--direita {
+        display: none;
+    }
+
+    .navegacao__hamburguer {
+        display: block;
+    }
+
+    .navegacao__hamburguer img {
+        width: 50px;
+    }
+
+    .banner {
+        background-position-y: 20%;
+    }
+
+    .banner__titulo {
+        flex: display;
+        flex-wrap: wrap;
+    }
+
+    .personalidade__img {
+        margin-left: 1.875rem;
+    }
+
+    .personalidade__img--foto {
+        max-width: 270px;
+    }
+
+    .personalidade__texto {
+        margin-right: 1.875rem;
+    }
+
+    .citacao {
+        margin-left: 1.75rem;
+        margin-right: 1.75rem;
+    }
+
+    .historia {
+        padding: 1.875rem;
+        margin-right: 1.875rem;
+    }
+
+    .historia__img {
+        width: 100%;
+    }
+
+    .autora__container {
+        width: 100%;
+    }
+
+    .autora__texto {
+        margin-left: 2.5rem;
+    }
+
+    .rodape {
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .rodape__logo img {
+        width: 300px;
+    }
+
+    .rodape__fb img {
+        width: 30px;
+    }
+
+}
+
+@media(max-width: 420px) {
+    body {
+        font-size: 25px;
+    }
+
+    .navegacao {
+        width: 805px;
+    }
+
+    .navegacao__menu--direita {
+        display: none;
+    }
+
+    .navegacao__menu--logo-img {
+        width: 340px;
+    }
+
+    .navegacao__hamburguer img {
+        width: 40px;
+    }
+
+    .banner {
+        width: 805px;
+    }
+
+    .banner__titulo {
+        margin-bottom: 1.2rem;
+    }
+
+    .personalidade {
+        display: flex;
+        flex-wrap: wrap;
+        width: 800px;
+    }
+
+    .personalidade__img {
+        margin-bottom: 5%;
+        width: 400px;
+    }
+
+    .personalidade__img--foto {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .personalidade__texto {
+        width: 90%;
+    }
+
+    .personalidade__texto h3 {
+        width: 85%;
+        margin: 5rem auto;
+    }
+
+    .citacao {
+        width: 550px;
+        margin-left: 6.25rem;
+    }
+    .historia {
+        width: 745px;
+    }
+
+    .historia h3 {
+        width: 82%;
+        margin: 1.25rem auto;
+    }
+
+    .historia p {
+        width: 82%;
+        margin: 0 auto;
+    }
+
+    .historia img {
+        width: 82%;
+        padding: 1.875rem 0;
+        margin: auto 4rem;
+    }
+
+    .autora {
+        width: 805px;
+    }
+    
+    .autora__container {
+        width: 95%;
+    }
+
+    .autora__texto {
+        margin-left: 0rem;
+        width: 60%;
+    }
+
+    .footer {
+        width: 805px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .rodape__logo img {
+        width: 300px;
+    }
+
+    .rodape__fb img {
+        width: 30px;
+    }
+
 }
