@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+  text-decoration: none;  
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color:#63458A;
+}
+
+.container-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #674582;
+    z-index: 100;
+    position: fixed;
+}
+
+.menu {
+    display: flex;
+    width: 70vw;
+    justify-content: space-around;  
+    align-items: center;
+    padding: 4vh;
+}
+
+.menu__logo {
+    max-width: 200px;
+}
+
+.menu__img {
+    width: 100%;
+}
+
+.menu__lista {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.menu__lista a {
+    color: white;
+}
+
+.menu__link {
+    
+    font-size: 18px;
+    margin: 10px;
+}
+.menu__hamburguer{
+    display:none;
+}
+
+.banner {
+    background: linear-gradient( rgb(103, 69, 130, .6), rgba(103, 69, 130, .6)), url(../img/reprograma-bg.jpeg);
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    top:8vw;
+    text-align: center;
+
+}
+
+.banner__titulo {
+    color: white;
+    font-size: 9vh;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: 10px;
+    text-transform: uppercase;
+}
+
+.centralizada {
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.destaque {
+    margin-top:12vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.destaque__titulo {
+    text-align: left;
+    font-weight: bold;
+    font-size:36px;
+
+}
+
+.destaque__imagem {
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+    font-size: 30px;
+}
+
+.destaque__texto {
+    margin-top: 30px;
+    min-width: 300px;
+    width: 30vw;
+}
+.destaque__redes{
+    list-style-type: none;
+    display: flex;
+}
+.destaque__link {
+    margin-right:5px;
+    color:#674582;
+    font-weight: bold;
+}
+
+.destaque__link:not(:first-child):before  {
+    content: "|"
+}
+.negrito{
+    font-weight: bolder;
+    color:#674582;
+}
+.divisoria{
+    margin:30px auto;
+    width:30%;
+    border:1px solid #674582;
+
+}
+.sobre-maravilhosas__titulo{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.sobre-maravilhosas__imagem {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sobre-maravilhosas p{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+/* 
+.sobreautora {
+    margin-top:28px;
+    background-color: #E4B7E5;
+    margin-bottom: 30px;
+}
+.sobreautora__conteudo{
+    display:flex;
+    font-size:28px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.sobreautora__imagem{
+    width:150px;
+    height:150px;
+    border-radius: 5px;
+}
+.sobreautora__texto {
+    
+    min-width: 300px;
+    font-size:30px;
+    margin-top:28px;
+    
+}
+
+.sobreautora__texto p{
+    font-size: 3rem;
+}
+.ver_todas{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+
+}
+.ver_todas__botao{
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    background-color:#C083B9;
+
+} */
+.outras-maravilhosas{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.outras-maravilhosas__container{
+    margin-top:10px;
+    margin-bottom:10px;
+    width:150px;
+    height:150px;
+    border-radius: 5px;
+    background-color: #63458A;
+    color: #ffffff;
+
+}
+.outras-maravilhosas__container img{
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+
+}
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100vw;
+    background: #323534;
+}
+.rodape__link{
+    text-align: center;
+    color: #fff;
+    
+}
+.rodape__lista-links {
+    list-style-type: none;
+}
+.rodape__img{
+    width:400px;
+}
+.rodape__facebook{
+    color:#fff;
+
+}
+.rodape__destaque{
+    color:#674582;
+    font-size:45px;
+    font-weight: bolder;
+}
+.direitos_autorais{
+    display:flex;
+    width:100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #292A2A;
+    color:#fff;
+    text-align: center;
+    height: 59px;
+}
+@media(max-width: 700px){
+    .menu__lista{
+        display:none;
+    }
+    .rodape__lista-links {
+        display:none;
+    }
+    .rodape__facebook{
+        display:none;
+    }
+    .rodape__img{
+        width: 100px;
+    }
+    .menu__hamburguer{
+        display: block;
+    }
+    .centralizada {
+        width: 90vw;
+    }
+}
