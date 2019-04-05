@@ -1,0 +1,510 @@
+* {
+     box-sizing: border-box;
+    }
+ 
+    body {
+         font-family: 'Montserrat', sans-serif;
+         font-size: 14px;
+         margin: 0;
+         color: #63458A;
+    }
+ 
+    h1 {
+         margin-top: 2%;
+         font-family: 'Roboto Slab', serif;
+    }
+ 
+    a {
+          text-decoration: none;   
+          color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+          h1 {
+               font-size: 16px;     
+          }
+     }
+
+     @media (max-width: 480px) {
+          h1 {
+               font-size: 16px;     
+               }
+     }
+
+     @media (max-width: 320px) {
+          h1 {
+               font-size: 16px;     
+               }
+          }
+
+/* Menu */
+    .navegacao {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          padding: 10px;
+          background-color: #674582;
+     }
+ 
+    .container_logo {
+          display: flex;
+          align-items: center;
+     }
+ 
+     .logo_mulheres {
+          width: 46%;
+     }
+ 
+     .menu {
+         padding: 0px;
+         list-style: none;    
+         text-transform: uppercase;
+     }
+ 
+     .menu > a {
+         margin-left: 30px;
+     }
+ 
+     .redes {
+         display: flex;
+         justify-content: space-around;
+     }
+ 
+     .logo_redes {
+         margin-left: 15px;
+     }
+ 
+/* Menu responsivo */
+ 
+     @media (min-width: 1024px) {
+          .navegacao-hamburguer {
+               display: none;
+          }
+ 
+          .menu, .redes {
+               display: flex;
+               justify-content: space-around;
+          }
+     }
+ 
+     @media (max-width: 768px) {
+          .menu, .redes {
+               display: none;
+          }
+     
+     .navegacao-hamburguer {
+          display: flex;
+          }
+     }
+  
+/* Cabeçalho */
+
+     .cabecalho {
+         display: flex;
+         width: 100%;
+         align-items: flex-end;
+         justify-content: center;
+         color:#ffffff;
+         font-weight: 800;
+         font-size: 40px;
+         text-transform: uppercase;
+         min-height: 70vh;
+         height: 19,53124%;
+         background: linear-gradient(
+         rgba(103, 69, 130, 0.56),
+         rgba(1, 0, 2, 0.75)
+         ),url(../img/bg-banner-claro.jpeg);
+         background-size: cover;
+         background-position: center 40%;
+         background-repeat: no-repeat;
+     }
+ 
+/* Cabeçalho responsivo */
+
+     @media (max-width: 1024px) {
+          .cabecalho {
+               font-size: 30px;
+          }
+     }
+ 
+    @media (max-width: 768px) {
+          .cabecalho {
+               font-size: 30px;
+          }
+     }
+ 
+    @media (max-width: 480px) {
+          .cabecalho {
+               font-size: 20px;
+          }
+     }
+ 
+     @media (max-width: 320px) {
+          .cabecalho {
+               font-size: 10px;
+          }
+     }
+ 
+/* Conteúdo */
+
+     .container {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+     }
+
+     .container__autora {
+          display: flex;
+          width: 50%;
+          margin: 0 auto;
+     }
+
+     .container__foto {
+          width: 30%;
+     }
+
+     .foto__autora {
+          width: 100%;
+     }
+
+     .resumo__autora {
+          text-align: left;
+          width: 60%;
+          margin-left: 10%;
+     }
+
+     .destaque__italico {
+          font-weight: bold;
+          font-style: italic;
+     }
+
+     .destaque__negrito {
+          font-weight: bold;
+          color: #63458A;
+     }
+
+     .contato__autora {
+          display: inline-block;  
+          width: 50%;
+     }
+
+
+     .divisao {
+          display: block;
+          margin: 0 auto;
+          margin-top: 4%;
+          border-top: 2px solid #63458A;
+          width: 40%;
+          padding: 2%;
+     }
+
+     .container__sobre {
+          display: flex;
+          flex-direction: column;
+          width: 60%;
+          justify-content: center;
+          margin: 0 auto;
+          text-align: left;
+     }
+
+     .foto__grupo {
+          width: 100%;
+     }
+
+     .legenda {
+          font-size: 12px;
+          text-align: center;
+     }
+
+/* Maravilhosas */
+
+     .maravilhosas {
+          display: flex;
+          width: 65%;
+          margin: 0 auto;
+          justify-items: space-between;   
+     }
+
+     .container__maravilhosas {
+          padding: 5%;
+     }
+
+     .outras__maravilhosas {
+          width: 100%;
+          background-color: #63458A;
+          border: none;
+          border-radius: 5%;  
+     }
+
+     .container__maravilhosas > a {
+          color: #63458A;
+     }
+
+/* Botâo */
+
+     .btn {
+          width: 170px;
+          height: 40px;
+          border: none;
+          color: #f8f9fa;
+          background-color: #C083B9;
+          text-transform: uppercase;
+          border-radius: 10px;
+          margin-bottom: 6%;
+          text-align: center;
+          font-weight: bold;
+          font-size: 13px;
+     }
+
+/* Conteúdo responsivo */
+
+     @media (max-width: 768px) {
+          .container {
+               margin-top: 5%;
+          }
+          .container__autora {
+               display: block;
+          }
+ 
+          .container__foto {
+               width: 80%;
+               margin: 0 auto;
+          }
+
+          .resumo__autora {
+               display: block;
+               width: 90%;
+               text-align: justify;
+               margin: 0 auto;
+          }
+ 
+          .foto__autora {
+               display: block;
+               width: 100%;
+               margin: 0 auto;
+          }
+
+          .contato__autora {
+               width: 60%;
+          }
+     }
+
+     @media (max-width: 480px) {
+          .container {
+               margin-top: 5%;
+          }
+
+          .container__autora {
+               display: block;
+          }
+      
+          .container__foto {
+               width: 80%;
+               margin: 0 auto;
+          }
+     
+          .resumo__autora {
+               display: block;
+               width: 100%;
+               text-align: justify;
+               margin: 0 auto;
+          }
+      
+          .foto__autora {
+               display: block;
+               width: 100%;
+               margin: 0 auto;
+          }
+     
+          .contato__autora {
+               width: 60%;
+          }
+     }
+
+     @media (max-width: 320px) {
+          .container {
+               margin-top: 5%;
+          }
+
+          .container__autora {
+               display: block;
+          }
+ 
+          .container__foto {
+               width: 80%;
+               margin: 0 auto;
+          }
+
+          .resumo__autora {
+               display: block;
+               width: 90%;
+               text-align: justify;
+               margin: 0 auto;
+          }
+ 
+          .foto__autora {
+               display: block;
+               width: 100%;
+               margin: 0 auto;
+          }
+
+          .contato__autora {
+               width: 49%;
+          }
+     }
+ 
+/* Sobre responsivo */
+
+     @media (max-width: 768px) {
+          .container__sobre {
+               width: 60%;
+               text-align: justify;
+          }
+     }
+
+     @media (max-width: 480px) {
+          .container__sobre {
+               width: 60%;
+               text-align: justify;
+          }
+     }
+
+     @media (max-width: 320px) {
+          .container__sobre {
+               width: 60%;
+               text-align: justify;
+          }
+     }
+ 
+/* Maravilhosas */
+
+     @media (max-width: 768px) {
+          .maravilhosas {
+               display: flex;
+               width: 60%;
+               margin: 0 auto;
+               justify-items: space-between;    
+          }
+
+          .container__maravilhosas {
+               padding: 1%;
+          }
+
+          .outras__maravilhosas {
+               width: 100%;
+               background-color: #63458A;
+               border: none;
+               border-radius: 5%;
+          }
+
+          .nome__personalidade {
+               font-size: 12px;
+          }
+     }
+    
+/* Rodapé */
+    
+     .rodape {
+          display: flex;
+          width: 70%;
+          justify-content: space-evenly;
+          align-items: center;
+          background-color: #323534;
+          color: #e7e5e5;
+          min-height: 20vh;
+          height: 60px;
+          margin: 0 auto;
+     }
+ 
+    .bg__footer {
+          width: 100%;
+          background-color: #323534;  
+     }
+
+    .rodape-escuro {
+          display: flex;
+          background-color: #292A2A;
+          width: 100%;
+          height: 50px;
+          justify-content: center;
+          align-items: center;
+          color: #e7e5e5;
+          font-size: 11px;
+     }
+ 
+    .contato {
+         display: flex;
+         text-align: center;
+         width: 20%;
+         padding: 0;
+         justify-content: center;
+     }
+    
+    .logo_facebook {
+         width: 12px;
+     }
+ 
+    .logo_mulheres--rodapé {
+         width: 200px;
+     }
+ 
+    .links ul, li {
+         padding: 0;
+         display: block;
+         width: 100%;
+         text-align: center;    
+     }
+ 
+/* Rodapé responsívo */
+ 
+    @media (max-width: 768px) {
+          .rodape {
+               display: block;
+               width: 100%;
+               height: 30%;
+               padding: 2%;
+               margin: 0 auto;
+          }
+ 
+          .logo_rodape, .contato {
+               display: block;
+               width: 100%;
+               text-align: center;
+          }   
+     }
+ 
+    @media (max-width: 480px) {
+          .rodape {
+               display: block;
+               width: 100%;
+               height: 30%;
+               padding: 2%;
+               margin: 0 auto;
+          }
+ 
+          .logo_rodape, .contato {
+               display: block;
+               width: 100%;
+               text-align: center;
+          }
+     }
+ 
+     @media (max-width: 320px) {
+          .rodape {
+               display: block;
+               width: 100%;
+               height: 30%;
+               padding: 2%;
+               margin: 0 auto;
+          }
+ 
+          .rodape-escuro {
+               text-align: center;
+          }
+  
+          .logo_rodape, .contato {
+               display: block;
+               width: 100%;
+               text-align: center;
+          }  
+     }
